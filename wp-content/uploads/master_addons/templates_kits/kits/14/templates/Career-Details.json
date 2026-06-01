@@ -1,0 +1,1152 @@
+{
+    "version": "0.4",
+    "template_id": 357,
+    "title": "Career Details",
+    "type": "page",
+    "metadata": {
+        "template_type": "page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "5381a97",
+            "settings": {
+                "flex_direction": "column",
+                "min_height": {
+                    "unit": "vh",
+                    "size": 60,
+                    "sizes": []
+                },
+                "min_height_tablet": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "min_height_mobile": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#F9F9FD",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "576f8f3"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "f22553c"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "12d1896"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "a9e8020",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "d966a04"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "9d1ba34"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "c8e7bd1"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "a6a3b65",
+                            "settings": {
+                                "content_width": "full",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "8cd426e"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "04d6420"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "73d139f"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "6e507aa",
+                                    "settings": {
+                                        "ma_el_dual_first_heading": "Frequently Asked ",
+                                        "ma_el_dual_second_heading": "Questions",
+                                        "ma_el_dual_heading_description": "",
+                                        "ma_el_dual_heading_first_text_color": "#070127",
+                                        "ma_el_dual_heading_first_bg_color": "",
+                                        "ma_el_dual_first_heading_typography_typography": "custom",
+                                        "ma_el_dual_first_heading_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_dual_first_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_font_weight": "500",
+                                        "ma_el_dual_first_heading_typography_line_height": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_letter_spacing": {
+                                            "unit": "px",
+                                            "size": -2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_second_text_color": "#070127",
+                                        "ma_el_dual_second_heading_typography_typography": "custom",
+                                        "ma_el_dual_second_heading_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_dual_second_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_font_weight": "500",
+                                        "ma_el_dual_second_heading_typography_line_height": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_letter_spacing": {
+                                            "unit": "px",
+                                            "size": -2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_description_text_color": "#2F2F2F",
+                                        "ma_el_dual_heading_description_typography_typography": "custom",
+                                        "ma_el_dual_heading_description_typography_font_family": "Lato",
+                                        "ma_el_dual_heading_description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_description_typography_font_weight": "400",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "601108a"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "title_html_tag": "h2",
+                                        "ma_el_dual_first_heading_typography_text_transform": "capitalize",
+                                        "ma_el_dual_description_padding": {
+                                            "unit": "px",
+                                            "top": "40",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "_css_classes": "underline-inside",
+                                        "custom_css": ".underline-inside .jltma-second-heading{\n   position: relative;\n   display: inline-block\n}\n.underline-inside .jltma-second-heading::after{\n    content: \"\";\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n    height: 15px;\n    background: #FEECA0;\n    z-index: -2\n}",
+                                        "ma_el_dual_second_heading_typography_text_transform": "lowercase",
+                                        "_z_index": 0,
+                                        "ma_el_dual_first_heading_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_line_height_tablet": {
+                                            "unit": "em",
+                                            "size": 1.2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_line_height_tablet": {
+                                            "unit": "em",
+                                            "size": 1.2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_alignment": "left"
+                                    },
+                                    "widgetType": "ma-dual-heading",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "187180a",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_justify_content": "center",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "8cd426e"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "04d6420"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "73d139f"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "9376239",
+                                    "settings": {
+                                        "editor": "<p>Provide an overview of the primary digital services your agency specializes in, such as digital marketing, web development, design, etc.<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Lato",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "400",
+                                        "text_color": "#2F2F2F",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "99e27dc"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "b1d2389",
+            "settings": {
+                "flex_direction": "column",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "fb3fe50"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "cbfe28c"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "bec3cb1"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "8e9926e",
+                    "settings": {
+                        "content_width": "full",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "0225f4c"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "9dc2625"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "ed1c52e"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000",
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": "15",
+                            "right": "15",
+                            "bottom": "15",
+                            "left": "15",
+                            "isLinked": true
+                        },
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": {
+                            "horizontal": 1,
+                            "vertical": 1,
+                            "blur": 25,
+                            "spread": 0,
+                            "color": "rgba(2.8052261451144833, 8.64416951260605, 17.472314453124987, 0.02)"
+                        },
+                        "margin": {
+                            "unit": "px",
+                            "top": "-350",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "60",
+                            "right": "60",
+                            "bottom": "60",
+                            "left": "60",
+                            "isLinked": true
+                        },
+                        "margin_tablet": {
+                            "unit": "px",
+                            "top": "-300",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "margin_mobile": {
+                            "unit": "px",
+                            "top": "-115",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "10",
+                            "bottom": "10",
+                            "left": "10",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "36f0d59",
+                            "settings": {
+                                "content_width": "full",
+                                "background_background": "classic",
+                                "background_color": "#F9F9FD",
+                                "ma_el_slider_delay": "5000",
+                                "border_radius": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "15",
+                                    "bottom": "15",
+                                    "left": "15",
+                                    "isLinked": true
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "40",
+                                    "right": "40",
+                                    "bottom": "40",
+                                    "left": "40",
+                                    "isLinked": true
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "8aa107c",
+                                    "settings": {
+                                        "title": "Job Overview",
+                                        "header_size": "h4",
+                                        "align": "left",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#171717"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "3f09ca5",
+                                    "settings": {
+                                        "editor": "<p>Department: Sr.UX Designer Location: New Maxico Type: Full-Time Salary: $25k-$42k<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Montserrat",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "600",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "30c43a5"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "paragraph_spacing": {
+                                            "unit": "px",
+                                            "size": 0,
+                                            "sizes": []
+                                        },
+                                        "text_color": "#070707"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "cdf4ca3",
+                                    "settings": {
+                                        "text": "Apply For This Job",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "500",
+                                        "button_text_color": "#FFFFFF",
+                                        "background_color": "#070127",
+                                        "hover_color": "#070127",
+                                        "button_background_hover_color": "#02010100",
+                                        "button_hover_border_color": "#070127",
+                                        "button_hover_transition_duration": {
+                                            "unit": "s",
+                                            "size": 1,
+                                            "sizes": []
+                                        },
+                                        "border_border": "solid",
+                                        "border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "border_color": "#070127",
+                                        "border_radius": {
+                                            "unit": "px",
+                                            "top": "50",
+                                            "right": "50",
+                                            "bottom": "50",
+                                            "left": "50",
+                                            "isLinked": true
+                                        },
+                                        "text_padding": {
+                                            "unit": "px",
+                                            "top": "16",
+                                            "right": "32",
+                                            "bottom": "16",
+                                            "left": "32",
+                                            "isLinked": false
+                                        },
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "acd9036"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "link": {
+                                            "url": "#apply job",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "widgetType": "button",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "5851d38",
+                            "settings": {
+                                "content_width": "full",
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "d72ba28",
+                                    "settings": {
+                                        "title": "Job Description",
+                                        "align": "left",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#171717"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "8c74d80",
+                                    "settings": {
+                                        "editor": "<p>A UI\/UX (User Interface\/User Experience) Designer is responsible for creating intuitive and visually appealing digital experiences that enhance user satisfaction and meet business goals. They combine their knowledge of design principles, user psychology, and industry best practices to craft user-centric interfaces for websites, mobile applications<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Lato",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "400"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "96c2123",
+                                    "settings": {
+                                        "editor": "<p>Develop visually appealing user interfaces that align with the brand identity and product requirements. Use tools like Sketch, Adobe XD, or Figma to design pixel-perfect mockups and assets.<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Lato",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "400"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "30a8fa2",
+                                    "settings": {
+                                        "title": "Skills",
+                                        "align": "left",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#171717"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "90d85bd",
+                                    "settings": {
+                                        "editor": "<ul><li>Excellent interpersonal skills<\/li><li>Knowledge of multiple functional areas such as product management, engineering, UX\/UI, sales, customer support, finance, or marketing.<\/li><li>Aware of trends in mobile, communications, and collaboration<\/li><li>Ability to influence multiple stakeholders without direct authority.<\/li><li>Communicates powerfully and prolifically.<\/li><li>Proficiency in a variety of design tools such as Figma, Photoshop, Illustrator, and Sketch.<\/li><\/ul>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Lato",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "400"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "56f287d",
+                                    "settings": {
+                                        "title": "Job Responsibilities",
+                                        "align": "left",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "500",
+                                        "title_color": "#171717"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "cd2ce9e",
+                            "settings": {
+                                "editor": "<p>Conduct user research activities to understand user needs, behaviors, and preferences. This may involve user interviews, surveys, usability testing, and analyzing user data to inform design decisions.<\/p><p>Create wireframes, low-fidelity and high-fidelity prototypes to visually represent the layout, structure, and functionality of digital products. These prototypes help communicate design concepts and interactions to stakeholders and developers.<\/p><p>Develop visually appealing and intuitive user interfaces that align with the brand identity and project requirements. This includes creating pixel-perfect mockups, selecting appropriate typography, colors, and visual elements, and ensuring consistency across different screens and platforms.<\/p>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "d30f7c3",
+                            "settings": {
+                                "title": "Qualifications",
+                                "align": "left",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#171717"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "c04fa15",
+                            "settings": {
+                                "editor": "<p>To become a UI\/UX (User Interface\/User Experience) designer, there are certain qualifications and skills that are typically sought after in the industry. While specific requirements may vary depending on the company and the level of the position, here are some common qualifications for UI\/UX designers:<\/p><ul><li>Education and Formal Training<\/li><li>Design Skills<\/li><li>UX Research and Analysis<\/li><li>Collaboration and Communication<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "eaa4820",
+                            "settings": {
+                                "title": "Other Benefits",
+                                "align": "left",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#171717"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "bd32fad",
+                            "settings": {
+                                "editor": "<p>As a UI\/UX designer, in addition to the basic salary, there are various other benefits that you may receive from an office or employer. These benefits can vary depending on the company and location, but here are some common ones<\/p><ul><li>Health Insurance<\/li><li>Flexible Work Hours<\/li><li>Remote Work Options<\/li><li>Professional Development<\/li><li>Employee Assistance Programs (EAP)<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7d92a35",
+                            "settings": {
+                                "text": "Divider",
+                                "color": "#B3B3B3"
+                            },
+                            "widgetType": "divider",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7fcb068",
+                            "settings": {
+                                "title": "Apply For Position",
+                                "align": "left",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#171717"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1e07fb1",
+                            "settings": {
+                                "ma_cf7_list": "287",
+                                "ma_cf7_padding": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "ma_cf7_title_typography_font_family": "Plus Jakarta Sans",
+                                "ma_cf7_title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "ma_cf7_title_typography_font_weight": "500",
+                                "ma_cf7_field_bg": "#F8F8F8",
+                                "ma_cf7_field_text_color": "#181818",
+                                "text_color_label": "#0F0F0F",
+                                "ma_cf7_typography_label_typography": "custom",
+                                "ma_cf7_typography_label_font_family": "Plus Jakarta Sans",
+                                "ma_cf7_typography_label_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "ma_cf7_typography_label_font_weight": "400",
+                                "ma_cf7_typography_label_line_height": {
+                                    "unit": "rem",
+                                    "size": 2.5,
+                                    "sizes": []
+                                },
+                                "ma_cf7_typography_label_line_height_tablet": {
+                                    "unit": "rem",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "ma_cf7_typography_label_line_height_mobile": {
+                                    "unit": "rem",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "ma_cf7_button_border_radius": {
+                                    "unit": "px",
+                                    "top": "10",
+                                    "right": "10",
+                                    "bottom": "10",
+                                    "left": "10",
+                                    "isLinked": true
+                                }
+                            },
+                            "widgetType": "ma-contact-form-7",
+                            "elType": "widget"
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "4dc1d43",
+            "settings": {
+                "flex_direction": "row",
+                "flex_gap": {
+                    "column": "",
+                    "row": "",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": null
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "220",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "492a431"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "264cab0"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "6ac7c00"
+                    }
+                ],
+                "ma_el_slider_delay": "5000"
+            },
+            "elements": [
+                {
+                    "id": "b29bf26",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_gap": {
+                            "column": "",
+                            "row": "",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": null
+                        },
+                        "background_background": "classic",
+                        "background_color": "#CFD4FA",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": "15",
+                            "right": "15",
+                            "bottom": "15",
+                            "left": "15",
+                            "isLinked": true
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "25",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "25",
+                            "isLinked": false
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "20",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "9aca286"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "2be8b8e"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "eb9218b"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "c38ef4c",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_justify_content": "center",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "621e9b5"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "e5bf543"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d6317ea"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "5075b27",
+                                    "settings": {
+                                        "title": "Ready to hire us?",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "600",
+                                        "typography_line_height": {
+                                            "unit": "px",
+                                            "size": 42,
+                                            "sizes": []
+                                        },
+                                        "title_color": "#070127",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "28287a6"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "_animation": "zoomIn"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "02d1c2d",
+                                    "settings": {
+                                        "editor": "<p>The delightfully smart collaboration platform get started - for free, everything in hobby plus higher limits.<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Montserrat",
+                                        "typography_font_weight": "400",
+                                        "paragraph_spacing": {
+                                            "unit": "px",
+                                            "size": 0,
+                                            "sizes": []
+                                        },
+                                        "text_color": "#2F2F2F",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "593a8b4"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "99daee3",
+                                    "settings": {
+                                        "ma_cf7_list": "55",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "96d7d9f"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "ma_cf7_layout_style": "9",
+                                        "ma_cf7_width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "ma_cf7_field_width": {
+                                            "unit": "%",
+                                            "size": 55,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_button_bg_color_normal_background": "classic",
+                                        "ma_cf7_button_bg_color_normal_color": "#6640FF",
+                                        "ma_cf7_button_text_color_normal": "#FFFFFF",
+                                        "ma_cf7_button_border_radius": {
+                                            "unit": "px",
+                                            "top": "8",
+                                            "right": "8",
+                                            "bottom": "8",
+                                            "left": "8",
+                                            "isLinked": true
+                                        },
+                                        "button_padding": {
+                                            "unit": "px",
+                                            "top": "3",
+                                            "right": "10",
+                                            "bottom": "3",
+                                            "left": "10",
+                                            "isLinked": false
+                                        },
+                                        "custom_css": ".wpcf7 .wpcf7-form-control-wrap{\n    display: inline !important;\n}\np{\n    margin: 0px !important;\n}\n.wpcf7-form-control{\n    margin: 0px !important;\n}",
+                                        "ma_cf7_field_bg": "#F4F4F4",
+                                        "ma_cf7_field_text_color": "#040827",
+                                        "ma_cf7_field_padding": {
+                                            "unit": "px",
+                                            "top": "10",
+                                            "right": "10",
+                                            "bottom": "10",
+                                            "left": "10",
+                                            "isLinked": true,
+                                            "size": 15
+                                        },
+                                        "ma_cf7_button_typography_typography": "custom",
+                                        "ma_cf7_button_typography_font_family": "Lato",
+                                        "ma_cf7_button_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_button_typography_font_weight": "400",
+                                        "ma_cf7_button_typography_text_transform": "capitalize",
+                                        "ma_cf7_button_bg_color_hover_background": "classic",
+                                        "ma_cf7_button_bg_color_hover_color": "#02010100",
+                                        "ma_cf7_button_text_color_hover": "#6640FF",
+                                        "ma_cf7_button_border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "ma_cf7_button_border_color_hover": "#6640FF",
+                                        "_animation": "fadeInUp",
+                                        "animation_duration": "slow",
+                                        "ma_cf7_button_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        }
+                                    },
+                                    "widgetType": "ma-contact-form-7",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "2573d48",
+                            "settings": {
+                                "content_width": "full",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                },
+                                "_flex_order_mobile": "start",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "27d8dc2"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "6f27413"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "c241b91"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "f6c316b",
+                                    "settings": {
+                                        "image": {
+                                            "id": "50",
+                                            "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/image-10.webp"
+                                        },
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": "-193",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "78514bb"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "_margin_tablet": {
+                                            "unit": "px",
+                                            "top": "-97",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        }
+    ]
+}

@@ -1,0 +1,2304 @@
+{
+    "version": "0.4",
+    "template_id": 382,
+    "title": "Pricing",
+    "type": "page",
+    "metadata": {
+        "template_type": "page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "2693cf7",
+            "settings": {
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "f20d0b6"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "5626c8a"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "f6dec2a"
+                    }
+                ],
+                "ma_el_slider_delay": "5000"
+            },
+            "elements": [
+                {
+                    "id": "8b86edb",
+                    "settings": {
+                        "content_width": "full",
+                        "width": {
+                            "unit": "%",
+                            "size": 60,
+                            "sizes": []
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "60",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "4505288"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "e8686f3"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "2e30ab0"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "274cd08",
+                            "settings": {
+                                "ma_el_dual_first_heading": "Choose a pricing plan best suited ",
+                                "ma_el_dual_second_heading": "for you",
+                                "ma_el_dual_heading_description": "",
+                                "ma_el_dual_heading_first_text_color": "#070127",
+                                "ma_el_dual_heading_first_bg_color": "",
+                                "ma_el_dual_first_heading_typography_typography": "custom",
+                                "ma_el_dual_first_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_first_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_font_weight": "500",
+                                "ma_el_dual_first_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_second_text_color": "#070127",
+                                "ma_el_dual_second_heading_typography_typography": "custom",
+                                "ma_el_dual_second_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_second_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_weight": "500",
+                                "ma_el_dual_second_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_text_color": "#2F2F2F",
+                                "ma_el_dual_heading_description_typography_typography": "custom",
+                                "ma_el_dual_heading_description_typography_font_family": "Lato",
+                                "ma_el_dual_heading_description_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_typography_font_weight": "400",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "601108a"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip",
+                                "title_html_tag": "h2",
+                                "ma_el_dual_first_heading_typography_text_transform": "capitalize",
+                                "ma_el_dual_description_padding": {
+                                    "unit": "px",
+                                    "top": "40",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_css_classes": "underline-inside",
+                                "custom_css": ".underline-inside .jltma-second-heading{\n   position: relative;\n   display: inline-block\n}\n.underline-inside .jltma-second-heading::after{\n    content: \"\";\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n    height: 15px;\n    background: #FEECA0;\n    z-index: -2\n}",
+                                "ma_el_dual_second_heading_typography_text_transform": "lowercase",
+                                "_z_index": 0,
+                                "ma_el_dual_first_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                }
+                            },
+                            "widgetType": "ma-dual-heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                },
+                {
+                    "id": "fc6e9ec",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_wrap_tablet": "wrap",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "ba5691a"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "b5b450d"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "f2e9ebf"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "74b7f2f",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "327f17e"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "d2df2b9"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "bdca04b"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "ed4c7ae",
+                                    "settings": {
+                                        "ma_el_pricing_table_layout": "two",
+                                        "ma_el_pricing_table_head_color_scheme": "custom",
+                                        "ma_el_pricing_table_heading": "Basic Plan",
+                                        "ma_el_pricing_table_sub_heading": "Essential support for small business ensuring timely assistance",
+                                        "ma_el_pricing_table_price": "29",
+                                        "ma_el_pricing_table_period": "\/ per monthly",
+                                        "ma_el_pricing_table_features_list": [
+                                            {
+                                                "ma_el_pricing_table_item_text": "Email with quick response time",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "67c62ab",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Access to knowledge base and FAQS",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "826732d",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Chat support during business hours",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "lnr lnr-cross-circle",
+                                                    "library": "linear-icons"
+                                                },
+                                                "_id": "3569eda",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Basic ticketing system issue tracking",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "lnr lnr-cross-circle",
+                                                    "library": "linear-icons"
+                                                },
+                                                "_id": "771463c"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Monthly performance reports",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "lnr lnr-cross-circle",
+                                                    "library": "linear-icons"
+                                                },
+                                                "_id": "b674a4c"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "14\/7 live chat support",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "lnr lnr-cross-circle",
+                                                    "library": "linear-icons"
+                                                },
+                                                "_id": "087d3d9"
+                                            }
+                                        ],
+                                        "ma_el_pricing_table_button_text": "Join for free",
+                                        "ma_el_pricing_table_footer_additional_info": "",
+                                        "ma_el_pricing_table_header_bg_color_background": "classic",
+                                        "ma_el_pricing_table_header_bg_color_color": "#FEECA0",
+                                        "ma_el_pricing_table_header_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "20",
+                                            "bottom": "20",
+                                            "left": "20",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_heading_color": "#000000",
+                                        "ma_el_pricing_table_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_heading_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_sub_heading_color": "#6A6A6A",
+                                        "ma_el_pricing_table_sub_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_sub_heading_typography_font_family": "Nunito",
+                                        "ma_el_pricing_table_sub_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_sub_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_price_color": "#000000",
+                                        "ma_el_pricing_table_price_typography_typography": "custom",
+                                        "ma_el_pricing_table_price_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_pricing_table_price_typography_font_weight": "500",
+                                        "ma_el_pricing_table_currency_size": {
+                                            "unit": "px",
+                                            "size": 45,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_currency_vertical_position": "middle",
+                                        "ma_el_pricing_table_fractional-part_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_fractional_part_vertical_position": "bottom",
+                                        "ma_el_pricing_table_period_color": "#070127",
+                                        "ma_el_pricing_table_period_typography_typography": "custom",
+                                        "ma_el_pricing_table_period_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_period_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_period_typography_font_weight": "400",
+                                        "ma_el_pricing_table_period_typography_text_transform": "lowercase",
+                                        "ma_el_pricing_table_features_list_bg_color": "#FEECA0",
+                                        "ma_el_pricing_table_features_list_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "10",
+                                            "bottom": "20",
+                                            "left": "10",
+                                            "isLinked": false
+                                        },
+                                        "ma_el_pricing_table_features_list_color": "#070127",
+                                        "ma_el_pricing_table_features_list_typography_typography": "custom",
+                                        "ma_el_pricing_table_features_list_typography_font_family": "Poppins",
+                                        "ma_el_pricing_table_features_list_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_features_list_typography_font_weight": "500",
+                                        "ma_el_pricing_table_features_list_alignment": "left",
+                                        "ma_el_pricing_table_list_divider": "",
+                                        "ma_el_pricing_table_divider_color": "",
+                                        "ma_el_pricing_table_divider_width": {
+                                            "unit": "px",
+                                            "size": 1,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_ribbon_title": "Popular",
+                                        "ma_el_pricing_table_button_size": "xs",
+                                        "ma_el_pricing_table_button_text_color": "#FFFFFF",
+                                        "ma_el_pricing_table_button_background_color_background": "classic",
+                                        "ma_el_pricing_table_button_background_color_color": "#000000",
+                                        "ma_el_pricing_table_button_border_border": "solid",
+                                        "ma_el_pricing_table_button_border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_border_color": "#000000",
+                                        "ma_el_pricing_table_button_border_radius": {
+                                            "unit": "px",
+                                            "top": "35",
+                                            "right": "35",
+                                            "bottom": "35",
+                                            "left": "35",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_typography_typography": "custom",
+                                        "ma_el_pricing_table_button_typography_font_family": "DM Sans",
+                                        "ma_el_pricing_table_button_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_button_typography_font_weight": "500",
+                                        "ma_el_pricing_table_button_typography_text_transform": "capitalize",
+                                        "ma_el_pricing_table_button_hover_color": "#000000",
+                                        "ma_el_pricing_table_button_background_hover_color": "#02010100",
+                                        "ma_el_pricing_table_button_hover_border_color": "#000000",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "a26c722"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "custom_css": ".jltma-price-table-details, .jltma-price-table{\n    margin: 0px !important;\n}",
+                                        "_border_radius": {
+                                            "unit": "px",
+                                            "top": "15",
+                                            "right": "15",
+                                            "bottom": "15",
+                                            "left": "15",
+                                            "isLinked": true
+                                        },
+                                        "_animation": "fadeInLeft",
+                                        "animation_duration": "slow",
+                                        "ma_el_pricing_table_features_list_typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 13,
+                                            "sizes": []
+                                        }
+                                    },
+                                    "widgetType": "ma-pricing-table",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "740105f",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "dd0de96"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "dc31fb7"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "fd10d7f"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "5e8a1e8",
+                                    "settings": {
+                                        "ma_el_pricing_table_layout": "two",
+                                        "ma_el_pricing_table_head_color_scheme": "custom",
+                                        "ma_el_pricing_table_heading": "Premium Plan",
+                                        "ma_el_pricing_table_sub_heading": "Everything in hobby plus higher limits and team features.",
+                                        "ma_el_pricing_table_price": "85",
+                                        "ma_el_pricing_table_period": "\/ per monthly",
+                                        "ma_el_pricing_table_features_list": [
+                                            {
+                                                "ma_el_pricing_table_item_text": "Email with quick response time",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "67c62ab",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Access to knowledge base and FAQS",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "826732d",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Chat support during business hours",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "3569eda",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Basic ticketing system issue tracking",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "771463c",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Monthly performance reports",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "b674a4c",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "14\/7 live chat support",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "lnr lnr-cross-circle",
+                                                    "library": "linear-icons"
+                                                },
+                                                "_id": "087d3d9"
+                                            }
+                                        ],
+                                        "ma_el_pricing_table_button_text": "Join for free",
+                                        "ma_el_pricing_table_footer_additional_info": "",
+                                        "ma_el_pricing_table_header_bg_color_background": "classic",
+                                        "ma_el_pricing_table_header_bg_color_color": "#C9DEFD",
+                                        "ma_el_pricing_table_header_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "20",
+                                            "bottom": "20",
+                                            "left": "20",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_heading_color": "#000000",
+                                        "ma_el_pricing_table_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_heading_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_sub_heading_color": "#6A6A6A",
+                                        "ma_el_pricing_table_sub_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_sub_heading_typography_font_family": "Nunito",
+                                        "ma_el_pricing_table_sub_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_sub_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_price_color": "#000000",
+                                        "ma_el_pricing_table_price_typography_typography": "custom",
+                                        "ma_el_pricing_table_price_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_pricing_table_price_typography_font_weight": "500",
+                                        "ma_el_pricing_table_currency_size": {
+                                            "unit": "px",
+                                            "size": 45,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_currency_vertical_position": "middle",
+                                        "ma_el_pricing_table_fractional-part_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_fractional_part_vertical_position": "bottom",
+                                        "ma_el_pricing_table_period_color": "#070127",
+                                        "ma_el_pricing_table_period_typography_typography": "custom",
+                                        "ma_el_pricing_table_period_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_period_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_period_typography_font_weight": "400",
+                                        "ma_el_pricing_table_period_typography_text_transform": "lowercase",
+                                        "ma_el_pricing_table_features_list_bg_color": "#C9DEFD",
+                                        "ma_el_pricing_table_features_list_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "10",
+                                            "bottom": "20",
+                                            "left": "10",
+                                            "isLinked": false
+                                        },
+                                        "ma_el_pricing_table_features_list_color": "#070127",
+                                        "ma_el_pricing_table_features_list_typography_typography": "custom",
+                                        "ma_el_pricing_table_features_list_typography_font_family": "Poppins",
+                                        "ma_el_pricing_table_features_list_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_features_list_typography_font_weight": "500",
+                                        "ma_el_pricing_table_features_list_alignment": "left",
+                                        "ma_el_pricing_table_list_divider": "",
+                                        "ma_el_pricing_table_divider_color": "",
+                                        "ma_el_pricing_table_divider_width": {
+                                            "unit": "px",
+                                            "size": 1,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_ribbon_title": "Popular",
+                                        "ma_el_pricing_table_button_size": "xs",
+                                        "ma_el_pricing_table_button_text_color": "#FFFFFF",
+                                        "ma_el_pricing_table_button_background_color_background": "classic",
+                                        "ma_el_pricing_table_button_background_color_color": "#000000",
+                                        "ma_el_pricing_table_button_border_border": "solid",
+                                        "ma_el_pricing_table_button_border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_border_color": "#000000",
+                                        "ma_el_pricing_table_button_border_radius": {
+                                            "unit": "px",
+                                            "top": "35",
+                                            "right": "35",
+                                            "bottom": "35",
+                                            "left": "35",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_typography_typography": "custom",
+                                        "ma_el_pricing_table_button_typography_font_family": "DM Sans",
+                                        "ma_el_pricing_table_button_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_button_typography_font_weight": "500",
+                                        "ma_el_pricing_table_button_typography_text_transform": "capitalize",
+                                        "ma_el_pricing_table_button_hover_color": "#000000",
+                                        "ma_el_pricing_table_button_background_hover_color": "#02010100",
+                                        "ma_el_pricing_table_button_hover_border_color": "#000000",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "a26c722"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "custom_css": ".jltma-price-table-details, .jltma-price-table{\n    margin: 0px !important;\n}",
+                                        "ma_el_pricing_table_ribbon_align": "justify",
+                                        "_border_radius": {
+                                            "unit": "px",
+                                            "top": "15",
+                                            "right": "15",
+                                            "bottom": "15",
+                                            "left": "15",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_ribbon_horizontal_position": {
+                                            "unit": "px",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_ribbon_vertical_position": {
+                                            "unit": "px",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_ribbon_rotate": {
+                                            "unit": "px",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "_animation": "swing",
+                                        "animation_duration": "slow",
+                                        "ma_el_pricing_table_features_list_typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 13,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_show_ribbon": "yes"
+                                    },
+                                    "widgetType": "ma-pricing-table",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "d1ba9ab",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "5bfd0ef"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "0f83c75"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "6079c26"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "f6671b0",
+                                    "settings": {
+                                        "ma_el_pricing_table_layout": "two",
+                                        "ma_el_pricing_table_head_color_scheme": "custom",
+                                        "ma_el_pricing_table_heading": "Enterprice plan",
+                                        "ma_el_pricing_table_sub_heading": "Essential support for small business ensuring timely assistance",
+                                        "ma_el_pricing_table_price": "99",
+                                        "ma_el_pricing_table_period": "\/ per month",
+                                        "ma_el_pricing_table_features_list": [
+                                            {
+                                                "ma_el_pricing_table_item_text": "Email with quick response time",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "67c62ab",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Access to knowledge base and FAQS",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "826732d",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Chat support during business hours",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "3569eda",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Basic ticketing system issue tracking",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "771463c",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "Monthly performance reports",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "b674a4c",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            },
+                                            {
+                                                "ma_el_pricing_table_item_text": "14\/7 live chat support",
+                                                "ma_el_pricing_table_item_icon": {
+                                                    "value": "fas fa-check-circle",
+                                                    "library": "fa-solid"
+                                                },
+                                                "_id": "087d3d9",
+                                                "ma_el_pricing_table_item_icon_color": "#393DFF"
+                                            }
+                                        ],
+                                        "ma_el_pricing_table_button_text": "Join for free",
+                                        "ma_el_pricing_table_footer_additional_info": "",
+                                        "ma_el_pricing_table_header_bg_color_background": "classic",
+                                        "ma_el_pricing_table_header_bg_color_color": "#EFEAFE",
+                                        "ma_el_pricing_table_header_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "20",
+                                            "bottom": "20",
+                                            "left": "20",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_heading_color": "#000000",
+                                        "ma_el_pricing_table_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_heading_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_sub_heading_color": "#6A6A6A",
+                                        "ma_el_pricing_table_sub_heading_typography_typography": "custom",
+                                        "ma_el_pricing_table_sub_heading_typography_font_family": "Nunito",
+                                        "ma_el_pricing_table_sub_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_sub_heading_typography_font_weight": "500",
+                                        "ma_el_pricing_table_price_color": "#333333",
+                                        "ma_el_pricing_table_price_typography_typography": "custom",
+                                        "ma_el_pricing_table_price_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_pricing_table_price_typography_font_weight": "400",
+                                        "ma_el_pricing_table_currency_size": {
+                                            "unit": "px",
+                                            "size": 45,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_currency_vertical_position": "middle",
+                                        "ma_el_pricing_table_fractional-part_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_fractional_part_vertical_position": "bottom",
+                                        "ma_el_pricing_table_period_color": "#070127",
+                                        "ma_el_pricing_table_period_typography_typography": "custom",
+                                        "ma_el_pricing_table_period_typography_font_family": "Montserrat",
+                                        "ma_el_pricing_table_period_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_period_typography_font_weight": "400",
+                                        "ma_el_pricing_table_period_typography_text_transform": "lowercase",
+                                        "ma_el_pricing_table_features_list_bg_color": "#EFEAFE",
+                                        "ma_el_pricing_table_features_list_padding": {
+                                            "unit": "px",
+                                            "top": "20",
+                                            "right": "10",
+                                            "bottom": "20",
+                                            "left": "10",
+                                            "isLinked": false
+                                        },
+                                        "ma_el_pricing_table_features_list_color": "#070127",
+                                        "ma_el_pricing_table_features_list_typography_typography": "custom",
+                                        "ma_el_pricing_table_features_list_typography_font_family": "Poppins",
+                                        "ma_el_pricing_table_features_list_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 14,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_features_list_typography_font_weight": "500",
+                                        "ma_el_pricing_table_features_list_alignment": "left",
+                                        "ma_el_pricing_table_list_divider": "",
+                                        "ma_el_pricing_table_divider_color": "",
+                                        "ma_el_pricing_table_divider_width": {
+                                            "unit": "px",
+                                            "size": 1,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_ribbon_title": "Popular",
+                                        "ma_el_pricing_table_button_size": "xs",
+                                        "ma_el_pricing_table_button_text_color": "#FFFFFF",
+                                        "ma_el_pricing_table_button_background_color_background": "classic",
+                                        "ma_el_pricing_table_button_background_color_color": "#000000",
+                                        "ma_el_pricing_table_button_border_border": "solid",
+                                        "ma_el_pricing_table_button_border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_border_color": "#000000",
+                                        "ma_el_pricing_table_button_border_radius": {
+                                            "unit": "px",
+                                            "top": "35",
+                                            "right": "35",
+                                            "bottom": "35",
+                                            "left": "35",
+                                            "isLinked": true
+                                        },
+                                        "ma_el_pricing_table_button_typography_typography": "custom",
+                                        "ma_el_pricing_table_button_typography_font_family": "DM Sans",
+                                        "ma_el_pricing_table_button_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "ma_el_pricing_table_button_typography_font_weight": "500",
+                                        "ma_el_pricing_table_button_typography_text_transform": "capitalize",
+                                        "ma_el_pricing_table_button_hover_color": "#000000",
+                                        "ma_el_pricing_table_button_background_hover_color": "#02010100",
+                                        "ma_el_pricing_table_button_hover_border_color": "#000000",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "a26c722"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "custom_css": ".jltma-price-table-details, .jltma-price-table{\n    margin: 0px !important;\n}",
+                                        "_border_radius": {
+                                            "unit": "px",
+                                            "top": "15",
+                                            "right": "15",
+                                            "bottom": "15",
+                                            "left": "15",
+                                            "isLinked": true
+                                        },
+                                        "_animation": "fadeInRight",
+                                        "animation_duration": "slow",
+                                        "ma_el_pricing_table_features_list_typography_font_size_mobile": {
+                                            "unit": "px",
+                                            "size": 13,
+                                            "sizes": []
+                                        }
+                                    },
+                                    "widgetType": "ma-pricing-table",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "b117d15",
+            "settings": {
+                "flex_direction": "column",
+                "border_border": "solid",
+                "border_width": {
+                    "unit": "px",
+                    "top": "1",
+                    "right": "0",
+                    "bottom": "1",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "border_color": "#CCCCCC29",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "a562fdf"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "452c105"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "5b04377"
+                    }
+                ],
+                "ma_el_slider_delay": "5000"
+            },
+            "elements": [
+                {
+                    "id": "7285868",
+                    "settings": {
+                        "editor": "<p>Powering tools and integrations from companies all around the world<\/p>",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Hanken Grotesk",
+                        "typography_font_size": {
+                            "unit": "px",
+                            "size": 18,
+                            "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "text_color": "#000000",
+                        "jltma_display_conditions": [
+                            {
+                                "_id": "a5b9b30"
+                            }
+                        ],
+                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                        "align": "center",
+                        "paragraph_spacing": {
+                            "unit": "px",
+                            "size": 10,
+                            "sizes": []
+                        }
+                    },
+                    "widgetType": "text-editor",
+                    "elType": "widget"
+                },
+                {
+                    "id": "8dc3a49",
+                    "settings": {
+                        "jltma_logo_slider_items": [
+                            {
+                                "jltma_logo_slider_brand_name": "Brand Name 1",
+                                "_id": "b361d4c",
+                                "jltma_logo_slider_image_normal": {
+                                    "id": "16",
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/Fictional-company-logo.png"
+                                },
+                                "jltma_logo_slider_brand_description": "Brand Short Description Type Here.",
+                                "jltma_logo_slider_tooltip_text": "This is Element Tooltip",
+                                "jltma_logo_slider_image_hover": {
+                                    "id": 59,
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/placeholder-5.png"
+                                }
+                            },
+                            {
+                                "jltma_logo_slider_brand_name": "Brand Name 2",
+                                "_id": "36633d9",
+                                "jltma_logo_slider_image_normal": {
+                                    "id": "18",
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/Fictional-company-logo-1.png"
+                                },
+                                "jltma_logo_slider_brand_description": "Brand Short Description Type Here.",
+                                "jltma_logo_slider_tooltip_text": "This is Element Tooltip",
+                                "jltma_logo_slider_image_hover": {
+                                    "id": 60,
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/placeholder-6.png"
+                                }
+                            },
+                            {
+                                "jltma_logo_slider_brand_name": "Brand Name 3",
+                                "_id": "bc58547",
+                                "jltma_logo_slider_image_normal": {
+                                    "id": "20",
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/Fictional-company-logo-2.png"
+                                },
+                                "jltma_logo_slider_brand_description": "Brand Short Description Type Here.",
+                                "jltma_logo_slider_tooltip_text": "This is Element Tooltip",
+                                "jltma_logo_slider_image_hover": {
+                                    "id": 61,
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/placeholder-7.png"
+                                }
+                            },
+                            {
+                                "jltma_logo_slider_brand_name": "Brand Name 4",
+                                "_id": "6bc9bdc",
+                                "jltma_logo_slider_image_normal": {
+                                    "id": "22",
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/Fictional-company-logo-3.png"
+                                },
+                                "jltma_logo_slider_brand_description": "Brand Short Description Type Here.",
+                                "jltma_logo_slider_tooltip_text": "This is Element Tooltip",
+                                "jltma_logo_slider_image_hover": {
+                                    "id": 62,
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/placeholder-8.png"
+                                }
+                            },
+                            {
+                                "jltma_logo_slider_brand_name": "Brand Name 5",
+                                "_id": "0bfcc3b",
+                                "jltma_logo_slider_image_normal": {
+                                    "id": "24",
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/Fictional-company-logo-4.png"
+                                },
+                                "jltma_logo_slider_brand_description": "Brand Short Description Type Here.",
+                                "jltma_logo_slider_tooltip_text": "This is Element Tooltip",
+                                "jltma_logo_slider_image_hover": {
+                                    "id": 63,
+                                    "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/placeholder-9.png"
+                                }
+                            }
+                        ],
+                        "navigation": "none",
+                        "columns": "5",
+                        "autoplay_speed": 3000,
+                        "jltma_display_conditions": [
+                            {
+                                "_id": "63ec5e0"
+                            }
+                        ],
+                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                        "columns_tablet": "4",
+                        "columns_mobile": "3",
+                        "_padding_tablet": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "20",
+                            "bottom": "0",
+                            "left": "20",
+                            "isLinked": false
+                        }
+                    },
+                    "widgetType": "jltma-logo-slider",
+                    "elType": "widget"
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "3c01a24",
+            "settings": {
+                "flex_direction": "column",
+                "flex_align_items": "center",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "8a91a52"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "f255fda"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "6610fa3"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "background_background": "classic",
+                "background_color": "#FBF8FF"
+            },
+            "elements": [
+                {
+                    "id": "0d66065",
+                    "settings": {
+                        "content_width": "full",
+                        "width": {
+                            "unit": "%",
+                            "size": 80,
+                            "sizes": []
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "10",
+                            "bottom": "30",
+                            "left": "10",
+                            "isLinked": false
+                        },
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "a6f8157"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "0a20951"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "bb76942"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "7ad47b2",
+                            "settings": {
+                                "ma_el_dual_first_heading": "Complete solution for teams to",
+                                "ma_el_dual_second_heading": "connect, collaborate",
+                                "ma_el_dual_heading_description": "",
+                                "ma_el_dual_heading_first_text_color": "#070127",
+                                "ma_el_dual_heading_first_bg_color": "",
+                                "ma_el_dual_first_heading_typography_typography": "custom",
+                                "ma_el_dual_first_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_first_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_font_weight": "500",
+                                "ma_el_dual_first_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_second_text_color": "#070127",
+                                "ma_el_dual_second_heading_typography_typography": "custom",
+                                "ma_el_dual_second_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_second_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_weight": "500",
+                                "ma_el_dual_second_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_text_color": "#2F2F2F",
+                                "ma_el_dual_heading_description_typography_typography": "custom",
+                                "ma_el_dual_heading_description_typography_font_family": "Lato",
+                                "ma_el_dual_heading_description_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_typography_font_weight": "400",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "601108a"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip",
+                                "title_html_tag": "h2",
+                                "ma_el_dual_first_heading_typography_text_transform": "lowercase",
+                                "ma_el_dual_description_padding": {
+                                    "unit": "px",
+                                    "top": "40",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_css_classes": "underline-inside",
+                                "custom_css": ".underline-inside .jltma-second-heading{\n   position: relative;\n   display: inline-block\n}\n.underline-inside .jltma-second-heading::after{\n    content: \"\";\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n    height: 15px;\n    background: #FEECA0;\n    z-index: -2\n}",
+                                "ma_el_dual_first_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_text_transform": "lowercase"
+                            },
+                            "widgetType": "ma-dual-heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                },
+                {
+                    "id": "9034e75",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_wrap_tablet": "wrap",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "078631f"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "b6f4f73"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "a853a83"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000",
+                        "flex_direction": "row",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "3d7bf12",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "fcc632d"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "86fe90c"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d4b6b15"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "d1e413b",
+                                    "settings": {
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "title_text": "1m",
+                                        "description_text": "Less than 1 minute to start virtual spcae for teams",
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Plus Jakarta Sans",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "title_typography_font_weight": "700",
+                                        "title_color": "#6B21F3",
+                                        "hover_title_color": "#6B21F3",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Plus Jakarta Sans",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "description_typography_font_weight": "400",
+                                        "description_color": "#8E8E8E",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "27364a1"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "icon-box",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "c08adc5",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "fcc632d"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "86fe90c"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d4b6b15"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "08b9999",
+                                    "settings": {
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "title_text": "25k",
+                                        "description_text": "Amazing remote virtual assistants for remote teams",
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Plus Jakarta Sans",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "title_typography_font_weight": "700",
+                                        "title_color": "#6B21F3",
+                                        "hover_title_color": "#6B21F3",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Plus Jakarta Sans",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "description_typography_font_weight": "400",
+                                        "description_color": "#8E8E8E",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "27364a1"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "icon-box",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "d6d777b",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "fcc632d"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "86fe90c"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d4b6b15"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "01e9537",
+                                    "settings": {
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "title_text": "1:1",
+                                        "description_text": "All your meetings for 1:1s to standups to brainstorming",
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Plus Jakarta Sans",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "title_typography_font_weight": "700",
+                                        "title_color": "#6B21F3",
+                                        "hover_title_color": "#6B21F3",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Plus Jakarta Sans",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "description_typography_font_weight": "400",
+                                        "description_color": "#8E8E8E",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "27364a1"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "icon-box",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "2bbda60",
+                            "settings": {
+                                "content_width": "full",
+                                "width_tablet": {
+                                    "unit": "%",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                },
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "fcc632d"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "86fe90c"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d4b6b15"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "e6baca8",
+                                    "settings": {
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "title_text": "10x",
+                                        "description_text": "10x faster than sending a video conference link",
+                                        "title_typography_typography": "custom",
+                                        "title_typography_font_family": "Plus Jakarta Sans",
+                                        "title_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "title_typography_font_weight": "700",
+                                        "title_color": "#6B21F3",
+                                        "hover_title_color": "#6B21F3",
+                                        "description_typography_typography": "custom",
+                                        "description_typography_font_family": "Plus Jakarta Sans",
+                                        "description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "description_typography_font_weight": "400",
+                                        "description_color": "#8E8E8E",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "27364a1"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "icon-box",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "c7fc3a6",
+            "settings": {
+                "flex_direction": "column",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "fb3fe50"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "cbfe28c"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "bec3cb1"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "41cbdd2",
+                    "settings": {
+                        "content_width": "full",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "0225f4c"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "9dc2625"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "ed1c52e"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "09dc72e",
+                            "settings": {
+                                "ma_el_dual_first_heading": "Frequently Asked ",
+                                "ma_el_dual_second_heading": "Questions",
+                                "ma_el_dual_heading_description": "",
+                                "ma_el_dual_heading_first_text_color": "#070127",
+                                "ma_el_dual_heading_first_bg_color": "",
+                                "ma_el_dual_first_heading_typography_typography": "custom",
+                                "ma_el_dual_first_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_first_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_font_weight": "500",
+                                "ma_el_dual_first_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_second_text_color": "#070127",
+                                "ma_el_dual_second_heading_typography_typography": "custom",
+                                "ma_el_dual_second_heading_typography_font_family": "Plus Jakarta Sans",
+                                "ma_el_dual_second_heading_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_weight": "500",
+                                "ma_el_dual_second_heading_typography_line_height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_text_color": "#2F2F2F",
+                                "ma_el_dual_heading_description_typography_typography": "custom",
+                                "ma_el_dual_heading_description_typography_font_family": "Lato",
+                                "ma_el_dual_heading_description_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_heading_description_typography_font_weight": "400",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "601108a"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip",
+                                "title_html_tag": "h2",
+                                "ma_el_dual_first_heading_typography_text_transform": "capitalize",
+                                "ma_el_dual_description_padding": {
+                                    "unit": "px",
+                                    "top": "40",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "_css_classes": "underline-inside",
+                                "custom_css": ".underline-inside .jltma-second-heading{\n   position: relative;\n   display: inline-block\n}\n.underline-inside .jltma-second-heading::after{\n    content: \"\";\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n    height: 15px;\n    background: #FEECA0;\n    z-index: -2\n}",
+                                "ma_el_dual_second_heading_typography_text_transform": "lowercase",
+                                "_z_index": 0,
+                                "ma_el_dual_first_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_first_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "ma_el_dual_second_heading_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.2,
+                                    "sizes": []
+                                }
+                            },
+                            "widgetType": "ma-dual-heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "af47ac1",
+                            "settings": {
+                                "tabs": [
+                                    {
+                                        "tab_title": "Evente looks great  -  what is it?",
+                                        "_id": "f172c9e",
+                                        "accordion_tab_default_active": "yes",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Evente is a virtual space where you and your remote team can work and hang out together. Evente makes spending time with your remote team fun &amp; productive.<\/p>"
+                                    },
+                                    {
+                                        "tab_title": "Is my data secure with Tell Desk?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Absolutely. We use enterprise-grade encryption, role-based access, and regular security audits to ensure your data is always protected. Tell Desk is also GDPR-compliant.<\/p>",
+                                        "_id": "583abc9"
+                                    },
+                                    {
+                                        "tab_title": "How does the pricing model work?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Tell Desk offers a flexible subscription model. You can choose between monthly or annual billing, with different plans tailored for startups, growing businesses, and enterprises. Custom pricing is also available for larger teams.<\/p>",
+                                        "_id": "eb90de7"
+                                    },
+                                    {
+                                        "tab_title": "Can my team collaborate on Tell Desk in real-time?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Yes! Multiple users can collaborate in real-time, track progress, and assign tasks. You’ll always have visibility into who is working on what, without messy back-and-forth emails.<\/p>",
+                                        "_id": "5363268"
+                                    },
+                                    {
+                                        "tab_title": "What kind of support does Tell Desk provide?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>We offer 24\/7 email support, live chat during business hours, and a knowledge base with step-by-step guides. Premium plans include dedicated account managers.<\/p>",
+                                        "_id": "a2ee3e4"
+                                    },
+                                    {
+                                        "tab_title": "Can I try Tell Desk before purchasing?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Yes, we offer a 14-day free trial with full access to all features—no credit card required. This way, you can explore Tell Desk and see if it’s the right fit for your team<\/p>",
+                                        "_id": "ff85b22"
+                                    },
+                                    {
+                                        "tab_title": "How do I get started with Tell Desk?",
+                                        "accordion_tab_default_active": "",
+                                        "accordion_tab_title_icon": {
+                                            "value": "far fa-plus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "accordion_tab_title_icon_collapse": {
+                                            "value": "far fa-minus-square",
+                                            "library": "fa-regular"
+                                        },
+                                        "single_tab_title_bg_color_show": "",
+                                        "accordion_content": "<p>Getting started is simple. Sign up on our website, customize your workspace, and invite your team. Our onboarding wizard will guide you through the setup in under 10 minutes.<\/p>",
+                                        "_id": "e9944f6"
+                                    }
+                                ],
+                                "accordion_items_spacing": {
+                                    "unit": "px",
+                                    "size": 25,
+                                    "sizes": []
+                                },
+                                "accordion_items_border_color": "#DEE2E6",
+                                "accordion_items_box_shadow_box_shadow": {
+                                    "horizontal": -6,
+                                    "vertical": -6,
+                                    "blur": 46,
+                                    "spread": -39,
+                                    "color": "rgba(17.00000000000001, 17.00000000000001, 17.00000000000001, 0.04)"
+                                },
+                                "tab_title_bg_color_background": "classic",
+                                "tab_title_bg_color_color": "#FFFFFF",
+                                "tab_title_text_color": "#02312F",
+                                "tab_title_typography_typography": "custom",
+                                "tab_title_typography_font_family": "DM Sans",
+                                "tab_title_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "tab_title_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -0.5,
+                                    "sizes": []
+                                },
+                                "jltma_accordion_box_padding": {
+                                    "unit": "px",
+                                    "top": "20",
+                                    "right": "30",
+                                    "bottom": "20",
+                                    "left": "20",
+                                    "isLinked": false
+                                },
+                                "tab_content_bg_color": "#FFFFFF",
+                                "tab_content_text_color": "#02312F",
+                                "tab_content_typography_typography": "custom",
+                                "tab_content_typography_font_family": "DM Sans",
+                                "tab_content_typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "tab_content_typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": -0.1,
+                                    "sizes": []
+                                },
+                                "toggle_icon_color": "#6B21F3",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "3430711"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip",
+                                "tab_title_typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "tab_title_typography_line_height_tablet": {
+                                    "unit": "em",
+                                    "size": 1.6,
+                                    "sizes": []
+                                },
+                                "toggle_icon_color_active": "#6B21F3"
+                            },
+                            "widgetType": "ma-advanced-accordion",
+                            "elType": "widget"
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "c79f2cc",
+            "settings": {
+                "flex_direction": "row",
+                "flex_gap": {
+                    "column": "",
+                    "row": "",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": null
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "220",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "492a431"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "264cab0"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "6ac7c00"
+                    }
+                ],
+                "ma_el_slider_delay": "5000"
+            },
+            "elements": [
+                {
+                    "id": "e06a9d6",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "flex_gap": {
+                            "column": "",
+                            "row": "",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": null
+                        },
+                        "background_background": "classic",
+                        "background_color": "#CFD4FA",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": "15",
+                            "right": "15",
+                            "bottom": "15",
+                            "left": "15",
+                            "isLinked": true
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "25",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "25",
+                            "isLinked": false
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "20",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "9aca286"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "2be8b8e"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "eb9218b"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000"
+                    },
+                    "elements": [
+                        {
+                            "id": "cfaab09",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_justify_content": "center",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "621e9b5"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "e5bf543"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "d6317ea"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "4fff8d4",
+                                    "settings": {
+                                        "title": "Ready to hire us?",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Plus Jakarta Sans",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 28,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "600",
+                                        "typography_line_height": {
+                                            "unit": "px",
+                                            "size": 42,
+                                            "sizes": []
+                                        },
+                                        "title_color": "#070127",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "28287a6"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "_animation": "zoomIn"
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "7b88e04",
+                                    "settings": {
+                                        "editor": "<p>The delightfully smart collaboration platform get started - for free, everything in hobby plus higher limits.<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Montserrat",
+                                        "typography_font_weight": "400",
+                                        "paragraph_spacing": {
+                                            "unit": "px",
+                                            "size": 0,
+                                            "sizes": []
+                                        },
+                                        "text_color": "#2F2F2F",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "593a8b4"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip"
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "9f82e7d",
+                                    "settings": {
+                                        "ma_cf7_list": "55",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "96d7d9f"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "ma_cf7_layout_style": "9",
+                                        "ma_cf7_width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "ma_cf7_field_width": {
+                                            "unit": "%",
+                                            "size": 55,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_button_bg_color_normal_background": "classic",
+                                        "ma_cf7_button_bg_color_normal_color": "#6640FF",
+                                        "ma_cf7_button_text_color_normal": "#FFFFFF",
+                                        "ma_cf7_button_border_radius": {
+                                            "unit": "px",
+                                            "top": "8",
+                                            "right": "8",
+                                            "bottom": "8",
+                                            "left": "8",
+                                            "isLinked": true
+                                        },
+                                        "button_padding": {
+                                            "unit": "px",
+                                            "top": "3",
+                                            "right": "10",
+                                            "bottom": "3",
+                                            "left": "10",
+                                            "isLinked": false
+                                        },
+                                        "custom_css": ".wpcf7 .wpcf7-form-control-wrap{\n    display: inline !important;\n}\np{\n    margin: 0px !important;\n}\n.wpcf7-form-control{\n    margin: 0px !important;\n}",
+                                        "ma_cf7_field_bg": "#F4F4F4",
+                                        "ma_cf7_field_text_color": "#040827",
+                                        "ma_cf7_field_padding": {
+                                            "unit": "px",
+                                            "top": "10",
+                                            "right": "10",
+                                            "bottom": "10",
+                                            "left": "10",
+                                            "isLinked": true,
+                                            "size": 15
+                                        },
+                                        "ma_cf7_button_typography_typography": "custom",
+                                        "ma_cf7_button_typography_font_family": "Lato",
+                                        "ma_cf7_button_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "ma_cf7_button_typography_font_weight": "400",
+                                        "ma_cf7_button_typography_text_transform": "capitalize",
+                                        "ma_cf7_button_bg_color_hover_background": "classic",
+                                        "ma_cf7_button_bg_color_hover_color": "#02010100",
+                                        "ma_cf7_button_text_color_hover": "#6640FF",
+                                        "ma_cf7_button_border_width": {
+                                            "unit": "px",
+                                            "top": "1",
+                                            "right": "1",
+                                            "bottom": "1",
+                                            "left": "1",
+                                            "isLinked": true
+                                        },
+                                        "ma_cf7_button_border_color_hover": "#6640FF",
+                                        "_animation": "fadeInUp",
+                                        "animation_duration": "slow",
+                                        "ma_cf7_button_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        }
+                                    },
+                                    "widgetType": "ma-contact-form-7",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "2b82f00",
+                            "settings": {
+                                "content_width": "full",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                },
+                                "_flex_order_mobile": "start",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "27d8dc2"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "6f27413"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "c241b91"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "387cd44",
+                                    "settings": {
+                                        "image": {
+                                            "id": "50",
+                                            "url": "https:\/\/el.master-addons.com\/servedesk\/wp-content\/uploads\/sites\/14\/2025\/10\/image-10.webp"
+                                        },
+                                        "_margin": {
+                                            "unit": "px",
+                                            "top": "-193",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "78514bb"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "_margin_tablet": {
+                                            "unit": "px",
+                                            "top": "-97",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        }
+                                    },
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        }
+    ]
+}

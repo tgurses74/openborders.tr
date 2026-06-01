@@ -1,0 +1,512 @@
+{
+    "manifest_version": "1.0.0",
+    "title": "Techbyte",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "categories": "technology",
+    "keywords": "",
+    "is_pro": 0,
+    "downloadable": 1,
+    "downloads": "",
+    "purchasable": 0,
+    "purchase_url": "",
+    "description": "",
+    "thumbnail": "./screenshots/kit-default-kit.png",
+    "thumbnail_url": "./../../thumbnails/kit-thumb.png",
+    "preview_url": "https://el.master-addons.com/techbyte",
+    "created_date": "2026-01-07 04:25:03",
+    "last_updated": "2026-03-08 09:18:22",
+    "template_count": 6,
+    "export_date": "2026-04-07 04:49:11",
+    "export_version": "1.1.0",
+    "templates": [
+        {
+            "template_id": "3",
+            "varsion": "1.0.0",
+            "name": "Techbyte - Global Style",
+            "type": "section",
+            "screenshot": "screenshots/global-kit-styles.jpg",
+            "source": "templates/global.json",
+            "preview_url": "https://el.master-addons.com/techbyte",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ],
+                "wp_page_template": "default"
+            }
+        },
+        {
+            "template_id": 302,
+            "name": "Footer",
+            "screenshot": "./screenshots/Footer.png",
+            "source": "templates/Footer.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/footer/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 290,
+            "name": "Header",
+            "screenshot": "./screenshots/Header.png",
+            "source": "templates/Header.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/header/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 287,
+            "name": "Project Details",
+            "screenshot": "./screenshots/Project-Details.png",
+            "source": "templates/Project-Details.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/project-details/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 284,
+            "name": "Home",
+            "screenshot": "./screenshots/Home.png",
+            "source": "templates/Home.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/home/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 278,
+            "name": "About",
+            "screenshot": "./screenshots/About.png",
+            "source": "templates/About.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/about/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 273,
+            "name": "404",
+            "screenshot": "./screenshots/404.png",
+            "source": "templates/404.json",
+            "preview_url": "https://el.master-addons.com/techbyte/template-kit/404/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Master Addons for Elementor Premium",
+            "version": "2.1.0",
+            "file": "master-addons-pro/master-addons.php",
+            "author": "Jewel Theme"
+        },
+        {
+            "name": "Elementor",
+            "version": "4.0.1",
+            "file": "elementor/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "vr-1.png",
+            "thumbnail_url": "./../../thumbnails/image-vr-1.png",
+            "templates": [
+                {
+                    "source": "templates/Project-Details.json",
+                    "name": "Project Details"
+                },
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 98874,
+            "dimensions": [
+                571,
+                571
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "vr-1-1.png",
+            "thumbnail_url": "./../../thumbnails/image-vr-1-1.png",
+            "templates": [
+                {
+                    "source": "templates/Project-Details.json",
+                    "name": "Project Details"
+                }
+            ],
+            "filesize": 98683,
+            "dimensions": [
+                571,
+                571
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Intro-Image.webp",
+            "thumbnail_url": "./../../thumbnails/image-Intro-Image.webp",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 180730,
+            "dimensions": [
+                1440,
+                757
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Tabs-1.webp",
+            "thumbnail_url": "./../../thumbnails/image-Tabs-1.webp",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 33646,
+            "dimensions": [
+                514,
+                791
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Tabs-2.jpeg",
+            "thumbnail_url": "./../../thumbnails/image-Tabs-2.jpeg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 47393,
+            "dimensions": [
+                514,
+                791
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Tabs-3.jpeg",
+            "thumbnail_url": "./../../thumbnails/image-Tabs-3.jpeg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 54870,
+            "dimensions": [
+                514,
+                791
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Tabs-4.jpeg",
+            "thumbnail_url": "./../../thumbnails/image-Tabs-4.jpeg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 56835,
+            "dimensions": [
+                514,
+                791
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "us-1.png",
+            "thumbnail_url": "./../../thumbnails/image-us-1.png",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 157783,
+            "dimensions": [
+                410,
+                586
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-12.webp",
+            "thumbnail_url": "./../../thumbnails/image-Frame-12.webp",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 89162,
+            "dimensions": [
+                526,
+                708
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-14.webp",
+            "thumbnail_url": "./../../thumbnails/image-Frame-14.webp",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 59540,
+            "dimensions": [
+                636,
+                440
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-14-1.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-14-1.png",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 174474,
+            "dimensions": [
+                636,
+                440
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-12-1.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-12-1.png",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 162591,
+            "dimensions": [
+                526,
+                708
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "About-Intro-Image-300x158-1.png",
+            "thumbnail_url": "./../../thumbnails/image-About-Intro-Image-300x158-1.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 86512,
+            "dimensions": [
+                300,
+                158
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Icon.png",
+            "thumbnail_url": "./../../thumbnails/image-Icon.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1672,
+            "dimensions": [
+                92,
+                56
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Icon2.png",
+            "thumbnail_url": "./../../thumbnails/image-Icon2.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 5387,
+            "dimensions": [
+                92,
+                92
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Icon3.png",
+            "thumbnail_url": "./../../thumbnails/image-Icon3.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 3565,
+            "dimensions": [
+                92,
+                92
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-29.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-29.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 29867,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-29-1.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-29-1.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 42979,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-29-2.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-29-2.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 43446,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame-29-3.png",
+            "thumbnail_url": "./../../thumbnails/image-Frame-29-3.png",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 45479,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

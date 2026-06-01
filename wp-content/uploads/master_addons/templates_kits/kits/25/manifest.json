@@ -1,0 +1,199 @@
+{
+    "manifest_version": "1.0.0",
+    "title": "Shift Flow",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "categories": "business",
+    "keywords": "",
+    "is_pro": 0,
+    "downloadable": 0,
+    "downloads": "",
+    "purchasable": 0,
+    "purchase_url": "",
+    "description": "",
+    "thumbnail": "./screenshots/kit-default-kit.webp",
+    "thumbnail_url": "./../../thumbnails/kit-thumb.webp",
+    "preview_url": "https://el.master-addons.com/shiftflow",
+    "created_date": "2026-01-08 06:35:55",
+    "last_updated": "2026-03-09 07:56:19",
+    "template_count": 1,
+    "export_date": "2026-03-09 10:02:57",
+    "export_version": "1.1.0",
+    "templates": [
+        {
+            "template_id": "3",
+            "varsion": "1.0.0",
+            "name": "Shift Flow - Global Style",
+            "type": "section",
+            "screenshot": "screenshots/global-kit-styles.jpg",
+            "source": "templates/global.json",
+            "preview_url": "https://el.master-addons.com/shiftflow",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ],
+                "wp_page_template": "default"
+            }
+        },
+        {
+            "template_id": 204,
+            "name": "Homepage",
+            "screenshot": null,
+            "source": "templates/Homepage.json",
+            "preview_url": "https://el.master-addons.com/shiftflow/template-kit/homepage/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Contact Form 7",
+            "version": "6.1.5",
+            "file": "contact-form-7/wp-contact-form-7.php",
+            "author": "Rock Lobster Inc."
+        },
+        {
+            "name": "Elementor",
+            "version": "3.35.6",
+            "file": "elementor/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Featured-Job-1.svg",
+            "thumbnail_url": "./../../thumbnails/image-Featured-Job-1.svg",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 9481,
+            "dimensions": [
+                74,
+                74
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Inity.png",
+            "thumbnail_url": "./../../thumbnails/image-Inity.png",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 11646,
+            "dimensions": [
+                148,
+                148
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Chorus-One.png",
+            "thumbnail_url": "./../../thumbnails/image-Chorus-One.png",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 14039,
+            "dimensions": [
+                148,
+                148
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Green-Plus.png",
+            "thumbnail_url": "./../../thumbnails/image-Green-Plus.png",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 9075,
+            "dimensions": [
+                148,
+                148
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Featured-4.svg",
+            "thumbnail_url": "./../../thumbnails/image-Featured-4.svg",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 50810,
+            "dimensions": [
+                40,
+                40
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Featured-2.svg",
+            "thumbnail_url": "./../../thumbnails/image-Featured-2.svg",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 31503,
+            "dimensions": [
+                40,
+                40
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Featured-1.svg",
+            "thumbnail_url": "./../../thumbnails/image-Featured-1.svg",
+            "templates": [
+                {
+                    "source": "templates/Homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 45775,
+            "dimensions": [
+                40,
+                40
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

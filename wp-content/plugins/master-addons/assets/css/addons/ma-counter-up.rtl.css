@@ -1,0 +1,79 @@
+/* Counter Up */
+.jltma-counterup-items {
+  display: flex;
+}
+.jltma-counterup-items .jltma-counterup {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 30px 20px;
+  transition: 0.3s;
+}
+.jltma-counterup-items .jltma-counterup i {
+  background-color: #4b00e7;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+}
+.jltma-counterup-items .jltma-counterup .counterup-icon-text-center {
+  text-align: center;
+  display: block;
+}
+.jltma-counterup-items .jltma-counterup .counterup-icon-text-center i,
+.jltma-counterup-items .jltma-counterup .counterup-icon-text-center img {
+  margin-bottom: 25px;
+}
+.jltma-counterup-items .jltma-counterup h3 {
+  display: inline-block;
+  color: #333;
+}
+.jltma-counterup-items .jltma-counterup h3.jltma-counterup-number {
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #333;
+}
+.jltma-counterup-items .jltma-counterup span.jltma-counterup-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  color: #525151;
+}
+.jltma-counterup-items .jltma-counterup-icon-left,
+.jltma-counterup-items .jltma-counterup-icon-right {
+  display: flex;
+  align-items: center;
+}
+.jltma-counterup-items .jltma-counterup-icon-right {
+  justify-content: flex-end;
+}
+.jltma-counterup-items .counterup-icon-text-right {
+  order: 2;
+}
+.jltma-counterup-items .jltma-counterup-icon-center {
+  text-align: center;
+}
+.jltma-counterup-items .counterup-icon-text-left {
+  margin-left: 30px;
+}
+.jltma-counterup-items .counterup-icon-text-right {
+  margin-right: 30px;
+}
+.jltma-counterup-items .jltma-counterup-icon-right .jltma-counterup-content {
+  text-align: left;
+}
+.jltma-counterup-items .counterup-icon-text-center img {
+  margin-right: auto;
+  margin-left: auto;
+}

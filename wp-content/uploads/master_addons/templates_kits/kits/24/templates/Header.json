@@ -1,0 +1,219 @@
+{
+    "version": "0.4",
+    "template_id": 290,
+    "title": "Header",
+    "type": "page",
+    "metadata": {
+        "template_type": "page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "5e067867",
+            "settings": {
+                "flex_direction": "column",
+                "content_width": "full",
+                "flex_justify_content": "center",
+                "flex_gap": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 0
+                },
+                "background_background": "classic",
+                "background_color": "#161C28",
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "20",
+                    "bottom": "0",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "28192130",
+                    "settings": {
+                        "boxed_width": {
+                            "unit": "px",
+                            "size": 1296,
+                            "sizes": []
+                        },
+                        "flex_gap": {
+                            "column": "0",
+                            "row": "0",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 0
+                        },
+                        "ma_el_slider_delay": "5000",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "border_border": "none",
+                        "border_width": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "1.5",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "border_color": "#FF0000"
+                    },
+                    "elements": [
+                        {
+                            "id": "463aa4ed",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_justify_content": "space-between",
+                                "flex_align_items": "center",
+                                "flex_gap": {
+                                    "column": "0",
+                                    "row": "0",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 0
+                                },
+                                "ma_el_slider_delay": "5000",
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "1.5",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "border_color": "#454953",
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "26",
+                                    "right": "0",
+                                    "bottom": "23",
+                                    "left": "0",
+                                    "isLinked": false
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "394cd3b5",
+                                    "settings": {
+                                        "title": "TechByte",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Inter",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "700",
+                                        "typography_text_transform": "uppercase",
+                                        "typography_line_height": {
+                                            "unit": "custom",
+                                            "size": "150%",
+                                            "sizes": []
+                                        },
+                                        "typography_line_height_tablet": {
+                                            "unit": "custom",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "typography_line_height_mobile": {
+                                            "unit": "custom",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "title_color": "#FFFFFF",
+                                        "link": {
+                                            "url": "https:\/\/el.master-addons.com\/techbyte",
+                                            "is_external": "",
+                                            "nofollow": "",
+                                            "custom_attributes": ""
+                                        }
+                                    },
+                                    "widgetType": "heading",
+                                    "elType": "widget"
+                                },
+                                {
+                                    "id": "20a874f6",
+                                    "settings": {
+                                        "main_menu_typography_typography": "custom",
+                                        "main_menu_typography_font_family": "Inter",
+                                        "main_menu_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 16,
+                                            "sizes": []
+                                        },
+                                        "main_menu_typography_font_weight": "500",
+                                        "main_menu_typography_line_height": {
+                                            "unit": "custom",
+                                            "size": "150%",
+                                            "sizes": []
+                                        },
+                                        "main_menu_typography_line_height_tablet": {
+                                            "unit": "custom",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "main_menu_typography_line_height_mobile": {
+                                            "unit": "custom",
+                                            "size": "",
+                                            "sizes": []
+                                        },
+                                        "main_menu_item_color": "#FFFFFF",
+                                        "main_menu_item_space_between": {
+                                            "unit": "px",
+                                            "size": 48,
+                                            "sizes": []
+                                        },
+                                        "jltma_nav_menu": 2,
+                                        "indicator_main_popover": "",
+                                        "toggle_align_mobile": "right",
+                                        "dropdown_toggle_icon_active": {
+                                            "value": "fas fa-times",
+                                            "library": "fa-solid"
+                                        },
+                                        "dropdown_toggle_color": "#FFFFFF",
+                                        "dropdown_toggle_icon_size_mobile": {
+                                            "unit": "px",
+                                            "size": 26,
+                                            "sizes": []
+                                        },
+                                        "dropdown_toggle_padding_mobile": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "widgetType": "ma-navmenu",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        }
+    ]
+}

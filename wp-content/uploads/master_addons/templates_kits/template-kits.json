@@ -1,0 +1,421 @@
+{
+    "business": [
+        {
+            "kit_id": "9",
+            "kit_name": "Fundora",
+            "categories": [
+                "business"
+            ],
+            "keywords": [
+                "design",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Fundora-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/fundora",
+            "descriptions": "",
+            "template_count": 14
+        },
+        {
+            "kit_id": "25",
+            "kit_name": "Shift Flow",
+            "categories": [
+                "business"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 0,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Shift-Flow-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/shiftflow",
+            "descriptions": "",
+            "template_count": 2
+        },
+        {
+            "kit_id": "27",
+            "kit_name": "Finix",
+            "categories": [
+                "business"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Finix-thumb.jpg",
+            "preview_url": "https:\/\/el.master-addons.com\/finix",
+            "descriptions": "",
+            "template_count": 13
+        }
+    ],
+    "technology": [
+        {
+            "kit_id": "11",
+            "kit_name": "Token Aid",
+            "categories": [
+                "technology"
+            ],
+            "keywords": [
+                "design",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": "https:\/\/el.master-addons.com\/tokenaid\/wp-content\/uploads\/sites\/11\/2026\/01\/Token-Aid.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/tokenaid",
+            "descriptions": "",
+            "template_count": 13
+        },
+        {
+            "kit_id": "24",
+            "kit_name": "Techbyte",
+            "categories": [
+                "technology"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 0,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Techbyte-thumb.png",
+            "preview_url": "https:\/\/el.master-addons.com\/techbyte",
+            "descriptions": "",
+            "template_count": 7
+        },
+        {
+            "kit_id": "29",
+            "kit_name": "Clowdify",
+            "categories": [
+                "technology"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Clowdify-thumb.jpg",
+            "preview_url": "https:\/\/el.master-addons.com\/clowdify",
+            "descriptions": "",
+            "template_count": 16
+        },
+        {
+            "kit_id": "35",
+            "kit_name": "Lead Lift",
+            "categories": [
+                "technology"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Lead-Lift-thumb.png",
+            "preview_url": "https:\/\/el.master-addons.com\/lead-lift",
+            "descriptions": "",
+            "template_count": 7
+        }
+    ],
+    "startup": [
+        {
+            "kit_id": "14",
+            "kit_name": "Serve Desk",
+            "categories": [
+                "startup"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 0,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Serve-Desk-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/servedesk",
+            "descriptions": "",
+            "template_count": 1
+        },
+        {
+            "kit_id": "16",
+            "kit_name": "Flow Desk",
+            "categories": [
+                "startup"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Flow-Desk-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/flowdesk",
+            "descriptions": "",
+            "template_count": 1
+        },
+        {
+            "kit_id": "33",
+            "kit_name": "Drift",
+            "categories": [
+                "startup"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Drift-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/drift",
+            "descriptions": "",
+            "template_count": 22
+        }
+    ],
+    "agency": [
+        {
+            "kit_id": "15",
+            "kit_name": "Travello - Your Travel Guide",
+            "categories": [
+                "agency"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 0,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Travello-Your-Travel-Guide-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/travello",
+            "descriptions": "",
+            "template_count": 11
+        },
+        {
+            "kit_id": "23",
+            "kit_name": "Wiro",
+            "categories": [
+                "agency"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Wiro-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/wiro",
+            "descriptions": "",
+            "template_count": 1
+        },
+        {
+            "kit_id": "30",
+            "kit_name": "Klyro",
+            "categories": [
+                "agency"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Klyro-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/klyro",
+            "descriptions": "",
+            "template_count": 10
+        },
+        {
+            "kit_id": "32",
+            "kit_name": "Nexis",
+            "categories": [
+                "agency"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": "https:\/\/el.master-addons.com\/nexis\/wp-content\/uploads\/sites\/32\/2026\/02\/Home.png",
+            "preview_url": "https:\/\/el.master-addons.com\/nexis",
+            "descriptions": "",
+            "template_count": 14
+        },
+        {
+            "kit_id": "34",
+            "kit_name": "Sabrion",
+            "categories": [
+                "agency"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Sabrion-thumb.png",
+            "preview_url": "https:\/\/el.master-addons.com\/sabrion",
+            "descriptions": "",
+            "template_count": 12
+        }
+    ],
+    "real-estate": [
+        {
+            "kit_id": "17",
+            "kit_name": "Vibe Space",
+            "categories": [
+                "real-estate"
+            ],
+            "keywords": [
+                "design",
+                "multipage"
+            ],
+            "is_pro": 0,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": "https:\/\/el.master-addons.com\/vibespace\/wp-content\/uploads\/sites\/17\/2026\/01\/Vibe-Space.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/vibespace",
+            "descriptions": "",
+            "template_count": 1
+        },
+        {
+            "kit_id": "18",
+            "kit_name": "Home Axis",
+            "categories": [
+                "real-estate"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage"
+            ],
+            "is_pro": 1,
+            "downloadable": 0,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Home-Axis-thumb.webp",
+            "preview_url": "https:\/\/el.master-addons.com\/homeaxis",
+            "descriptions": "",
+            "template_count": 18
+        }
+    ],
+    "creative": [
+        {
+            "kit_id": "26",
+            "kit_name": "grip",
+            "categories": [
+                "creative"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 1,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-grip-thumb.jpg",
+            "preview_url": "https:\/\/el.master-addons.com\/grip",
+            "descriptions": "",
+            "template_count": 8
+        }
+    ],
+    "health": [
+        {
+            "kit_id": "28",
+            "kit_name": "Optivue",
+            "categories": [
+                "health"
+            ],
+            "keywords": [
+                "design",
+                "functionality",
+                "multipage",
+                "single-page"
+            ],
+            "is_pro": 0,
+            "downloadable": 1,
+            "purchasable": 0,
+            "purchase_url": "",
+            "downloads": "",
+            "thumbnail": ".\/\/wp-content\/uploads\/master_addons\/templates_kits\/thumbnails\/kit-Optivue-thumb.jpg",
+            "preview_url": "https:\/\/el.master-addons.com\/optivue",
+            "descriptions": "",
+            "template_count": 7
+        }
+    ]
+}

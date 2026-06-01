@@ -1,0 +1,213 @@
+/* Glassmorphism Capsule Navigation Bar */
+#custom-masthead {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  width: auto;
+  max-width: 95%;
+  pointer-events: none; /* Let dragging/clicking pass through the background */
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.nav-pill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  pointer-events: auto; /* Re-enable pointer events for the navbar itself */
+}
+
+/* Capsule Pill - Enchanced length and height */
+.nav-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 12px 36px; /* Increased padding */
+  height: 72px; /* Increased height by 15% (from 62px to 72px) */
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  gap: 120px; /* Increased length by adding 30%+ gap between logo and burger */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-pill:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Logo Link */
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Logo Image - Scaled up accordingly */
+.nav-logo {
+  height: 48px; /* Increased logo height (from 38px to 48px) */
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo-link:hover .nav-logo {
+  transform: scale(1.02);
+}
+
+/* Burger Button Reset */
+.nav-burger, 
+.nav-burger:hover, 
+.nav-burger:focus, 
+.nav-burger:active {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+  width: 26px; /* Slightly wider */
+  height: 20px; /* Slightly taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+
+/* Burger Lines */
+.burger-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.3s ease, 
+              height 0.2s ease,
+              background-color 0.3s ease;
+}
+
+/* Hover Effect: Make burger lines thicker (3.5px) and clear background */
+.nav-burger:hover .burger-bar {
+  height: 3.5px;
+  background-color: #ffffff;
+}
+
+/* Burger Open State (Morph into X) */
+.nav-burger.open .burger-bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.nav-burger.open .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-burger.open .burger-bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Dropdown Menu */
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  width: 320px; /* Slightly wider dropdown for larger navbar */
+  max-width: 90vw;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 12px 0;
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease, 
+              transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              visibility 0.3s ease;
+  z-index: 999998;
+}
+
+.nav-dropdown.open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+.nav-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-list li {
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #E47C24;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link.active {
+  color: #E47C24;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* ==========================================
+   PAGE HERO SECTION OVERRIDES 
+   ========================================== */
+
+/* 1. Homepage Hero Section Override */
+.elementor-element-886d288 {
+  margin-top: 0px !important; /* Remove negative margin pull-up */
+  min-height: 100vh !important; /* Force full screen height */
+  height: 100vh !important;
+  padding-top: 170px !important; /* Push the 3 squares down below our floating nav capsule */
+  padding-bottom: 50px !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. Subpages Hero Section Override
+   - elementor-element-5c770ab: Sporcu Bursları Page
+   - elementor-element-4c8a52ba: Randevu Alın (Appointment) Page
+   - elementor-element-35b501a0: Çerez Politikası Page
+*/
+.elementor-element-5c770ab,
+.elementor-element-4c8a52ba,
+.elementor-element-35b501a0 {
+  margin-top: 0px !important; /* Remove negative margin pull-up */
+  min-height: 100vh !important; /* Force full screen height */
+  height: 100vh !important;
+  box-sizing: border-box !important;
+}
+
+/* Prevent other pages' body text from bleeding under fixed navbar */
+body.ehf-header {
+  padding-top: 0px !important;
+}

@@ -1,0 +1,730 @@
+{
+    "manifest_version": "1.0.0",
+    "title": "Serve Desk",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "categories": "technology",
+    "keywords": "",
+    "is_pro": 0,
+    "downloadable": 1,
+    "downloads": "",
+    "purchasable": 0,
+    "purchase_url": "",
+    "description": "",
+    "thumbnail": "./screenshots/kit-default-kit.webp",
+    "thumbnail_url": "./../../thumbnails/kit-thumb.webp",
+    "preview_url": "https://el.master-addons.com/servedesk",
+    "created_date": "2025-10-27 17:46:40",
+    "last_updated": "2026-03-09 07:12:57",
+    "template_count": 16,
+    "export_date": "2026-04-07 04:46:17",
+    "export_version": "1.1.0",
+    "templates": [
+        {
+            "template_id": "3",
+            "varsion": "1.0.0",
+            "name": "Serve Desk - Global Style",
+            "type": "section",
+            "screenshot": "screenshots/global-kit-styles.jpg",
+            "source": "templates/global.json",
+            "preview_url": "https://el.master-addons.com/servedesk",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ],
+                "wp_page_template": "default"
+            }
+        },
+        {
+            "template_id": 340,
+            "name": "404",
+            "screenshot": "./screenshots/404.webp",
+            "source": "templates/404.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/404/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 416,
+            "name": "Header",
+            "screenshot": "./screenshots/Header.webp",
+            "source": "templates/Header.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/header/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 410,
+            "name": "Testimonials",
+            "screenshot": "./screenshots/Testimonials.webp",
+            "source": "templates/Testimonials.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/testimonials/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 405,
+            "name": "Terms & Conditions",
+            "screenshot": "./screenshots/Terms-Conditions.webp",
+            "source": "templates/Terms-Conditions.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/terms-conditions/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 400,
+            "name": "Sign Up",
+            "screenshot": "./screenshots/Sign-Up.webp",
+            "source": "templates/Sign-Up.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/sign-up/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 395,
+            "name": "Sign in",
+            "screenshot": "./screenshots/Sign-in.webp",
+            "source": "templates/Sign-in.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/sign-in/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 391,
+            "name": "Privacy Policy",
+            "screenshot": "./screenshots/Privacy-Policy.webp",
+            "source": "templates/Privacy-Policy.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/privacy-policy/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 382,
+            "name": "Pricing",
+            "screenshot": "./screenshots/Pricing.webp",
+            "source": "templates/Pricing.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/pricing/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 377,
+            "name": "Home",
+            "screenshot": "./screenshots/Home.webp",
+            "source": "templates/Home.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/home/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 372,
+            "name": "Features",
+            "screenshot": "./screenshots/Features.webp",
+            "source": "templates/Features.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/features/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 367,
+            "name": "FAQ",
+            "screenshot": "./screenshots/FAQ.webp",
+            "source": "templates/FAQ.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/faq/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 362,
+            "name": "Contact",
+            "screenshot": "./screenshots/Contact.webp",
+            "source": "templates/Contact.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/contact/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 357,
+            "name": "Career Details",
+            "screenshot": "./screenshots/Career-Details.webp",
+            "source": "templates/Career-Details.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/career-details/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 351,
+            "name": "Career",
+            "screenshot": "./screenshots/Career.webp",
+            "source": "templates/Career.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/career/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 344,
+            "name": "About",
+            "screenshot": "./screenshots/About.webp",
+            "source": "templates/About.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/about/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "template_id": 422,
+            "name": "Footer",
+            "screenshot": "./screenshots/Footer.webp",
+            "source": "templates/Footer.json",
+            "preview_url": "https://el.master-addons.com/servedesk/template-kit/footer/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Contact Form 7",
+            "version": "6.1.5",
+            "file": "contact-form-7/wp-contact-form-7.php",
+            "author": "Rock Lobster Inc."
+        },
+        {
+            "name": "Elementor",
+            "version": "4.0.1",
+            "file": "elementor/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Serve-desk.webp",
+            "thumbnail_url": "./../../thumbnails/image-Serve-desk.webp",
+            "templates": [
+                {
+                    "source": "templates/Header.json",
+                    "name": "Header"
+                },
+                {
+                    "source": "templates/Footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 16956,
+            "dimensions": [
+                972,
+                207
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-10.webp",
+            "thumbnail_url": "./../../thumbnails/image-image-10.webp",
+            "templates": [
+                {
+                    "source": "templates/Testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates/Pricing.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates/FAQ.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates/Career-Details.json",
+                    "name": "Career Details"
+                },
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                },
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 52668,
+            "dimensions": [
+                621,
+                602
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-7-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-7-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/Sign-Up.json",
+                    "name": "Sign Up"
+                },
+                {
+                    "source": "templates/Sign-in.json",
+                    "name": "Sign in"
+                },
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 49103,
+            "dimensions": [
+                800,
+                890
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-22.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-22.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 18115,
+            "dimensions": [
+                710,
+                340
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-11-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-11-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 11134,
+            "dimensions": [
+                356,
+                303
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-13-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-13-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 14285,
+            "dimensions": [
+                381,
+                385
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Card.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Card.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 17512,
+            "dimensions": [
+                772,
+                368
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-23.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-23.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 21611,
+            "dimensions": [
+                659,
+                375
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-26.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-26.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                }
+            ],
+            "filesize": 20542,
+            "dimensions": [
+                650,
+                325
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "map.jpg",
+            "thumbnail_url": "./../../thumbnails/image-map.jpg",
+            "templates": [
+                {
+                    "source": "templates/Home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 53566,
+            "dimensions": [
+                1296,
+                658
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-2.jpg",
+            "thumbnail_url": "./../../thumbnails/image-Image-2.jpg",
+            "templates": [
+                {
+                    "source": "templates/Features.json",
+                    "name": "Features"
+                },
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 27256,
+            "dimensions": [
+                670,
+                523
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 23483,
+            "dimensions": [
+                410,
+                295
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-24-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-24-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 15403,
+            "dimensions": [
+                416,
+                300
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-21-4.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-21-4.jpg",
+            "templates": [
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 19072,
+            "dimensions": [
+                407,
+                296
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-22-2.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-22-2.jpg",
+            "templates": [
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 24379,
+            "dimensions": [
+                416,
+                300
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-23-2.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-23-2.jpg",
+            "templates": [
+                {
+                    "source": "templates/Career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 28304,
+            "dimensions": [
+                416,
+                500
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-21.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-21.jpg",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 28347,
+            "dimensions": [
+                416,
+                671
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-22-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-22-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 26919,
+            "dimensions": [
+                416,
+                335
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-23-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-23-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 24107,
+            "dimensions": [
+                416,
+                335
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-21-1.jpg",
+            "thumbnail_url": "./../../thumbnails/image-image-21-1.jpg",
+            "templates": [
+                {
+                    "source": "templates/About.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 38213,
+            "dimensions": [
+                856,
+                312
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

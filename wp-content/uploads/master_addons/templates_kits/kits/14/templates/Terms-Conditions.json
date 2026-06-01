@@ -1,0 +1,795 @@
+{
+    "version": "0.4",
+    "template_id": 405,
+    "title": "Terms & Conditions",
+    "type": "page",
+    "metadata": {
+        "template_type": "page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "9c9a820",
+            "settings": {
+                "flex_direction": "column",
+                "min_height": {
+                    "unit": "vh",
+                    "size": 60,
+                    "sizes": []
+                },
+                "min_height_tablet": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "min_height_mobile": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "background_background": "classic",
+                "background_color": "#F9F9FD",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "576f8f3"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "f22553c"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "12d1896"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "c9cdb47",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "d966a04"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "9d1ba34"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "c8e7bd1"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "6247ca7",
+                            "settings": {
+                                "content_width": "full",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "8cd426e"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "04d6420"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "73d139f"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "ca4a401",
+                                    "settings": {
+                                        "ma_el_dual_first_heading": "Terms and ",
+                                        "ma_el_dual_second_heading": "Condition",
+                                        "ma_el_dual_heading_description": "",
+                                        "ma_el_dual_heading_first_text_color": "#070127",
+                                        "ma_el_dual_heading_first_bg_color": "",
+                                        "ma_el_dual_first_heading_typography_typography": "custom",
+                                        "ma_el_dual_first_heading_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_dual_first_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_font_weight": "500",
+                                        "ma_el_dual_first_heading_typography_line_height": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_letter_spacing": {
+                                            "unit": "px",
+                                            "size": -2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_second_text_color": "#070127",
+                                        "ma_el_dual_second_heading_typography_typography": "custom",
+                                        "ma_el_dual_second_heading_typography_font_family": "Plus Jakarta Sans",
+                                        "ma_el_dual_second_heading_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_font_weight": "500",
+                                        "ma_el_dual_second_heading_typography_line_height": {
+                                            "unit": "px",
+                                            "size": 60,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_letter_spacing": {
+                                            "unit": "px",
+                                            "size": -2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_description_text_color": "#2F2F2F",
+                                        "ma_el_dual_heading_description_typography_typography": "custom",
+                                        "ma_el_dual_heading_description_typography_font_family": "Lato",
+                                        "ma_el_dual_heading_description_typography_font_size": {
+                                            "unit": "px",
+                                            "size": 20,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_description_typography_font_weight": "400",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "601108a"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "title_html_tag": "h2",
+                                        "ma_el_dual_first_heading_typography_text_transform": "capitalize",
+                                        "ma_el_dual_description_padding": {
+                                            "unit": "px",
+                                            "top": "40",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": false
+                                        },
+                                        "_css_classes": "underline-inside",
+                                        "custom_css": ".underline-inside .jltma-second-heading{\n   position: relative;\n   display: inline-block\n}\n.underline-inside .jltma-second-heading::after{\n    content: \"\";\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n    height: 15px;\n    background: #FEECA0;\n    z-index: -2\n}",
+                                        "ma_el_dual_second_heading_typography_text_transform": "lowercase",
+                                        "_z_index": 0,
+                                        "ma_el_dual_first_heading_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_first_heading_typography_line_height_tablet": {
+                                            "unit": "em",
+                                            "size": 1.2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_font_size_tablet": {
+                                            "unit": "px",
+                                            "size": 35,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_second_heading_typography_line_height_tablet": {
+                                            "unit": "em",
+                                            "size": 1.2,
+                                            "sizes": []
+                                        },
+                                        "ma_el_dual_heading_alignment": "left"
+                                    },
+                                    "widgetType": "ma-dual-heading",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        },
+                        {
+                            "id": "4ad0ff4",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_justify_content": "center",
+                                "gradient_color_list": [
+                                    {
+                                        "ma_el_animated_gradient_color": "#00a6d8",
+                                        "_id": "8cd426e"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#b800c9",
+                                        "_id": "04d6420"
+                                    },
+                                    {
+                                        "ma_el_animated_gradient_color": "#e57600",
+                                        "_id": "73d139f"
+                                    }
+                                ],
+                                "ma_el_slider_delay": "5000"
+                            },
+                            "elements": [
+                                {
+                                    "id": "8e2667e",
+                                    "settings": {
+                                        "editor": "<p>We are living in the future of writing! Take a look at what our users have to say about it.<\/p>",
+                                        "typography_typography": "custom",
+                                        "typography_font_family": "Lato",
+                                        "typography_font_size": {
+                                            "unit": "px",
+                                            "size": 18,
+                                            "sizes": []
+                                        },
+                                        "typography_font_weight": "400",
+                                        "text_color": "#2F2F2F",
+                                        "jltma_display_conditions": [
+                                            {
+                                                "_id": "99e27dc"
+                                            }
+                                        ],
+                                        "jltma_element_tooltip_text": "This is Element Tooltip",
+                                        "paragraph_spacing": {
+                                            "unit": "px",
+                                            "size": 0,
+                                            "sizes": []
+                                        }
+                                    },
+                                    "widgetType": "text-editor",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "elType": "container",
+                            "isInner": true
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        },
+        {
+            "id": "e2ca06d",
+            "settings": {
+                "flex_direction": "column",
+                "gradient_color_list": [
+                    {
+                        "ma_el_animated_gradient_color": "#00a6d8",
+                        "_id": "fb3fe50"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#b800c9",
+                        "_id": "cbfe28c"
+                    },
+                    {
+                        "ma_el_animated_gradient_color": "#e57600",
+                        "_id": "bec3cb1"
+                    }
+                ],
+                "ma_el_slider_delay": "5000",
+                "padding": {
+                    "unit": "px",
+                    "top": "80",
+                    "right": "0",
+                    "bottom": "80",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "flex_align_items": "center"
+            },
+            "elements": [
+                {
+                    "id": "66ebd46",
+                    "settings": {
+                        "content_width": "full",
+                        "gradient_color_list": [
+                            {
+                                "ma_el_animated_gradient_color": "#00a6d8",
+                                "_id": "0225f4c"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#b800c9",
+                                "_id": "9dc2625"
+                            },
+                            {
+                                "ma_el_animated_gradient_color": "#e57600",
+                                "_id": "ed1c52e"
+                            }
+                        ],
+                        "ma_el_slider_delay": "5000",
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_radius": {
+                            "unit": "px",
+                            "top": "15",
+                            "right": "15",
+                            "bottom": "15",
+                            "left": "15",
+                            "isLinked": true
+                        },
+                        "box_shadow_box_shadow_type": "yes",
+                        "box_shadow_box_shadow": {
+                            "horizontal": 1,
+                            "vertical": 1,
+                            "blur": 25,
+                            "spread": 0,
+                            "color": "rgba(2.8052261451144833, 8.64416951260605, 17.472314453124987, 0.02)"
+                        },
+                        "margin": {
+                            "unit": "px",
+                            "top": "-350",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "60",
+                            "right": "60",
+                            "bottom": "60",
+                            "left": "60",
+                            "isLinked": true
+                        },
+                        "width": {
+                            "unit": "%",
+                            "size": 90,
+                            "sizes": []
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "a352684",
+                            "settings": {
+                                "title": "This Privacy policy was published on 04 May 2024",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 32,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "2116dac",
+                            "settings": {
+                                "title": "GDPR Compliance",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "55b1fcf",
+                            "settings": {
+                                "editor": "<p>We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and\/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may<\/p><p>collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term \"personal data\" does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.<\/p>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "3eb5f62",
+                            "settings": {
+                                "title": "About TellDesk",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 32,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "ed1e2ff",
+                            "settings": {
+                                "title": "Service Provided As:",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "4648891",
+                            "settings": {
+                                "editor": "<p>The discovery was made by Richard McClintock , a professor of Latin at Hampden-Sydney College in Virginia, who faced the impetuous recurrence of the dark word consectetur in the text Lorem ipsum researched its origins to identify them in sections 1.10.32 and 1.10.33 of the aforementioned Cicero's<\/p><p>When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go<\/p>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "ccf5cce",
+                            "settings": {
+                                "title": "Company Liability:",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "9512581",
+                            "settings": {
+                                "editor": "<p>The choice of font and font size with which Lorem ipsum is reproduced answers to specific needs that go beyond the simple and simple filling of spaces dedicated to accepting real texts and allowing to have hands an advertising\/publishing product, both web and paper, true to reality.<\/p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores<\/p>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7b0e749",
+                            "settings": {
+                                "title": "When we collect personal data about you",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "aad2806",
+                            "settings": {
+                                "editor": "<p>In order to use our Service, you must meet a number of conditions, including but not limited to:<\/p><ul><li>Enhance or improve User experience, our Site, or our Service.<\/li><li>Send emails and updates about Conclude, Process transactions.<\/li><li>Send emails about our Site or respond to inquiries.<\/li><li>Including news and requests for agreement to amended legal documents such as this<br \/>Privacy Policy and our Terms of Service.<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "ac82208",
+                            "settings": {
+                                "title": "Information Collection",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "4dfb422",
+                            "settings": {
+                                "editor": "<ul><li>Personal Information: List the types of personal information collected, such as names, email addresses, contact details,<br \/>payment information, etc.<\/li><li>How Collected: Explain how information is collected, including through forms, cookies, website analytics, etc.<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1c2b951",
+                            "settings": {
+                                "title": "Information Usage",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "44eadf3",
+                            "settings": {
+                                "editor": "<ul><li>Purposes: Outline the purposes for which personal information is used, such as providing customer support, improving services, and sending marketing communications.<\/li><li>Legal Basis: Specify the legal basis for processing personal information (e.g., consent, contract, legitimate interest).<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1b05842",
+                            "settings": {
+                                "title": "Additional Considerations:",
+                                "header_size": "h3",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "9355b17",
+                            "settings": {
+                                "editor": "<ul><li>Specific Features: Tailor the privacy policy to address any unique features or functionalities of your customer support SaaS theme.<\/li><li>Data Retention: Specify the retention periods for different types of personal information.<\/li><li>Cross-Border Transfers: If personal information is transferred to countries outside the jurisdiction, address data protection measures in place.<\/li><li>Legal Compliance: Ensure the privacy policy complies with applicable data protection laws and regulations.<\/li><\/ul>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "cdf2b49",
+                            "settings": {
+                                "title": "Type of personal data collected",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Plus Jakarta Sans",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 32,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "500",
+                                "title_color": "#212121",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "5708d10"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "ad8ffad",
+                            "settings": {
+                                "editor": "<p>Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.<\/p><p>Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.<\/p>",
+                                "typography_typography": "custom",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "400",
+                                "text_color": "#55585A",
+                                "jltma_display_conditions": [
+                                    {
+                                        "_id": "805b16b"
+                                    }
+                                ],
+                                "jltma_element_tooltip_text": "This is Element Tooltip"
+                            },
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "elType": "container",
+                    "isInner": true
+                }
+            ],
+            "elType": "container",
+            "isInner": false
+        }
+    ]
+}
