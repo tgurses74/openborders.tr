@@ -211,3 +211,87 @@
 body.ehf-header {
   padding-top: 0px !important;
 }
+
+/* ==========================================
+   MOBILE RESPONSIVE STYLES
+   ========================================== */
+
+/* Tablet (≤ 1024px): tighten the giant 120px gap */
+@media (max-width: 1024px) {
+  .nav-pill {
+    gap: 60px;
+    padding: 10px 28px;
+  }
+}
+
+/* Mobile (≤ 768px): compact pill, mobile-safe hero heights */
+@media (max-width: 768px) {
+  #custom-masthead {
+    top: 14px;
+    max-width: calc(100% - 24px);
+  }
+  .nav-pill {
+    height: 60px;
+    padding: 10px 22px;
+    gap: 40px;
+    border-radius: 40px;
+  }
+  .nav-logo {
+    height: 38px;
+  }
+  .nav-burger {
+    width: 24px;
+    height: 18px;
+  }
+  /* Re-tune the X-morph for the smaller burger */
+  .nav-burger.open .burger-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-burger.open .burger-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-dropdown {
+    width: min(300px, calc(100vw - 24px));
+  }
+  .nav-link {
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+
+  /* Hero overrides: drop forced 100vh (breaks with mobile URL bar / clips content),
+     keep min-height, tighten the 170px top padding to clear the smaller navbar */
+  .elementor-element-886d288,
+  .elementor-element-5c770ab,
+  .elementor-element-4c8a52ba,
+  .elementor-element-35b501a0 {
+    height: auto !important;
+    min-height: 100svh !important; /* svh accounts for mobile browser chrome */
+    padding-top: 110px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* Small phones (≤ 480px): tighten further */
+@media (max-width: 480px) {
+  #custom-masthead {
+    top: 10px;
+    max-width: calc(100% - 16px);
+  }
+  .nav-pill {
+    height: 54px;
+    padding: 8px 18px;
+    gap: 20px;
+  }
+  .nav-logo {
+    height: 32px;
+  }
+  .nav-dropdown {
+    width: calc(100vw - 16px);
+  }
+  .elementor-element-886d288,
+  .elementor-element-5c770ab,
+  .elementor-element-4c8a52ba,
+  .elementor-element-35b501a0 {
+    padding-top: 90px !important;
+  }
+}
