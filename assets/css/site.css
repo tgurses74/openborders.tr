@@ -51,8 +51,27 @@ button { font: inherit; cursor: pointer; }
   align-items: center;
   gap: 20px;
   padding: 14px 28px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(10px);
+  background: transparent;
+}
+
+/* ---------- Fixed hero stage (homepage) ----------
+   Header + tile grid + explore pill form a fixed backdrop;
+   .scroll-content slides over it, acquired.fm-style. */
+.hero-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.hero-stage .site-header { position: static; }
+
+.scroll-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 100vh;
+  background: var(--bg);
 }
 
 .brand img { height: 46px; width: auto; }
@@ -156,12 +175,16 @@ button { font: inherit; cursor: pointer; }
 .tile:hover .tile-chip { opacity: 1; }
 
 .hero-footer {
-  position: relative;
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
-  margin-top: -30px;
   z-index: 7;
+  pointer-events: none;
 }
+.hero-footer .explore-pill { pointer-events: auto; }
 .explore-pill {
   border: 1px solid var(--line);
   background: var(--pill-bg);
@@ -178,7 +201,6 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Story statement section ---------- */
 .story {
   position: relative;
-  margin-top: 70px;
   padding: 150px 28px;
   text-align: center;
   color: #f8f4ec;
@@ -445,6 +467,11 @@ button { font: inherit; cursor: pointer; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
+  /* fixed hero stage doesn't fit small screens — fall back to normal flow */
+  .hero-stage { position: static; display: block; overflow: visible; }
+  .hero-stage .site-header { position: sticky; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); }
+  .hero-footer { position: static; margin: 22px 0 8px; }
+  .scroll-content { margin-top: 0; }
   .tile-grid { grid-template-columns: repeat(4, 1fr); }
   .card-row { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }

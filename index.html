@@ -13,33 +13,38 @@
 </head>
 <body data-root=".">
 
-  <header class="site-header">
-    <a class="brand" href="./">
-      <img src="./assets/img/openborders-logo-text.png" alt="Openborders">
-    </a>
-    <a class="ask-pill" href="./register/">
-      <span class="spark">✦</span>
-      <span data-i18n="ask">Müşteri Temsilcinize Her Şeyi Sorun</span>
-    </a>
-    <div class="header-pills">
-      <a class="pill" href="./register/" data-i18n="register">Kayıt Ol</a>
-      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
-      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
-    </div>
-  </header>
+  <!-- Fixed backdrop: transparent header + tile grid + explore pill.
+       The scroll-content below slides over this layer (acquired.fm-style). -->
+  <div class="hero-stage">
+    <header class="site-header">
+      <a class="brand" href="./">
+        <img src="./assets/img/openborders-logo-text.png" alt="Openborders">
+      </a>
+      <a class="ask-pill" href="./register/">
+        <span class="spark">✦</span>
+        <span data-i18n="ask">Müşteri Temsilcinize Her Şeyi Sorun</span>
+      </a>
+      <div class="header-pills">
+        <a class="pill" href="./register/" data-i18n="register">Kayıt Ol</a>
+        <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+        <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+      </div>
+    </header>
 
-  <main>
-    <!-- Hero: 18 university tiles -->
     <section class="hero" id="ogrencilerimiz" aria-label="Öğrencilerimiz">
       <div class="tile-grid" id="tileGrid"></div>
-      <div class="hero-footer">
-        <button class="explore-pill" type="button" data-i18n="explore"
-                onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
-          Openborders'ı Keşfedin
-        </button>
-      </div>
     </section>
 
+    <div class="hero-footer">
+      <button class="explore-pill" type="button" data-i18n="explore"
+              onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+        Openborders'ı Keşfedin
+      </button>
+    </div>
+  </div>
+
+  <div class="scroll-content">
+  <main>
     <!-- Every Student Has a Story -->
     <section class="story" id="story">
       <div class="kicker" data-i18n="storyKicker">Openborders • Uluslararası Eğitim Danışmanlığı</div>
@@ -126,6 +131,7 @@
       <span data-i18n="rights">Tüm hakları saklıdır.</span>
     </div>
   </footer>
+  </div><!-- /scroll-content -->
 
   <!-- Student story modal -->
   <div class="overlay" id="storyOverlay" role="dialog" aria-modal="true">
