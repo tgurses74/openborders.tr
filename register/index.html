@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kayıt Ol | Openborders</title>
+  <meta name="description" content="Openborders'a kayıt olun — yapay zeka müşteri temsilcimiz MaiA çok yakında sizinle.">
+  <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="..">
+
+  <header class="site-header">
+    <a class="brand" href="../">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+    </a>
+    <div class="header-pills">
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <h1 data-i18n="regTitle">Kayıt Olun</h1>
+    <p class="lead" data-i18n="regLead">Hesabınızı oluşturun; yapay zeka müşteri temsilcimiz MaiA çok yakında sizinle. Bu sayfa geliştirme aşamasındadır ve ileride tam olarak tasarlanacaktır.</p>
+
+    <div class="form-card">
+      <form id="registerForm">
+        <div class="form-grid">
+          <div>
+            <label for="regName" data-i18n="regName">Ad</label>
+            <input id="regName" name="name" type="text" required autocomplete="given-name">
+          </div>
+          <div>
+            <label for="regSurname" data-i18n="regSurname">Soyad</label>
+            <input id="regSurname" name="surname" type="text" required autocomplete="family-name">
+          </div>
+          <div>
+            <label for="regEmail" data-i18n="regEmail">E-posta</label>
+            <input id="regEmail" name="email" type="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="regPhone" data-i18n="regPhone">Telefon</label>
+            <input id="regPhone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="full">
+            <label for="regInterest" data-i18n="regInterest">İlgilendiğiniz Program</label>
+            <select id="regInterest" name="interest">
+              <option data-i18n="prog1">Üniversite Yerleştirme</option>
+              <option data-i18n="prog2">Spor Bursları</option>
+              <option data-i18n="prog3">Lise &amp; Akademiler</option>
+              <option data-i18n="prog4">Dil Okulları</option>
+              <option data-i18n="prog5">Yaz Kampları</option>
+              <option data-i18n="prog6">Vize Danışmanlığı</option>
+            </select>
+          </div>
+          <div class="full consent">
+            <input id="regConsent" type="checkbox" required>
+            <label for="regConsent" data-i18n="regConsent">Kişisel verilerimin KVKK kapsamında işlenmesini kabul ediyorum.</label>
+          </div>
+          <div class="full">
+            <button class="pill" type="submit" data-i18n="regSubmit">Kayıt Ol</button>
+          </div>
+        </div>
+      </form>
+      <p class="maia-note" data-i18n="regMaia">MaiA — yapay zeka destekli interaktif müşteri temsilcimiz — ikinci geliştirme aşamasında burada olacak. Kayıt olan kullanıcılar MaiA ile üniversite arama ve seçim sürecini sohbet ederek yürütebilecek.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© 2026 Openborders</span>
+      <span data-i18n="rights">Tüm hakları saklıdır.</span>
+    </div>
+  </footer>
+
+  <!-- Menu modal -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true">
+    <div class="menu-top">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+      <button class="menu-close" type="button" id="menuClose" data-i18n="close">Kapat</button>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../" data-i18n="mHome">Anasayfa</a></li>
+      <li><a href="https://camps.okareistanbul.com" data-i18n="mCamps">Kamplarımız</a></li>
+      <li><a href="../#ogrencilerimiz" data-i18n="mStudents">Öğrencilerimiz</a></li>
+      <li><a href="../referans-listesi-formu/" data-i18n="mRefs">Referans Listemiz</a></li>
+      <li><a href="https://www.youtube.com/@okareistanbul2816" target="_blank" rel="noopener" data-i18n="mVideos">Yardımcı Videolar</a></li>
+      <li><a href="../sporcu_tanima_formu/" data-i18n="mAthlete">Sporcu Tanıma Formu</a></li>
+      <li><a href="../appointment-page/" data-i18n="mAppointment">Randevu Alın</a></li>
+      <li><a href="../hakkimizda/" data-i18n="mAbout">Hakkımızda</a></li>
+      <li><a href="../iletisim/" data-i18n="mContact">İletişim</a></li>
+      <li><a href="../cerez-politikasi/" data-i18n="mCookies">Çerez Politikamız</a></li>
+      <li><a href="../privacy-policy/" data-i18n="mKvkk">KVKK Politikamız</a></li>
+    </ul>
+  </div>
+
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
