@@ -387,11 +387,9 @@ function renderAllStudents() {
 }
 
 /* ---------------- Scroll effects ----------------
-   Header gets a blurred background once scrolled; the fixed hero stage
-   fades and shrinks away as the content scrolls over it. */
+   The fixed hero stage fades and shrinks away as the content
+   scrolls over it. */
 function onScroll() {
-  const header = document.querySelector(".site-header");
-  if (header) header.classList.toggle("scrolled", window.scrollY > 30);
   const stage = document.querySelector(".hero-stage");
   if (stage) {
     if (window.matchMedia("(min-width: 1101px)").matches) {

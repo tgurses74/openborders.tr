@@ -45,8 +45,7 @@ button { font: inherit; cursor: pointer; }
 }
 
 /* ---------- Header ----------
-   Always the topmost layer, on every page. Transparent at the top of
-   the page; gains a blurred cream background once scrolled. */
+   Always the topmost layer, on every page, fully transparent. */
 .site-header {
   position: fixed;
   top: 0;
@@ -58,11 +57,6 @@ button { font: inherit; cursor: pointer; }
   gap: 20px;
   padding: 14px 28px;
   background: transparent;
-  transition: background .25s;
-}
-.site-header.scrolled {
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
-  backdrop-filter: blur(10px);
 }
 
 /* ---------- Fixed hero stage (homepage) ----------
