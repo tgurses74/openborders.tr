@@ -4,6 +4,7 @@
    ============================================================ */
 
 :root {
+  --header-h: 76px;
   --bg: #f7f3eb;
   --bg-soft: #efece3;
   --ink: #1c1b1a;
@@ -23,6 +24,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  padding-top: var(--header-h); /* room for the fixed header */
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -42,35 +44,45 @@ button { font: inherit; cursor: pointer; }
   font-weight: 500;
 }
 
-/* ---------- Header ---------- */
+/* ---------- Header ----------
+   Always the topmost layer, on every page. Transparent at the top of
+   the page; gains a blurred cream background once scrolled. */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 40;
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 14px 28px;
   background: transparent;
+  transition: background .25s;
+}
+.site-header.scrolled {
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(10px);
 }
 
 /* ---------- Fixed hero stage (homepage) ----------
-   Header + tile grid + explore pill form a fixed backdrop;
-   .scroll-content slides over it, acquired.fm-style. */
+   Tile grid + explore pill form a fixed backdrop under the header;
+   .scroll-content slides over the stage (but under the header),
+   while JS fades the stage out as the user scrolls. */
 .hero-stage {
   position: fixed;
   inset: 0;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
+  padding-top: var(--header-h);
   overflow: hidden;
+  transition: opacity .15s linear;
 }
-.hero-stage .site-header { position: static; }
 
 .scroll-content {
   position: relative;
   z-index: 2;
-  margin-top: 100vh;
+  /* body already reserves --header-h, so this lands exactly at 100vh */
+  margin-top: calc(100vh - var(--header-h));
   background: var(--bg);
 }
 
@@ -198,11 +210,16 @@ button { font: inherit; cursor: pointer; }
 }
 .explore-pill:hover { background: var(--ink); color: var(--bg); }
 
-/* ---------- Story statement section ---------- */
+/* ---------- Story statement section (full viewport, text at bottom) ---------- */
 .story {
   position: relative;
-  padding: 150px 28px;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding: 140px 48px 80px;
   color: #f8f4ec;
   background: url("../img/story-bg.jpg") center 30% / cover no-repeat;
 }
@@ -210,7 +227,7 @@ button { font: inherit; cursor: pointer; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(18, 20, 34, .62), rgba(18, 20, 34, .62));
+  background: linear-gradient(rgba(18, 20, 34, .25) 30%, rgba(18, 20, 34, .72));
 }
 .story > * { position: relative; }
 .story .kicker { font-family: var(--font-cond); letter-spacing: .18em; font-size: 14px; opacity: .85; }
@@ -219,12 +236,79 @@ button { font: inherit; cursor: pointer; }
   font-weight: 500;
   font-size: clamp(42px, 6vw, 84px);
   line-height: 1.05;
-  margin: 18px auto 22px;
+  margin: 18px 0 22px;
   max-width: 900px;
 }
-.story p { max-width: 640px; margin: 0 auto 34px; font-size: 19px; opacity: .92; }
+.story p { max-width: 640px; margin: 0 0 34px; font-size: 19px; opacity: .92; }
 .story .pill { background: transparent; color: #f8f4ec; border-color: rgba(248,244,236,.5); padding: 15px 30px; }
 .story .pill:hover { background: #f8f4ec; color: var(--ink); }
+
+/* ---------- University logo marquee ---------- */
+.marquee {
+  overflow: hidden;
+  padding: 44px 0;
+  border-bottom: 1px solid var(--line);
+}
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: marquee-scroll 55s linear infinite;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track img {
+  height: 58px;
+  width: 58px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(1) contrast(.9);
+  opacity: .7;
+  transition: filter .25s, opacity .25s;
+}
+.marquee-track img:hover { filter: none; opacity: 1; }
+@keyframes marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Featured placement (Discover-Episodes-style) ---------- */
+.featured-placement {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.featured-placement .f-photo {
+  border: 0;
+  padding: 0;
+  background: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0,0,0,.14);
+}
+.featured-placement .f-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .35s;
+}
+.featured-placement .f-photo:hover img { transform: scale(1.03); }
+.featured-placement .f-uni {
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.featured-placement h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(32px, 3.4vw, 48px);
+  margin: 0 0 16px;
+}
+.featured-placement .f-excerpt { color: var(--muted); font-size: 18px; margin: 0 0 26px; }
 
 /* ---------- Generic sections ---------- */
 .section { padding: 80px 28px; max-width: 1400px; margin: 0 auto; }
@@ -271,6 +355,15 @@ button { font: inherit; cursor: pointer; }
 
 .program-row { display: flex; flex-wrap: wrap; gap: 12px; }
 .program-row .pill { padding: 14px 26px; font-size: 14px; }
+
+/* ---------- All-students page ---------- */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.page-title { font-family: var(--font-display); font-weight: 500; font-size: clamp(40px, 5vw, 64px); margin: 20px 0 10px; }
+.page-lead { color: var(--muted); font-size: 20px; margin: 0 0 44px; max-width: 720px; }
 
 /* ---------- Signup ---------- */
 .signup {
@@ -468,17 +561,20 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
   /* fixed hero stage doesn't fit small screens — fall back to normal flow */
-  .hero-stage { position: static; display: block; overflow: visible; }
-  .hero-stage .site-header { position: sticky; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); }
+  .hero-stage { position: static; padding-top: 0; overflow: visible; opacity: 1 !important; }
   .hero-footer { position: static; margin: 22px 0 8px; }
   .scroll-content { margin-top: 0; }
   .tile-grid { grid-template-columns: repeat(4, 1fr); }
   .card-row { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .featured-placement { grid-template-columns: 1fr; gap: 26px; }
+  .students-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 720px) {
+  :root { --header-h: 148px; }
   .site-header { flex-wrap: wrap; }
   .ask-pill { order: 3; max-width: none; width: 100%; }
+  .students-grid { grid-template-columns: repeat(2, 1fr); }
   .tile-grid { grid-template-columns: repeat(2, 1fr); }
   .story-modal { grid-template-columns: 1fr; max-height: 92vh; }
   .story-modal .photo { min-height: 280px; order: -1; }

@@ -165,6 +165,9 @@ const I18N = {
     signupBtn: "Katıl",
     signupPh: "E-posta adresiniz",
     signupNote: "Bülten kaydı yakında aktif olacaktır.",
+    readStory: "Hikayeyi Okuyun",
+    studentsTitle: "Öğrencilerimiz",
+    studentsLead: "Dünyanın dört bir yanındaki okullara yerleştirdiğimiz öğrencilerimiz ve başarı hikayeleri.",
     footerMenu: "Menü",
     footerContact: "İletişim",
     footerLegal: "Yasal",
@@ -213,6 +216,9 @@ const I18N = {
     signupBtn: "Join",
     signupPh: "Your email address",
     signupNote: "Newsletter signup will be activated soon.",
+    readStory: "Read the Story",
+    studentsTitle: "Our Students",
+    studentsLead: "The students we have placed at schools around the world, and their success stories.",
     footerMenu: "Menu",
     footerContact: "Contact",
     footerLegal: "Legal",
@@ -273,6 +279,7 @@ function applyLang() {
   });
   const langBtn = document.querySelector(".pill.lang b");
   if (langBtn) langBtn.textContent = t("langBtn");
+  renderFeatured(); // featured excerpt is language-dependent
 }
 
 /* ---------------- Hero grid ---------------- */
@@ -307,22 +314,95 @@ function renderGrid() {
 }
 
 /* ---------------- Placement cards ---------------- */
+function makePlacementCard(s) {
+  const card = el("button", "placement-card");
+  const img = el("img");
+  img.loading = "lazy";
+  img.src = assetRoot() + "/assets/img/students/" + s.slug + "-student.jpg";
+  img.alt = s.name;
+  card.appendChild(img);
+  card.appendChild(el("h4", "", s.name));
+  card.appendChild(el("span", "", s.university));
+  card.addEventListener("click", () => openStory(s));
+  return card;
+}
+
 function renderPlacements() {
   const row = document.getElementById("placementRow");
   if (!row) return;
   row.textContent = "";
-  STUDENTS.slice(0, 4).forEach(s => {
-    const card = el("button", "placement-card");
-    const img = el("img");
-    img.loading = "lazy";
-    img.src = assetRoot() + "/assets/img/students/" + s.slug + "-student.jpg";
-    img.alt = s.name;
-    card.appendChild(img);
-    card.appendChild(el("h4", "", s.name));
-    card.appendChild(el("span", "", s.university));
-    card.addEventListener("click", () => openStory(s));
-    row.appendChild(card);
-  });
+  STUDENTS.slice(1, 5).forEach(s => row.appendChild(makePlacementCard(s)));
+}
+
+/* One big featured placement above the small cards (Discover-Episodes-style) */
+function renderFeatured() {
+  const box = document.getElementById("featuredPlacement");
+  if (!box) return;
+  const s = STUDENTS[0];
+  box.textContent = "";
+
+  const photoBtn = el("button", "f-photo");
+  const img = el("img");
+  img.src = assetRoot() + "/assets/img/students/" + s.slug + "-student.jpg";
+  img.alt = s.name;
+  photoBtn.appendChild(img);
+  photoBtn.addEventListener("click", () => openStory(s));
+
+  const info = el("div", "f-info");
+  info.appendChild(el("div", "f-uni", s.university));
+  info.appendChild(el("h3", "", s.name));
+  info.appendChild(el("p", "f-excerpt", (s[getLang()] || s.en).split("\n\n")[0]));
+  const btn = el("button", "pill", t("readStory"));
+  btn.addEventListener("click", () => openStory(s));
+  info.appendChild(btn);
+
+  box.appendChild(photoBtn);
+  box.appendChild(info);
+}
+
+/* ---------------- University logo marquee ---------------- */
+function renderMarquee() {
+  const track = document.getElementById("marqueeTrack");
+  if (!track) return;
+  track.textContent = "";
+  // two copies of the logo run -> seamless -50% loop
+  for (let copy = 0; copy < 2; copy++) {
+    STUDENTS.forEach(s => {
+      const img = el("img");
+      img.loading = "lazy";
+      img.src = assetRoot() + "/assets/img/universities/" + s.slug + "-logo.jpg";
+      img.alt = s.university;
+      if (copy === 1) img.setAttribute("aria-hidden", "true");
+      track.appendChild(img);
+    });
+  }
+}
+
+/* ---------------- All-students page ---------------- */
+function renderAllStudents() {
+  const grid = document.getElementById("allStudentsGrid");
+  if (!grid) return;
+  grid.textContent = "";
+  STUDENTS.forEach(s => grid.appendChild(makePlacementCard(s)));
+}
+
+/* ---------------- Scroll effects ----------------
+   Header gets a blurred background once scrolled; the fixed hero stage
+   fades and shrinks away as the content scrolls over it. */
+function onScroll() {
+  const header = document.querySelector(".site-header");
+  if (header) header.classList.toggle("scrolled", window.scrollY > 30);
+  const stage = document.querySelector(".hero-stage");
+  if (stage) {
+    if (window.matchMedia("(min-width: 1101px)").matches) {
+      const p = Math.min(window.scrollY / (window.innerHeight * 0.7), 1);
+      stage.style.opacity = String(1 - p);
+      stage.style.transform = "scale(" + (1 - 0.06 * p) + ")";
+    } else {
+      stage.style.opacity = "";
+      stage.style.transform = "";
+    }
+  }
 }
 
 /* ---------------- Story modal ---------------- */
@@ -361,7 +441,12 @@ function toggleMenu(open) {
 document.addEventListener("DOMContentLoaded", () => {
   renderGrid();
   renderPlacements();
-  applyLang();
+  renderMarquee();
+  renderAllStudents();
+  applyLang(); // also renders the featured placement
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   const langPill = document.querySelector(".pill.lang");
   if (langPill) langPill.addEventListener("click", () => {

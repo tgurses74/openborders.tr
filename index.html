@@ -13,24 +13,25 @@
 </head>
 <body data-root=".">
 
-  <!-- Fixed backdrop: transparent header + tile grid + explore pill.
-       The scroll-content below slides over this layer (acquired.fm-style). -->
-  <div class="hero-stage">
-    <header class="site-header">
-      <a class="brand" href="./">
-        <img src="./assets/img/openborders-logo-text.png" alt="Openborders">
-      </a>
-      <a class="ask-pill" href="./register/">
-        <span class="spark">✦</span>
-        <span data-i18n="ask">Müşteri Temsilcinize Her Şeyi Sorun</span>
-      </a>
-      <div class="header-pills">
-        <a class="pill" href="./register/" data-i18n="register">Kayıt Ol</a>
-        <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
-        <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
-      </div>
-    </header>
+  <!-- Header: fixed, always the topmost layer -->
+  <header class="site-header">
+    <a class="brand" href="./">
+      <img src="./assets/img/openborders-logo-text.png" alt="Openborders">
+    </a>
+    <a class="ask-pill" href="./register/">
+      <span class="spark">✦</span>
+      <span data-i18n="ask">Müşteri Temsilcinize Her Şeyi Sorun</span>
+    </a>
+    <div class="header-pills">
+      <a class="pill" href="./register/" data-i18n="register">Kayıt Ol</a>
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+    </div>
+  </header>
 
+  <!-- Fixed backdrop: tile grid + explore pill. The scroll-content below
+       slides over this layer while JS fades it out (acquired.fm-style). -->
+  <div class="hero-stage">
     <section class="hero" id="ogrencilerimiz" aria-label="Öğrencilerimiz">
       <div class="tile-grid" id="tileGrid"></div>
     </section>
@@ -53,12 +54,18 @@
       <a class="pill" href="./appointment-page/" data-i18n="storyCta">Randevu Alın</a>
     </section>
 
-    <!-- Recent placements -->
+    <!-- University logo marquee -->
+    <section class="marquee" aria-label="Üniversiteler">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </section>
+
+    <!-- Recent placements: one featured + three small -->
     <section class="section">
       <div class="section-head">
         <h3 data-i18n="placements">Son Yerleştirmelerimiz</h3>
-        <a href="#ogrencilerimiz" data-i18n="viewAll">Tümünü görün</a>
+        <a href="./ogrenciler/" data-i18n="viewAll">Tümünü görün</a>
       </div>
+      <div class="featured-placement" id="featuredPlacement"></div>
       <div class="card-row" id="placementRow"></div>
     </section>
 
@@ -101,7 +108,7 @@
         <h5 data-i18n="footerMenu">Menü</h5>
         <ul>
           <li><a href="./" data-i18n="mHome">Anasayfa</a></li>
-          <li><a href="./#ogrencilerimiz" data-i18n="mStudents">Öğrencilerimiz</a></li>
+          <li><a href="./ogrenciler/" data-i18n="mStudents">Öğrencilerimiz</a></li>
           <li><a href="./referans-listesi-formu/" data-i18n="mRefs">Referans Listemiz</a></li>
           <li><a href="./sporcu_tanima_formu/" data-i18n="mAthlete">Sporcu Tanıma Formu</a></li>
           <li><a href="./appointment-page/" data-i18n="mAppointment">Randevu Alın</a></li>
@@ -155,7 +162,7 @@
     <ul class="menu-list">
       <li><a href="./" data-i18n="mHome">Anasayfa</a></li>
       <li><a href="https://camps.okareistanbul.com" data-i18n="mCamps">Kamplarımız</a></li>
-      <li><a href="./#ogrencilerimiz" data-i18n="mStudents">Öğrencilerimiz</a></li>
+      <li><a href="./ogrenciler/" data-i18n="mStudents">Öğrencilerimiz</a></li>
       <li><a href="./referans-listesi-formu/" data-i18n="mRefs">Referans Listemiz</a></li>
       <li><a href="https://www.youtube.com/@okareistanbul2816" target="_blank" rel="noopener" data-i18n="mVideos">Yardımcı Videolar</a></li>
       <li><a href="./sporcu_tanima_formu/" data-i18n="mAthlete">Sporcu Tanıma Formu</a></li>

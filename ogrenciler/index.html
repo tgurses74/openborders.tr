@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hakkımızda | Openborders</title>
-  <meta name="description" content="Openborders — uluslararası eğitim danışmanlığı hakkında.">
+  <title>Öğrencilerimiz | Openborders</title>
+  <meta name="description" content="Openborders öğrencileri — dünyanın dört bir yanındaki okullara yerleştirdiğimiz öğrencilerimiz ve başarı hikayeleri.">
   <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,10 @@
     </div>
   </header>
 
-  <main class="page-wrap">
-    <h1 data-i18n="aboutTitle">Hakkımızda</h1>
-    <p class="lead" data-i18n="aboutLead">Openborders, öğrencileri dünyanın dört bir yanındaki üniversite, lise ve spor programlarıyla buluşturan uluslararası eğitim danışmanlığıdır.</p>
-    <p data-i18n="aboutBody1">Bu sayfanın içeriği yakında eklenecektir.</p>
-    <p data-i18n="aboutBody2">Deneyimimiz, yaklaşımımız ve ekibimiz hakkında ayrıntılı bilgiyi çok yakında burada bulabileceksiniz.</p>
+  <main class="section">
+    <h1 class="page-title" data-i18n="studentsTitle">Öğrencilerimiz</h1>
+    <p class="page-lead" data-i18n="studentsLead">Dünyanın dört bir yanındaki okullara yerleştirdiğimiz öğrencilerimiz ve başarı hikayeleri.</p>
+    <div class="students-grid" id="allStudentsGrid"></div>
   </main>
 
   <footer class="site-footer">
@@ -41,6 +40,19 @@
       <span data-i18n="rights">Tüm hakları saklıdır.</span>
     </div>
   </footer>
+
+  <!-- Student story modal -->
+  <div class="overlay" id="storyOverlay" role="dialog" aria-modal="true">
+    <button class="modal-close" type="button" aria-label="Kapat">✕</button>
+    <div class="story-modal">
+      <div class="text">
+        <div class="uni"></div>
+        <h3></h3>
+        <div class="paragraphs"></div>
+      </div>
+      <div class="photo"><img src="" alt=""></div>
+    </div>
+  </div>
 
   <!-- Menu modal -->
   <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true">
