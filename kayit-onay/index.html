@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kayıt Onayı | Openborders</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="..">
+
+  <header class="site-header">
+    <a class="brand" href="../">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+    </a>
+    <div class="header-pills">
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div id="confirmOk" hidden>
+      <h1 data-i18n="confirmOkTitle">Kaydınız Onaylandı! 🎉</h1>
+      <p class="lead" data-i18n="confirmOkText">Openborders ailesine hoş geldiniz. Yapay zeka müşteri temsilcimiz MaiA yayına girdiğinde ilk haber alanlardan olacaksınız.</p>
+      <a class="pill" href="../" data-i18n="mHome">Anasayfa</a>
+    </div>
+    <div id="confirmErr" hidden>
+      <h1 data-i18n="confirmErrTitle">Bağlantı Geçersiz veya Süresi Dolmuş</h1>
+      <p class="lead" data-i18n="confirmErrText">Onay bağlantınız geçersiz ya da 48 saatlik süresi dolmuş görünüyor. Lütfen kayıt formunu yeniden doldurun; size yeni bir onay e-postası gönderelim.</p>
+      <a class="pill" href="../register/" data-i18n="register">Kayıt Ol</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© 2026 Openborders</span>
+      <span data-i18n="rights">Tüm hakları saklıdır.</span>
+    </div>
+  </footer>
+
+  <!-- Menu modal -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true">
+    <div class="menu-top">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+      <button class="menu-close" type="button" id="menuClose" data-i18n="close">Kapat</button>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../" data-i18n="mHome">Anasayfa</a></li>
+      <li><a href="../ogrenciler/" data-i18n="mStudents">Öğrencilerimiz</a></li>
+      <li><a href="../hakkimizda/" data-i18n="mAbout">Hakkımızda</a></li>
+      <li><a href="../iletisim/" data-i18n="mContact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <script src="../assets/js/site.js"></script>
+  <script>
+    (function () {
+      var ok = new URLSearchParams(location.search).has("ok");
+      document.getElementById(ok ? "confirmOk" : "confirmErr").hidden = false;
+    })();
+  </script>
+</body>
+</html>

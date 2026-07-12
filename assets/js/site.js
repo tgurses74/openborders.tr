@@ -187,6 +187,13 @@ const I18N = {
     regSubmit: "Kayıt Ol",
     regMaia: "MaiA — yapay zeka destekli interaktif müşteri temsilcimiz — ikinci geliştirme aşamasında burada olacak. Kayıt olan kullanıcılar MaiA ile üniversite arama ve seçim sürecini sohbet ederek yürütebilecek.",
     regSoon: "Kayıt sistemi yakında aktif olacaktır. İlginiz için teşekkür ederiz!",
+    regCheckEmail: "Onay e-postası gönderdik! Kaydınızı tamamlamak için lütfen gelen kutunuzu (ve spam klasörünüzü) kontrol edin.",
+    regAlready: "Bu e-posta adresi zaten kayıtlı ve onaylı. Hoş geldiniz!",
+    regFailed: "Kayıt sırasında bir sorun oluştu. Lütfen daha sonra tekrar deneyin.",
+    confirmOkTitle: "Kaydınız Onaylandı! 🎉",
+    confirmOkText: "Openborders ailesine hoş geldiniz. Yapay zeka müşteri temsilcimiz MaiA yayına girdiğinde ilk haber alanlardan olacaksınız.",
+    confirmErrTitle: "Bağlantı Geçersiz veya Süresi Dolmuş",
+    confirmErrText: "Onay bağlantınız geçersiz ya da 48 saatlik süresi dolmuş görünüyor. Lütfen kayıt formunu yeniden doldurun; size yeni bir onay e-postası gönderelim.",
     aboutTitle: "Hakkımızda",
     aboutLead: "Openborders, öğrencileri dünyanın dört bir yanındaki üniversite, lise ve spor programlarıyla buluşturan uluslararası eğitim danışmanlığıdır.",
     aboutBody1: "Bu sayfanın içeriği yakında eklenecektir.",
@@ -238,6 +245,13 @@ const I18N = {
     regSubmit: "Register",
     regMaia: "MaiA — our AI-powered interactive client representative — will arrive in the second development phase. Registered users will be able to search and select universities by simply chatting with MaiA.",
     regSoon: "The registration system will be activated soon. Thank you for your interest!",
+    regCheckEmail: "Confirmation email sent! Please check your inbox (and spam folder) to complete your registration.",
+    regAlready: "This email address is already registered and confirmed. Welcome back!",
+    regFailed: "Something went wrong during registration. Please try again later.",
+    confirmOkTitle: "Registration Confirmed! 🎉",
+    confirmOkText: "Welcome to the Openborders family. You'll be among the first to know when our AI client representative MaiA goes live.",
+    confirmErrTitle: "Link Invalid or Expired",
+    confirmErrText: "Your confirmation link is invalid or has passed its 48-hour validity. Please fill in the registration form again and we'll send you a fresh confirmation email.",
     aboutTitle: "About Us",
     aboutLead: "Openborders is an international education consultancy connecting students with universities, high schools and athletic programs around the world.",
     aboutBody1: "The content of this page will be added soon.",
@@ -467,9 +481,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const regForm = document.getElementById("registerForm");
-  if (regForm) regForm.addEventListener("submit", e => {
+  if (regForm) regForm.addEventListener("submit", async e => {
     e.preventDefault();
-    alert(t("regSoon"));
+    const submitBtn = regForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch("/api/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: document.getElementById("regName").value,
+          surname: document.getElementById("regSurname").value,
+          email: document.getElementById("regEmail").value,
+          phone: document.getElementById("regPhone").value,
+          interest: document.getElementById("regInterest").value,
+          lang: getLang()
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const msg = el("p", "maia-note",
+          t(data.state === "already_confirmed" ? "regAlready" : "regCheckEmail"));
+        regForm.replaceWith(msg);
+      } else if (res.status === 404 || res.status === 405) {
+        alert(t("regSoon")); // API not deployed yet (local/static preview)
+      } else {
+        alert(t("regFailed"));
+      }
+    } catch {
+      alert(t("regSoon"));
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
   const signupForm = document.getElementById("signupForm");
   if (signupForm) signupForm.addEventListener("submit", e => {
