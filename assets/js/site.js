@@ -401,19 +401,36 @@ function renderAllStudents() {
 }
 
 /* ---------------- Scroll effects ----------------
-   The fixed hero stage fades and shrinks away as the content
-   scrolls over it. */
+   Hero tiles dissolve row by row as the content scrolls over the
+   stage: each row fades and drifts upward on its own staggered
+   schedule (top row first), instead of the whole grid at once. */
+function computeTileRows() {
+  const tiles = document.querySelectorAll("#tileGrid .tile");
+  const tops = [...new Set([...tiles].map(t => t.offsetTop))].sort((a, b) => a - b);
+  tiles.forEach(t => { t.dataset.row = tops.indexOf(t.offsetTop); });
+}
+
 function onScroll() {
-  const stage = document.querySelector(".hero-stage");
-  if (stage) {
-    if (window.matchMedia("(min-width: 1101px)").matches) {
-      const p = Math.min(window.scrollY / (window.innerHeight * 0.7), 1);
-      stage.style.opacity = String(1 - p);
-      stage.style.transform = "scale(" + (1 - 0.06 * p) + ")";
-    } else {
-      stage.style.opacity = "";
-      stage.style.transform = "";
-    }
+  const tiles = document.querySelectorAll("#tileGrid .tile");
+  const pill = document.querySelector(".hero-footer");
+  if (!tiles.length) return;
+  if (!window.matchMedia("(min-width: 1101px)").matches) {
+    tiles.forEach(t => { t.style.opacity = ""; t.style.transform = ""; t.style.pointerEvents = ""; });
+    if (pill) { pill.style.opacity = ""; }
+    return;
+  }
+  const p = window.scrollY / (window.innerHeight * 0.75);
+  tiles.forEach(t => {
+    const row = Number(t.dataset.row) || 0;
+    const rp = Math.min(Math.max((p - row * 0.22) / 0.4, 0), 1);
+    t.style.opacity = String(1 - rp);
+    t.style.transform = "translateY(" + (-46 * rp) + "px)";
+    t.style.pointerEvents = rp > 0.5 ? "none" : "";
+  });
+  if (pill) {
+    const pp = Math.min(Math.max(p / 0.3, 0), 1);
+    pill.style.opacity = String(1 - pp);
+    pill.style.pointerEvents = pp > 0.5 ? "none" : "";
   }
 }
 
@@ -457,6 +474,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderAllStudents();
   applyLang(); // also renders the featured placement
 
+  computeTileRows();
+  window.addEventListener("resize", () => { computeTileRows(); onScroll(); });
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
