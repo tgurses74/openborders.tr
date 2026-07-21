@@ -204,16 +204,20 @@ button { font: inherit; cursor: pointer; }
 }
 .explore-pill:hover { background: var(--ink); color: var(--bg); }
 
-/* ---------- Story statement section (full viewport, text at bottom) ---------- */
+/* ---------- Story statement section (inset "window" card) ---------- */
 .story {
   position: relative;
-  min-height: 100vh;
+  min-height: min(78vh, 720px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   text-align: left;
-  padding: 140px 48px 80px;
+  /* inset from the page edges like the rest of the content */
+  margin: 40px 28px 0;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 120px 56px 64px;
   color: #f8f4ec;
   background: url("../img/story-bg.jpg") center 30% / cover no-repeat;
 }
@@ -239,30 +243,46 @@ button { font: inherit; cursor: pointer; }
 
 /* ---------- University logo marquee ---------- */
 .marquee {
+  position: relative;
   overflow: hidden;
-  padding: 44px 0;
+  padding: 52px 0;
   border-bottom: 1px solid var(--line);
+  /* fade the strip out at both edges */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 .marquee-track {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap: 76px;
   width: max-content;
-  animation: marquee-scroll 55s linear infinite;
+  animation: marquee-scroll 60s linear infinite;
 }
 .marquee:hover .marquee-track { animation-play-state: paused; }
-.marquee-track img {
-  height: 58px;
-  width: 58px;
-  object-fit: cover;
-  border-radius: 10px;
-  filter: grayscale(1) contrast(.9);
-  opacity: .7;
-  transition: filter .25s, opacity .25s;
+.marquee-item {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 170px;
+  height: 72px;
 }
-.marquee-track img:hover { filter: none; opacity: 1; }
+.marquee-track img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* monochrome: desaturate, then flatten to near-black ink */
+  filter: grayscale(1) brightness(.35) contrast(1.35);
+  opacity: .55;
+  transition: filter .3s, opacity .3s;
+}
+.marquee-item:hover img { filter: none; opacity: 1; }
 @keyframes marquee-scroll {
-  to { transform: translateX(-50%); }
+  to { transform: translateX(calc(-50% - 38px)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
 }
 
 /* ---------- Featured placement (Discover-Episodes-style) ---------- */
@@ -359,26 +379,27 @@ button { font: inherit; cursor: pointer; }
 .page-title { font-family: var(--font-display); font-weight: 500; font-size: clamp(40px, 5vw, 64px); margin: 20px 0 10px; }
 .page-lead { color: var(--muted); font-size: 20px; margin: 0 0 44px; max-width: 720px; }
 
-/* ---------- Signup ---------- */
+/* ---------- Appointment CTA ---------- */
 .signup {
   background: var(--bg-soft);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-.signup-inner { max-width: 760px; margin: 0 auto; padding: 80px 28px; text-align: center; }
-.signup h3 { font-family: var(--font-display); font-size: 38px; font-weight: 500; margin: 0 0 10px; }
-.signup p { color: var(--muted); margin: 0 0 28px; }
-.signup form { display: flex; gap: 10px; max-width: 520px; margin: 0 auto; }
-.signup input {
-  flex: 1;
-  padding: 15px 22px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: #fff;
-  font: inherit;
+.signup-inner { max-width: 760px; margin: 0 auto; padding: 86px 28px; text-align: center; }
+.signup h3 { font-family: var(--font-display); font-size: 40px; font-weight: 500; margin: 0 0 12px; }
+.signup p { color: var(--muted); margin: 0 auto 30px; max-width: 560px; font-size: 18px; }
+.signup .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.signup .pill.primary {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+  padding: 17px 34px;
+  font-size: 15px;
 }
-.signup .pill { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.signup .note { font-size: 13px; margin-top: 14px; }
+.signup .pill.primary:hover { background: var(--ink); border-color: var(--ink); }
+.signup .pill.ghost { padding: 17px 34px; font-size: 15px; }
+.signup .note { font-size: 14px; margin-top: 18px; color: var(--muted); }
+.signup .note a { border-bottom: 1px solid var(--line); }
 
 /* ---------- Footer ---------- */
 .site-footer {
@@ -574,5 +595,8 @@ button { font: inherit; cursor: pointer; }
   .story-modal .photo { min-height: 280px; order: -1; }
   .menu-list { columns: 1; }
   .form-grid { grid-template-columns: 1fr; }
-  .signup form { flex-direction: column; }
+  .story { margin: 24px 16px 0; padding: 90px 24px 44px; border-radius: 14px; }
+  .marquee-item { width: 130px; height: 58px; }
+  .marquee-track { gap: 46px; }
+  .signup .cta-row { flex-direction: column; }
 }

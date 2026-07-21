@@ -160,11 +160,11 @@ const I18N = {
     prog4: "Dil Okulları",
     prog5: "Yaz Kampları",
     prog6: "Vize Danışmanlığı",
-    signupTitle: "Bültenimize Katılın",
-    signupText: "Burs fırsatları, başvuru dönemleri ve öğrenci başarı hikayelerimizden ilk siz haberdar olun.",
-    signupBtn: "Katıl",
-    signupPh: "E-posta adresiniz",
-    signupNote: "Bülten kaydı yakında aktif olacaktır.",
+    apptTitle: "Ücretsiz Ön Görüşme Alın",
+    apptText: "Hedeflerinizi konuşalım: hangi ülke, hangi program, hangi burs seçenekleri size uygun? Danışmanlarımızla ücretsiz ön görüşmenizi planlayın.",
+    apptBtn: "Randevu Alın",
+    apptContact: "Bize Ulaşın",
+    apptNote: "Sorularınız için:",
     readStory: "Hikayeyi Okuyun",
     studentsTitle: "Öğrencilerimiz",
     studentsLead: "Dünyanın dört bir yanındaki okullara yerleştirdiğimiz öğrencilerimiz ve başarı hikayeleri.",
@@ -218,11 +218,11 @@ const I18N = {
     prog4: "Language Schools",
     prog5: "Summer Camps",
     prog6: "Visa Consultancy",
-    signupTitle: "Join Our Newsletter",
-    signupText: "Be the first to hear about scholarship opportunities, application periods and our students' success stories.",
-    signupBtn: "Join",
-    signupPh: "Your email address",
-    signupNote: "Newsletter signup will be activated soon.",
+    apptTitle: "Book a Free Consultation",
+    apptText: "Let's talk about your goals: which country, which program and which scholarship options suit you best? Schedule a free introductory call with our consultants.",
+    apptBtn: "Book an Appointment",
+    apptContact: "Contact Us",
+    apptNote: "Questions? Write to us:",
     readStory: "Read the Story",
     studentsTitle: "Our Students",
     studentsLead: "The students we have placed at schools around the world, and their success stories.",
@@ -374,20 +374,46 @@ function renderFeatured() {
   box.appendChild(info);
 }
 
-/* ---------------- University logo marquee ---------------- */
+/* ---------------- University logo marquee ----------------
+   Transparent-PNG wordmarks, rendered monochrome (see .marquee CSS).
+   Order here = order in the carousel. */
+const LOGOS = [
+  { slug: "harvard-university", name: "Harvard University" },
+  { slug: "university-of-michigan", name: "University of Michigan" },
+  { slug: "university-of-maryland-baltimore-county", name: "University of Maryland, Baltimore County" },
+  { slug: "texas-a-m-university", name: "Texas A&M University" },
+  { slug: "university-at-albany", name: "University at Albany" },
+  { slug: "university-of-california-irvine", name: "University of California, Irvine" },
+  { slug: "chicago-state-university", name: "Chicago State University" },
+  { slug: "university-of-miami", name: "University of Miami" },
+  { slug: "george-washington-university", name: "George Washington University" },
+  { slug: "university-of-california-san-francisco", name: "University of California, San Francisco" },
+  { slug: "wingate-university", name: "Wingate University" },
+  { slug: "franklin-marshall-college", name: "Franklin & Marshall College" },
+  { slug: "rome-city-institute", name: "Rome City Institute" },
+  { slug: "monroe-university", name: "Monroe University" },
+  { slug: "northwest-missouri-state-university", name: "Northwest Missouri State University" },
+  { slug: "wagner-college", name: "Wagner College" },
+  { slug: "rocky-mountain-college", name: "Rocky Mountain College" },
+  { slug: "florida-atlantic-university", name: "Florida Atlantic University" },
+  { slug: "lcc-international-university", name: "LCC International University" }
+];
+
 function renderMarquee() {
   const track = document.getElementById("marqueeTrack");
   if (!track) return;
   track.textContent = "";
   // two copies of the logo run -> seamless -50% loop
   for (let copy = 0; copy < 2; copy++) {
-    STUDENTS.forEach(s => {
+    LOGOS.forEach(l => {
+      const item = el("span", "marquee-item");
       const img = el("img");
       img.loading = "lazy";
-      img.src = assetRoot() + "/assets/img/universities/" + s.slug + "-logo.jpg";
-      img.alt = s.university;
-      if (copy === 1) img.setAttribute("aria-hidden", "true");
-      track.appendChild(img);
+      img.src = assetRoot() + "/assets/img/logos/" + l.slug + ".png";
+      img.alt = copy === 0 ? l.name : "";
+      item.appendChild(img);
+      if (copy === 1) item.setAttribute("aria-hidden", "true");
+      track.appendChild(item);
     });
   }
 }
@@ -407,7 +433,10 @@ function renderAllStudents() {
 function computeTileRows() {
   const tiles = document.querySelectorAll("#tileGrid .tile");
   const tops = [...new Set([...tiles].map(t => t.offsetTop))].sort((a, b) => a - b);
-  tiles.forEach(t => { t.dataset.row = tops.indexOf(t.offsetTop); });
+  // rows dissolve bottom-up: the last row is stage 0, the top row last
+  tiles.forEach(t => {
+    t.dataset.row = String(tops.length - 1 - tops.indexOf(t.offsetTop));
+  });
 }
 
 function onScroll() {
@@ -532,10 +561,5 @@ document.addEventListener("DOMContentLoaded", () => {
     } finally {
       submitBtn.disabled = false;
     }
-  });
-  const signupForm = document.getElementById("signupForm");
-  if (signupForm) signupForm.addEventListener("submit", e => {
-    e.preventDefault();
-    alert(t("signupNote"));
   });
 });

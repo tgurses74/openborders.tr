@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "harvard-university",
+    "name": "Harvard University"
+  },
+  {
+    "slug": "university-of-maryland-baltimore-county",
+    "name": "University of Maryland, Baltimore County"
+  },
+  {
+    "slug": "chicago-state-university",
+    "name": "Chicago State University"
+  },
+  {
+    "slug": "university-at-albany",
+    "name": "University at Albany"
+  },
+  {
+    "slug": "rome-city-institute",
+    "name": "Rome City Institute"
+  },
+  {
+    "slug": "wingate-university",
+    "name": "Wingate University"
+  },
+  {
+    "slug": "george-washington-university",
+    "name": "George Washington University"
+  },
+  {
+    "slug": "monroe-university",
+    "name": "Monroe University"
+  },
+  {
+    "slug": "northwest-missouri-state-university",
+    "name": "Northwest Missouri State University"
+  },
+  {
+    "slug": "rocky-mountain-college",
+    "name": "Rocky Mountain College"
+  },
+  {
+    "slug": "wagner-college",
+    "name": "Wagner College"
+  },
+  {
+    "slug": "franklin-marshall-college",
+    "name": "Franklin & Marshall College"
+  },
+  {
+    "slug": "florida-atlantic-university",
+    "name": "Florida Atlantic University"
+  },
+  {
+    "slug": "lcc-international-university",
+    "name": "LCC International University"
+  },
+  {
+    "slug": "texas-a-m-university",
+    "name": "Texas A&M University"
+  },
+  {
+    "slug": "university-of-california-irvine",
+    "name": "University of California, Irvine"
+  },
+  {
+    "slug": "university-of-california-san-francisco",
+    "name": "University of California, San Francisco"
+  },
+  {
+    "slug": "university-of-miami",
+    "name": "University of Miami"
+  },
+  {
+    "slug": "university-of-michigan",
+    "name": "University of Michigan"
+  }
+]
