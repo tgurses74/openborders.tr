@@ -28,11 +28,115 @@
     </div>
   </header>
 
-  <main class="page-wrap">
-    <h1 data-i18n="aboutTitle">Hakkımızda</h1>
-    <p class="lead" data-i18n="aboutLead">Openborders, öğrencileri dünyanın dört bir yanındaki üniversite, lise ve spor programlarıyla buluşturan uluslararası eğitim danışmanlığıdır.</p>
-    <p data-i18n="aboutBody1">Bu sayfanın içeriği yakında eklenecektir.</p>
-    <p data-i18n="aboutBody2">Deneyimimiz, yaklaşımımız ve ekibimiz hakkında ayrıntılı bilgiyi çok yakında burada bulabileceksiniz.</p>
+  <!-- Fixed hero: image stays put while the content scrolls up over it -->
+  <div class="about-stage">
+    <div class="about-stage-inner">
+      <h1 data-i18n="aboutTitle">Biz Kimiz?</h1>
+      <p class="lead" data-i18n="aboutLead">Akademik yerleştirmeler ve sporcu bursları için doğru adrestesiniz.</p>
+    </div>
+  </div>
+
+  <main class="scroll-content">
+    <section class="about-intro">
+      <p data-i18n="aboutIntro1">2013 yılından beri akademik öğrenci yerleştirmeleri, atletik burs danışmanlığı, spor organizasyonları, gençlik kampları ve tematik kamplarımızla sizlere çözümler sunuyoruz.</p>
+      <p data-i18n="aboutIntro2">Dünya çapındaki çeşitli iş ortaklarımız aracılığıyla Sırbistan, Fransa, İtalya, İspanya ve ABD'de çeşitli etkinlikler düzenliyor; uluslararası iş ortaklarımızla birlikte öğrencilerimize ve sporcularımıza eğitim bursu bulma konusunda danışmanlık hizmeti veriyoruz.</p>
+      <p data-i18n="aboutIntro3">İş ortaklarımızın 17 yılın üzerindeki deneyimiyle akademik danışmanlık, sporcu bursu danışmanlığı, yurtdışı üniversite ve relokasyon danışmanlığı konularında; Türkiye, Sırbistan, İngiltere, İsveç ve Lüksemburg'dan size en geniş fırsat yelpazesini sunuyoruz.</p>
+    </section>
+
+    <!-- Stats -->
+    <section class="stat-row">
+      <div class="stat"><b>2013</b><span data-i18n="statSince">Yılından beri</span></div>
+      <div class="stat"><b>17+</b><span data-i18n="statExp">Yıllık ortak deneyimi</span></div>
+      <div class="stat"><b>$4.7B</b><span data-i18n="statFund">Yıllık spor bursu havuzu</span></div>
+      <div class="stat"><b>5</b><span data-i18n="statCountries">Ülkede ofis ve ortak ağı</span></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+      <div class="section-head"><h3 data-i18n="aboutServicesTitle">Hizmetlerimiz</h3></div>
+      <div class="service-grid">
+        <div class="service-card">
+          <h4 data-i18n="svcUniTitle">Üniversite Yerleştirme</h4>
+          <p data-i18n="svcUniText">Lisans ve yüksek lisans başvurularında program seçiminden kabule kadar tüm süreç.</p>
+        </div>
+        <div class="service-card">
+          <h4 data-i18n="svcHighTitle">Lise &amp; Akademiler</h4>
+          <p data-i18n="svcHighText">Yurtdışı yatılı okullar, kolejler ve spor akademilerinde lise eğitimi.</p>
+        </div>
+        <div class="service-card">
+          <h4 data-i18n="svcSportTitle">Sporcu Bursları</h4>
+          <p data-i18n="svcSportText">ABD, Kanada, Avrupa ve Asya'da atletik burs fırsatları ve kulüp bağlantıları.</p>
+        </div>
+        <div class="service-card">
+          <h4 data-i18n="svcCampTitle">Kamplar &amp; Organizasyonlar</h4>
+          <p data-i18n="svcCampText">Gençlik kampları, tematik kamplar ve uluslararası spor organizasyonları.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic placement -->
+    <section class="about-block">
+      <h2 data-i18n="aboutAcademicTitle">Akademik Yerleştirme</h2>
+      <p data-i18n="aboutAcademicText1">Sporcu bursları kadar akademik yerleştirmeler de uzmanlık alanımızdır. ABD, Kanada, İngiltere ve Avrupa'daki üniversitelerde lisans ve yüksek lisans programlarına başvuran öğrencilerimize; doğru üniversite ve program seçiminden başvuru dosyasının hazırlanmasına, niyet mektubu (SOP) ve referans mektuplarından TOEFL, IELTS, SAT gibi sınavların planlanmasına kadar tüm aşamalarda rehberlik ediyoruz.</p>
+      <p data-i18n="aboutAcademicText2">Kabul sonrasında da yalnız bırakmıyoruz: burs ve finansman başvuruları, vize süreci, konaklama ve şehre yerleşim adımlarında öğrencilerimizin ve ailelerinin yanında oluyoruz.</p>
+    </section>
+
+    <!-- High school -->
+    <section class="about-block">
+      <h2 data-i18n="aboutHighTitle">Lise ve Hazırlık Programları</h2>
+      <p data-i18n="aboutHighText">Üniversite öncesinde uluslararası deneyim kazanmak isteyen öğrenciler için yurtdışındaki yatılı liseler, özel kolejler ve spor akademileriyle çalışıyoruz. Akademik seviyeye, bütçeye ve sportif hedeflere uygun okul seçimini birlikte belirliyor; başvuru, kayıt ve veli iletişimi süreçlerini baştan sona yönetiyoruz.</p>
+    </section>
+
+    <!-- Athletic scholarships -->
+    <section class="about-block">
+      <h2 data-i18n="aboutSportTitle">Sporcu Bursları</h2>
+      <p data-i18n="aboutSportText1">ABD, Kanada, Avrupa ve Asya'daki spor bursları ve eğitim fırsatları konusunda sizinle iş birliği yaparak, lisanslı sporlarınızın eğitiminize katkıda bulunmasını sağlıyoruz.</p>
+      <p data-i18n="aboutSportText2">Amerikan ve Kanada üniversiteleri her yıl yaklaşık 4,7 milyar dolar spor bursu dağıtıyor. Bu burslardan en yüksek şekilde yararlanabilmeniz için çalışıyor, farklı üniversitelerden teklifler getiriyoruz. Bizimle birlikte en iyi spor bursu seçeneklerini bulacaksınız.</p>
+    </section>
+
+    <!-- Our Partners (content to be supplied) -->
+    <section class="section">
+      <div class="section-head"><h3 data-i18n="partnersTitle">İş Ortaklarımız</h3></div>
+      <p class="section-intro" data-i18n="partnersIntro">Dünya genelindeki iş ortaklarımızla birlikte öğrencilerimize en geniş fırsat ağını sunuyoruz.</p>
+      <div class="partner-grid">
+        <div class="partner-card"><div class="partner-logo"></div><h4 data-i18n="partnerPlaceholder">Yakında</h4></div>
+        <div class="partner-card"><div class="partner-logo"></div><h4 data-i18n="partnerPlaceholder">Yakında</h4></div>
+        <div class="partner-card"><div class="partner-logo"></div><h4 data-i18n="partnerPlaceholder">Yakında</h4></div>
+        <div class="partner-card"><div class="partner-logo"></div><h4 data-i18n="partnerPlaceholder">Yakında</h4></div>
+      </div>
+    </section>
+
+    <!-- From our parents -->
+    <section class="section quotes-section">
+      <div class="section-head"><h3 data-i18n="parentsTitle">Velilerimizden</h3></div>
+      <div class="quote-grid">
+        <blockquote class="quote-card">
+          <p data-i18n="parentQuote1">Oğlumuzun süreci boyunca her adımda yanımızdaydılar. Üniversite seçiminden vizeye kadar tüm aşamaları büyük bir sabırla anlattılar.</p>
+          <cite data-i18n="parentName1">Veli görüşü</cite>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p data-i18n="parentQuote2">Kızımızın hem akademik hem sportif hedeflerini birlikte değerlendirdiler. Doğru okulu bulmamızda büyük emekleri var.</p>
+          <cite data-i18n="parentName2">Veli görüşü</cite>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p data-i18n="parentQuote3">Yurtdışı eğitim süreci bize çok karmaşık geliyordu. Openborders ekibi her şeyi anlaşılır hale getirdi ve sürekli iletişimde kaldı.</p>
+          <cite data-i18n="parentName3">Veli görüşü</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-note" data-i18n="parentsNote">Referans listemiz ve veli görüşlerimiz yakında bu bölümde yer alacaktır.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="signup">
+      <div class="signup-inner">
+        <h3 data-i18n="aboutCtaTitle">Ücretsiz Değerlendirme</h3>
+        <p data-i18n="aboutCtaText">Bugün bizimle iletişime geçin, ÜCRETSİZ bir değerlendirme yapalım ve danışmanlarımız yolunuzu geliştirmenize yardımcı olsun.</p>
+        <div class="cta-row">
+          <a class="pill primary" href="../appointment-page/" data-i18n="aboutCtaBtn">Randevu Alın</a>
+          <a class="pill ghost" href="../iletisim/" data-i18n="apptContact">Bize Ulaşın</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

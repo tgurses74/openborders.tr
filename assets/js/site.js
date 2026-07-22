@@ -229,10 +229,53 @@ const I18N = {
     confirmOkText: "Openborders ailesine hoş geldiniz. Yapay zeka müşteri temsilcimiz MaiA yayına girdiğinde ilk haber alanlardan olacaksınız.",
     confirmErrTitle: "Bağlantı Geçersiz veya Süresi Dolmuş",
     confirmErrText: "Onay bağlantınız geçersiz ya da 48 saatlik süresi dolmuş görünüyor. Lütfen kayıt formunu yeniden doldurun; size yeni bir onay e-postası gönderelim.",
-    aboutTitle: "Hakkımızda",
-    aboutLead: "Openborders, öğrencileri dünyanın dört bir yanındaki üniversite, lise ve spor programlarıyla buluşturan uluslararası eğitim danışmanlığıdır.",
-    aboutBody1: "Bu sayfanın içeriği yakında eklenecektir.",
-    aboutBody2: "Deneyimimiz, yaklaşımımız ve ekibimiz hakkında ayrıntılı bilgiyi çok yakında burada bulabileceksiniz."
+    aboutTitle: "Biz Kimiz?",
+    aboutLead: "Akademik yerleştirmeler ve sporcu bursları için doğru adrestesiniz.",
+    aboutIntro1: "2013 yılından beri akademik öğrenci yerleştirmeleri, atletik burs danışmanlığı, spor organizasyonları, gençlik kampları ve tematik kamplarımızla sizlere çözümler sunuyoruz.",
+    aboutIntro2: "Dünya çapındaki çeşitli iş ortaklarımız aracılığıyla Sırbistan, Fransa, İtalya, İspanya ve ABD'de çeşitli etkinlikler düzenliyor; uluslararası iş ortaklarımızla birlikte öğrencilerimize ve sporcularımıza eğitim bursu bulma konusunda danışmanlık hizmeti veriyoruz.",
+    aboutIntro3: "İş ortaklarımızın 17 yılın üzerindeki deneyimiyle akademik danışmanlık, sporcu bursu danışmanlığı, yurtdışı üniversite ve relokasyon danışmanlığı konularında; Türkiye, Sırbistan, İngiltere, İsveç ve Lüksemburg'dan size en geniş fırsat yelpazesini sunuyoruz.",
+
+    aboutServicesTitle: "Hizmetlerimiz",
+    svcUniTitle: "Üniversite Yerleştirme",
+    svcUniText: "Lisans ve yüksek lisans başvurularında program seçiminden kabule kadar tüm süreç.",
+    svcHighTitle: "Lise & Akademiler",
+    svcHighText: "Yurtdışı yatılı okullar, kolejler ve spor akademilerinde lise eğitimi.",
+    svcSportTitle: "Sporcu Bursları",
+    svcSportText: "ABD, Kanada, Avrupa ve Asya'da atletik burs fırsatları ve kulüp bağlantıları.",
+    svcCampTitle: "Kamplar & Organizasyonlar",
+    svcCampText: "Gençlik kampları, tematik kamplar ve uluslararası spor organizasyonları.",
+
+    aboutAcademicTitle: "Akademik Yerleştirme",
+    aboutAcademicText1: "Sporcu bursları kadar akademik yerleştirmeler de uzmanlık alanımızdır. ABD, Kanada, İngiltere ve Avrupa'daki üniversitelerde lisans ve yüksek lisans programlarına başvuran öğrencilerimize; doğru üniversite ve program seçiminden başvuru dosyasının hazırlanmasına, niyet mektubu (SOP) ve referans mektuplarından TOEFL, IELTS, SAT gibi sınavların planlanmasına kadar tüm aşamalarda rehberlik ediyoruz.",
+    aboutAcademicText2: "Kabul sonrasında da yalnız bırakmıyoruz: burs ve finansman başvuruları, vize süreci, konaklama ve şehre yerleşim adımlarında öğrencilerimizin ve ailelerinin yanında oluyoruz.",
+
+    aboutHighTitle: "Lise ve Hazırlık Programları",
+    aboutHighText: "Üniversite öncesinde uluslararası deneyim kazanmak isteyen öğrenciler için yurtdışındaki yatılı liseler, özel kolejler ve spor akademileriyle çalışıyoruz. Akademik seviyeye, bütçeye ve sportif hedeflere uygun okul seçimini birlikte belirliyor; başvuru, kayıt ve veli iletişimi süreçlerini baştan sona yönetiyoruz.",
+
+    aboutSportTitle: "Sporcu Bursları",
+    aboutSportText1: "ABD, Kanada, Avrupa ve Asya'daki spor bursları ve eğitim fırsatları konusunda sizinle iş birliği yaparak, lisanslı sporlarınızın eğitiminize katkıda bulunmasını sağlıyoruz.",
+    aboutSportText2: "Amerikan ve Kanada üniversiteleri her yıl yaklaşık 4,7 milyar dolar spor bursu dağıtıyor. Bu burslardan en yüksek şekilde yararlanabilmeniz için çalışıyor, farklı üniversitelerden teklifler getiriyoruz. Bizimle birlikte en iyi spor bursu seçeneklerini bulacaksınız.",
+
+    statSince: "Yılından beri",
+    statExp: "Yıllık ortak deneyimi",
+    statFund: "Yıllık spor bursu havuzu",
+    statCountries: "Ülkede ofis ve ortak ağı",
+
+    partnersTitle: "İş Ortaklarımız",
+    partnersIntro: "Dünya genelindeki iş ortaklarımızla birlikte öğrencilerimize en geniş fırsat ağını sunuyoruz.",
+    partnerPlaceholder: "Yakında",
+    parentsTitle: "Velilerimizden",
+    parentQuote1: "Oğlumuzun süreci boyunca her adımda yanımızdaydılar. Üniversite seçiminden vizeye kadar tüm aşamaları büyük bir sabırla anlattılar.",
+    parentQuote2: "Kızımızın hem akademik hem sportif hedeflerini birlikte değerlendirdiler. Doğru okulu bulmamızda büyük emekleri var.",
+    parentQuote3: "Yurtdışı eğitim süreci bize çok karmaşık geliyordu. Openborders ekibi her şeyi anlaşılır hale getirdi ve sürekli iletişimde kaldı.",
+    parentName1: "Veli görüşü",
+    parentName2: "Veli görüşü",
+    parentName3: "Veli görüşü",
+    parentsNote: "Referans listemiz ve veli görüşlerimiz yakında bu bölümde yer alacaktır.",
+
+    aboutCtaTitle: "Ücretsiz Değerlendirme",
+    aboutCtaText: "Bugün bizimle iletişime geçin, ÜCRETSİZ bir değerlendirme yapalım ve danışmanlarımız yolunuzu geliştirmenize yardımcı olsun.",
+    aboutCtaBtn: "Randevu Alın"
   },
   en: {
     ask: "Ask Anything to Your Client Representative",
@@ -287,10 +330,53 @@ const I18N = {
     confirmOkText: "Welcome to the Openborders family. You'll be among the first to know when our AI client representative MaiA goes live.",
     confirmErrTitle: "Link Invalid or Expired",
     confirmErrText: "Your confirmation link is invalid or has passed its 48-hour validity. Please fill in the registration form again and we'll send you a fresh confirmation email.",
-    aboutTitle: "About Us",
-    aboutLead: "Openborders is an international education consultancy connecting students with universities, high schools and athletic programs around the world.",
-    aboutBody1: "The content of this page will be added soon.",
-    aboutBody2: "Detailed information about our experience, our approach and our team will be available here very soon."
+    aboutTitle: "Who We Are",
+    aboutLead: "Your address for academic placements and athletic scholarships.",
+    aboutIntro1: "Since 2013 we have been providing solutions through academic student placements, athletic scholarship consultancy, sports organisations, youth camps and our themed camps.",
+    aboutIntro2: "Through our partners worldwide we organise events in Serbia, France, Italy, Spain and the USA, and together with our international partners we advise our students and athletes on securing education scholarships.",
+    aboutIntro3: "With our partners' more than 17 years of experience in academic consultancy, athletic scholarship consultancy, and overseas university and relocation guidance, we offer you the widest range of opportunities from Türkiye, Serbia, the United Kingdom, Sweden and Luxembourg.",
+
+    aboutServicesTitle: "What We Do",
+    svcUniTitle: "University Placement",
+    svcUniText: "The full journey for bachelor's and master's applications, from choosing programs to acceptance.",
+    svcHighTitle: "High Schools & Academies",
+    svcHighText: "Boarding schools, colleges and sports academies abroad for high-school students.",
+    svcSportTitle: "Athletic Scholarships",
+    svcSportText: "Scholarship opportunities and club connections across the USA, Canada, Europe and Asia.",
+    svcCampTitle: "Camps & Events",
+    svcCampText: "Youth camps, themed camps and international sports organisations.",
+
+    aboutAcademicTitle: "Academic Placement",
+    aboutAcademicText1: "Academic placement is as much our speciality as athletic scholarships. For students applying to bachelor's and master's programs in the USA, Canada, the UK and Europe, we guide every stage — from selecting the right university and program to preparing the application file, from the statement of purpose and reference letters to planning exams such as TOEFL, IELTS and SAT.",
+    aboutAcademicText2: "Our work doesn't end at acceptance: we stand beside our students and their families through scholarship and funding applications, the visa process, accommodation and settling into their new city.",
+
+    aboutHighTitle: "High School & Preparatory Programs",
+    aboutHighText: "For students who want international experience before university, we work with boarding schools, private colleges and sports academies abroad. Together we identify the right school for each student's academic level, budget and sporting goals, and we manage the application, enrolment and family communication from start to finish.",
+
+    aboutSportTitle: "Athletic Scholarships",
+    aboutSportText1: "We collaborate with you on sports scholarships and education opportunities across the USA, Canada, Europe and Asia, so that the sport you compete in contributes to your education.",
+    aboutSportText2: "American and Canadian universities award approximately 4.7 billion dollars in athletic scholarships every year. We work to help you benefit from these scholarships to the fullest, bringing you offers from different universities. Together we will find the best athletic scholarship options for you.",
+
+    statSince: "Serving since",
+    statExp: "Years of partner experience",
+    statFund: "Annual athletic scholarship pool",
+    statCountries: "Countries with offices and partners",
+
+    partnersTitle: "Our Partners",
+    partnersIntro: "Together with our partners around the world we offer our students the widest network of opportunities.",
+    partnerPlaceholder: "Coming soon",
+    parentsTitle: "From Our Parents",
+    parentQuote1: "They were with us at every step of our son's journey, patiently explaining each stage from choosing a university to the visa process.",
+    parentQuote2: "They considered both our daughter's academic and athletic goals together. Their effort in finding the right school was invaluable.",
+    parentQuote3: "Studying abroad felt overwhelming to us. The Openborders team made everything clear and stayed in constant contact.",
+    parentName1: "Parent testimonial",
+    parentName2: "Parent testimonial",
+    parentName3: "Parent testimonial",
+    parentsNote: "Our reference list and parent testimonials will appear in this section soon.",
+
+    aboutCtaTitle: "Free Assessment",
+    aboutCtaText: "Get in touch today, let us make a FREE assessment, and let our consultants help you shape your path.",
+    aboutCtaBtn: "Book an Appointment"
   }
 };
 

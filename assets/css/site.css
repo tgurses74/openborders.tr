@@ -370,6 +370,188 @@ button { font: inherit; cursor: pointer; }
 .program-row { display: flex; flex-wrap: wrap; gap: 12px; }
 .program-row .pill { padding: 14px 26px; font-size: 14px; }
 
+/* ---------- About (Hakkımızda) page ----------
+   Fixed hero image; .scroll-content slides up over it. */
+.about-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 48px 12vh;
+  /* near-square photo with a centred subject */
+  background: url("../img/about-hero.jpg") center 30% / cover no-repeat;
+}
+.about-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(18, 20, 34, .30) 35%, rgba(18, 20, 34, .78));
+}
+.about-stage-inner { position: relative; max-width: 900px; color: #f8f4ec; }
+.about-stage-inner h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(44px, 6.5vw, 86px);
+  line-height: 1.03;
+  margin: 0 0 16px;
+}
+.about-stage-inner .lead {
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: clamp(15px, 1.8vw, 20px);
+  margin: 0;
+  opacity: .92;
+}
+
+.about-intro {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 74px 28px 20px;
+}
+.about-intro p { font-size: 18px; margin: 0 0 18px; }
+.about-intro p:first-child { font-size: 21px; }
+
+.section-intro {
+  max-width: 720px;
+  margin: -14px 0 30px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+/* Partners */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.partner-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px 22px;
+  text-align: center;
+}
+.partner-logo {
+  height: 74px;
+  border-radius: 10px;
+  background: repeating-linear-gradient(45deg, var(--bg-soft), var(--bg-soft) 10px, #f3efe6 10px, #f3efe6 20px);
+  margin-bottom: 14px;
+}
+.partner-card h4 {
+  margin: 0;
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Parent quotes (no photos) */
+.quotes-section { padding-top: 20px; }
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.quote-card {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 34px 30px;
+  position: relative;
+}
+.quote-card::before {
+  content: "\201C";
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1;
+  color: var(--line);
+}
+.quote-card p {
+  position: relative;
+  margin: 14px 0 18px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.quote-card cite {
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--muted);
+}
+.quotes-note { margin-top: 26px; color: var(--muted); font-size: 15px; }
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto 10px;
+  padding: 32px 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(30px, 3.4vw, 44px);
+  color: var(--navy);
+  line-height: 1.1;
+}
+.stat span {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px 24px;
+}
+.service-card h4 {
+  font-family: var(--font-cond);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.service-card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+.about-block {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 26px 28px;
+}
+.about-block h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(28px, 3vw, 38px);
+  margin: 0 0 16px;
+}
+.about-block p { font-size: 18px; margin: 0 0 16px; }
+.about-block + .signup { margin-top: 60px; }
+
 /* ---------- All-students page ---------- */
 .students-grid {
   display: grid;
@@ -584,6 +766,16 @@ button { font: inherit; cursor: pointer; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .featured-placement { grid-template-columns: 1fr; gap: 26px; }
   .students-grid { grid-template-columns: repeat(3, 1fr); }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+  .partner-grid { grid-template-columns: repeat(2, 1fr); }
+  .quote-grid { grid-template-columns: 1fr; }
+  /* fixed hero doesn't suit small screens — fall back to normal flow */
+  .about-stage {
+    position: static;
+    min-height: 62vh;
+    padding: 120px 24px 40px;
+  }
+  main.scroll-content { margin-top: 0; }
 }
 @media (max-width: 720px) {
   :root { --header-h: 148px; }
@@ -599,4 +791,7 @@ button { font: inherit; cursor: pointer; }
   .marquee-item { width: 130px; height: 58px; }
   .marquee-track { gap: 46px; }
   .signup .cta-row { flex-direction: column; }
+  .service-grid { grid-template-columns: 1fr; }
+  .partner-grid { grid-template-columns: 1fr; }
+  .stat-row { grid-template-columns: repeat(2, 1fr); gap: 26px; }
 }
