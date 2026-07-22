@@ -166,6 +166,13 @@ const STUDENTS = [
     tr: "Kayhan, Schalke 04 altyapısından yetişti. 2022–24 arasında U17 Bundesliga kadrosunda yer aldı; 38 maçta forma giydi, 34'üne ilk 11'de başladı, 2.846 dakika sahada kalarak 12 gol attı. 2023–24 sezonunda 24 maçta 11 gole ulaştı.\n\nArdından U19 DFB Gençlik Ligi'nde oynadı; Almanya'yı U16 ve U17 seviyelerinde temsil ederek UEFA Avrupa U17 Şampiyonası'nda mücadele etti. Şimdi Florida International University'de eğitimine ve kariyerine devam ediyor."
   },
   {
+    slug: "elif-dila",
+    university: "Stonehill College",
+    name: "Elif Dila",
+    en: "A 6'1\" setter from Ankara, Elif received a partial scholarship to play for the prestigious Stonehill College.\n\nWe wish her all the best for her academic and sporting career.",
+    tr: "Ankara'dan 1.85 boyundaki pasör Elif, prestijli Stonehill College'da oynamak üzere kısmi burs kazandı.\n\nAkademik ve sportif kariyerinde kendisine başarılar diliyoruz."
+  },
+  {
     slug: "zahira-arizmendi",
     university: "Florida Atlantic University",
     name: "Zahira Arizmendi",
