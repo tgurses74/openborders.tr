@@ -136,6 +136,41 @@ const STUDENTS = [
     name: "Alex Pachuki",
     en: "A tall French international who decided to continue his sports journey at the well-known Hoosac School, with an even better-known basketball program.",
     tr: "Uzun boylu Fransız oyuncu, spor yolculuğuna tanınmış Hoosac School'un çok daha tanınmış basketbol programında devam etme kararı aldı."
+  },
+  {
+    slug: "cisel-akgul",
+    university: "University of Miami",
+    name: "Cisel Akgül",
+    en: "A Turkish student from Kamen, Germany, Cisel plays as a forward and has transferred to the University of Miami.\n\nShe was named PBC Freshman of the Year and earned 2024 All-PBC First Team honours. She appeared in all 18 matches with 17 starts, scoring 10 goals and adding six assists for 26 points — including a four-goal performance against Albany State and a two-goal outing against Lander.",
+    tr: "Almanya'nın Kamen şehrinden Türk öğrencimiz Cisel, forvet mevkiinde oynuyor ve University of Miami'ye transfer oldu.\n\nPBC'de Yılın İlk Sınıf Oyuncusu seçildi ve 2024 All-PBC İlk Takım ödülüne layık görüldü. 18 maçın tamamında forma giydi, 17'sine ilk 11'de başladı; 10 gol ve altı asistle 26 puana ulaştı. Albany State karşısında dört gollük, Lander karşısında ise iki gollük performans sergiledi."
+  },
+  {
+    slug: "dayana-mendes",
+    university: "University of Miami",
+    name: "Dayana Mendes",
+    en: "Dayana played for Charnay and at INSEP High School, winning a France LF2 league championship and taking the 2018 title with Île-de-France.\n\nAfter transferring to Washington she made the WCC All-Freshman Team and was twice named WCC Freshman of the Week. She appeared in 30 games with nine starts, averaging 8.3 points, 5.3 rebounds and 1.3 assists in 18.5 minutes per game, with four double-doubles and 11 double-figure scoring games — including a career-high 16 points against Saint Mary's and 13 rebounds against Portland. She has since transferred to the University of Miami.",
+    tr: "Dayana, Charnay ve INSEP Lisesi'nde oynadı; Fransa LF2 lig şampiyonluğu ve Île-de-France ile 2018 şampiyonluğunu kazandı.\n\nWashington'a transfer olduktan sonra WCC All-Freshman Takımı'na seçildi ve iki kez WCC'nin Haftanın İlk Sınıf Oyuncusu oldu. 30 maçta forma giydi, dokuzuna ilk beşte başladı; maç başına 18.5 dakikada 8.3 sayı, 5.3 ribaund ve 1.3 asist ortalaması yakaladı. Dört double-double yaptı, 11 maçta çift haneli sayılara ulaştı; Saint Mary's karşısında kariyer rekoru 16 sayı, Portland karşısında 13 ribaund kaydetti. Ardından University of Miami'ye transfer oldu."
+  },
+  {
+    slug: "djurdja-stanojevic",
+    university: "Texas A&M University",
+    name: "Djurdja Stanojevic",
+    en: "A middle blocker who has been part of the Serbian national team since 2021, Djurdja has competed in three European Championships at U17, U18 and U20 level, as well as the 2023 U19 World Championships.\n\nIn her club league she recorded 130 kills and 45 service aces while blocking 89 attacks across 53 appearances for OK Tent. She now continues her volleyball career at Texas A&M.",
+    tr: "2021'den bu yana Sırbistan milli takımının bir parçası olan Djurdja, orta oyuncusu olarak U17, U18 ve U20 seviyelerinde üç Avrupa Şampiyonası'nda ve 2023 U19 Dünya Şampiyonası'nda mücadele etti.\n\nKulüp liginde OK Tent formasıyla çıktığı 53 maçta 130 sayı ve 45 servis asi kaydederken 89 blok yaptı. Voleybol kariyerine şimdi Texas A&M'de devam ediyor."
+  },
+  {
+    slug: "kayhan-sayman",
+    university: "Florida International University",
+    name: "Kayhan Sayman",
+    en: "Kayhan came through the Schalke 04 youth system, earning a place in the U17 Bundesliga from 2022–24 with 38 appearances, 34 starts, 2,846 minutes and 12 goals — including 11 goals in 24 matches during the 2023–24 season.\n\nHe went on to play in the U19 DFB Youth League and represented Germany at U16 and U17 level, competing at the UEFA European U17 Championship, before transferring to Florida International University.",
+    tr: "Kayhan, Schalke 04 altyapısından yetişti. 2022–24 arasında U17 Bundesliga kadrosunda yer aldı; 38 maçta forma giydi, 34'üne ilk 11'de başladı, 2.846 dakika sahada kalarak 12 gol attı. 2023–24 sezonunda 24 maçta 11 gole ulaştı.\n\nArdından U19 DFB Gençlik Ligi'nde oynadı; Almanya'yı U16 ve U17 seviyelerinde temsil ederek UEFA Avrupa U17 Şampiyonası'nda mücadele etti. Şimdi Florida International University'de eğitimine ve kariyerine devam ediyor."
+  },
+  {
+    slug: "zahira-arizmendi",
+    university: "Florida Atlantic University",
+    name: "Zahira Arizmendi",
+    en: "A guard from Madrid, Spain, standing 5-8 and now in her senior year.\n\nBefore Florida Atlantic she played at Middle Tennessee, where she made her breakthrough. She made her collegiate debut against Florida A&M, tallying three points and an assist in a season-high 14 minutes, and added two points in the win over NKU — then transferred to Florida Atlantic.",
+    tr: "Madrid, İspanya'dan gelen 1.73 boyundaki guard oyuncumuz, artık son sınıf öğrencisi.\n\nFlorida Atlantic öncesinde Middle Tennessee'de oynadı ve çıkışını orada yaptı. Üniversite kariyerindeki ilk maçına Florida A&M karşısında çıktı; sezonun en uzun süresi olan 14 dakikada üç sayı ve bir asist kaydetti. NKU galibiyetinde iki sayı ekledikten sonra Florida Atlantic'e transfer oldu."
   }
 ];
 
