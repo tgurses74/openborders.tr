@@ -280,6 +280,34 @@ const I18N = {
     parentName3: "Veli görüşü",
     parentsNote: "Referans listemiz ve veli görüşlerimiz yakında bu bölümde yer alacaktır.",
 
+    signinTitle: "MaiA'ya Giriş",
+    signinLead: "Kayıtlı e-posta adresinizi girin, size tek kullanımlık bir giriş bağlantısı gönderelim.",
+    signinBtn: "Giriş Bağlantısı Gönder",
+    signinSent: "Giriş bağlantısı e-postanıza gönderildi. Gelen kutunuzu kontrol edin.",
+    signinLinkErr: "Bağlantı geçersiz veya süresi dolmuş. Lütfen tekrar deneyin.",
+    signinNoAccount: "Hesabınız yok mu?",
+    maiaTitle: "MaiA ile Tanışın",
+    maiaLead: "Yapay zeka danışmanınız. Birkaç soruyla başlayalım.",
+    mq1: "Bugün ne arıyorsunuz?",
+    mq1a: "Lise", mq1b: "Üniversite (Lisans)", mq1c: "Yüksek Lisans / Doktora",
+    mq2: "Tercih ettiğiniz bir yer var mı? (Örn. Avrupa, ABD, Almanya, New York)",
+    mq2ph: "Örn. Almanya, Avrupa, New York…",
+    mq3: "Aklınızda bir bölüm var mı? Ne okumak istersiniz?",
+    mq3ph: "Örn. Bilgisayar Mühendisliği, İşletme…",
+    mq3note: "(Lise arıyorsanız bu adımı atlayabilirsiniz.)",
+    mq4: "Akademik burslar için her zaman başvuruyoruz. Elit bir sporcu musunuz? Spor bursu mu arıyorsunuz?",
+    mq4a: "Evet, sporcu bursu arıyorum", mq4b: "Hayır",
+    mq5: "Yurtdışı eğitim için yıllık bütçeniz nedir? Buna göre öneriler yapacağım.",
+    mq5ph: "Tutar",
+    maiaStart: "MaiA ile Başla",
+    maiaPlaceholder: "MaiA'ya yazın…",
+    maiaSend: "Gönder",
+    maiaFinish: "Bitir ve Özetimi Al",
+    maiaTyping: "MaiA yazıyor…",
+    maiaWelcome: "Merhaba! Verdiğiniz bilgilere göre size en uygun programları arıyorum…",
+    maiaDone: "Görüşmeniz tamamlandı. Özet e-posta adresinize ve danışmanlarımıza gönderildi. En kısa sürede sizinle iletişime geçeceğiz. 🎓",
+    maiaSignout: "Çıkış",
+
     aboutCtaTitle: "Ücretsiz Değerlendirme",
     aboutCtaText: "Bugün bizimle iletişime geçin, ÜCRETSİZ bir değerlendirme yapalım ve danışmanlarımız yolunuzu geliştirmenize yardımcı olsun.",
     aboutCtaBtn: "Randevu Alın"
@@ -380,6 +408,34 @@ const I18N = {
     parentName2: "Parent testimonial",
     parentName3: "Parent testimonial",
     parentsNote: "Our reference list and parent testimonials will appear in this section soon.",
+
+    signinTitle: "Sign in to MaiA",
+    signinLead: "Enter your registered email and we'll send you a one-time sign-in link.",
+    signinBtn: "Send sign-in link",
+    signinSent: "Sign-in link sent to your email. Please check your inbox.",
+    signinLinkErr: "The link is invalid or expired. Please try again.",
+    signinNoAccount: "Don't have an account?",
+    maiaTitle: "Meet MaiA",
+    maiaLead: "Your AI consultant. Let's start with a few questions.",
+    mq1: "What are you looking for today?",
+    mq1a: "High school", mq1b: "University (Bachelor's)", mq1c: "Postgraduate / Master's / PhD",
+    mq2: "Do you have a preferred location? (e.g. Europe, US, Germany, New York)",
+    mq2ph: "e.g. Germany, Europe, New York…",
+    mq3: "Do you have a major in mind? What do you want to study?",
+    mq3ph: "e.g. Computer Science, Business…",
+    mq3note: "(If you're looking for high school, you can skip this.)",
+    mq4: "We always apply for academic scholarships. Are you an elite athlete? Are you looking for a sports scholarship?",
+    mq4a: "Yes, I'm looking for a sports scholarship", mq4b: "No",
+    mq5: "What is your yearly budget for studying abroad? I'll tailor suggestions accordingly.",
+    mq5ph: "Amount",
+    maiaStart: "Start with MaiA",
+    maiaPlaceholder: "Message MaiA…",
+    maiaSend: "Send",
+    maiaFinish: "Finish & get my summary",
+    maiaTyping: "MaiA is typing…",
+    maiaWelcome: "Hi! Based on what you told me, I'm searching for the programs that fit you best…",
+    maiaDone: "Your session is complete. A summary has been sent to your email and to our consultants. We'll be in touch very soon. 🎓",
+    maiaSignout: "Sign out",
 
     aboutCtaTitle: "Free Assessment",
     aboutCtaText: "Get in touch today, let us make a FREE assessment, and let our consultants help you shape your path.",
@@ -622,6 +678,10 @@ function toggleMenu(open) {
   menu.classList.toggle("open", open);
   document.body.style.overflow = open ? "hidden" : "";
 }
+
+/* expose helpers for the MaiA / sign-in pages */
+window.OB_T = t;
+window.OB_LANG = getLang;
 
 /* ---------------- Init ---------------- */
 document.addEventListener("DOMContentLoaded", () => {

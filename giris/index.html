@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giriş Yap | Openborders</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="..">
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../assets/img/openborders-logo-text.png" alt="Openborders"></a>
+    <div class="header-pills">
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <div class="auth-card">
+      <h1 data-i18n="signinTitle">MaiA'ya Giriş</h1>
+      <p data-i18n="signinLead">Kayıtlı e-posta adresinizi girin, size tek kullanımlık bir giriş bağlantısı gönderelim.</p>
+      <form id="signinForm">
+        <input type="email" id="signinEmail" required autocomplete="email" data-i18n-ph="regEmail" placeholder="E-posta">
+        <button class="pill" type="submit" data-i18n="signinBtn">Giriş Bağlantısı Gönder</button>
+      </form>
+      <div class="auth-msg" id="signinMsg" hidden></div>
+      <p class="switch"><span data-i18n="signinNoAccount">Hesabınız yok mu?</span>
+        <a href="../register/" data-i18n="register">Kayıt Ol</a></p>
+    </div>
+  </main>
+
+  <!-- Menu modal -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true">
+    <div class="menu-top">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+      <button class="menu-close" type="button" id="menuClose" data-i18n="close">Kapat</button>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../" data-i18n="mHome">Anasayfa</a></li>
+      <li><a href="../ogrenciler/" data-i18n="mStudents">Öğrencilerimiz</a></li>
+      <li><a href="../hakkimizda/" data-i18n="mAbout">Hakkımızda</a></li>
+      <li><a href="../iletisim/" data-i18n="mContact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <script src="../assets/js/site.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById("signinForm");
+      var msg = document.getElementById("signinMsg");
+      var err = new URLSearchParams(location.search).get("err");
+      if (err) { msg.hidden = false; msg.className = "auth-msg err";
+        msg.textContent = (window.OB_T ? OB_T("signinLinkErr") : "Bağlantı geçersiz veya süresi dolmuş. Lütfen tekrar deneyin."); }
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        var btn = form.querySelector("button");
+        btn.disabled = true;
+        try {
+          await fetch("/api/signin", { method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: document.getElementById("signinEmail").value, lang: (window.OB_LANG ? OB_LANG() : "tr") }) });
+          msg.hidden = false; msg.className = "auth-msg ok";
+          msg.textContent = (window.OB_T ? OB_T("signinSent") : "Giriş bağlantısı e-postanıza gönderildi. Gelen kutunuzu kontrol edin.");
+          form.reset();
+        } catch (_) {
+          msg.hidden = false; msg.className = "auth-msg err";
+          msg.textContent = (window.OB_T ? OB_T("regFailed") : "Bir sorun oluştu, lütfen tekrar deneyin.");
+        } finally { btn.disabled = false; }
+      });
+    })();
+  </script>
+</body>
+</html>

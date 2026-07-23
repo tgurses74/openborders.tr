@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaiA | Openborders</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="..">
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../assets/img/openborders-logo-text.png" alt="Openborders"></a>
+    <div class="header-pills">
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="signoutBtn" data-i18n="maiaSignout">Çıkış</button>
+    </div>
+  </header>
+
+  <main class="maia-wrap">
+    <div class="maia-head">
+      <h1><span class="spark">✦</span> <span data-i18n="maiaTitle">MaiA ile Tanışın</span></h1>
+      <p data-i18n="maiaLead">Yapay zeka danışmanınız. Birkaç soruyla başlayalım.</p>
+    </div>
+
+    <!-- Intake form -->
+    <form class="intake" id="intakeForm">
+      <div class="q">
+        <label class="qlabel" data-i18n="mq1">Bugün ne arıyorsunuz?</label>
+        <div class="opts" data-field="level" data-single>
+          <label class="opt"><input type="radio" name="level" value="university" checked><span data-i18n="mq1b">Üniversite (Lisans)</span></label>
+          <label class="opt"><input type="radio" name="level" value="highschool"><span data-i18n="mq1a">Lise</span></label>
+          <label class="opt"><input type="radio" name="level" value="postgraduate"><span data-i18n="mq1c">Yüksek Lisans / Doktora</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <label class="qlabel" for="fLocation" data-i18n="mq2">Tercih ettiğiniz bir yer var mı?</label>
+        <input type="text" id="fLocation" style="width:100%" data-i18n-ph="mq2ph" placeholder="Örn. Almanya, Avrupa, New York…">
+      </div>
+      <div class="q">
+        <label class="qlabel" for="fField" data-i18n="mq3">Aklınızda bir bölüm var mı?</label>
+        <input type="text" id="fField" style="width:100%" data-i18n-ph="mq3ph" placeholder="Örn. Bilgisayar Mühendisliği, İşletme…">
+        <p class="maia-note" style="margin-top:8px" data-i18n="mq3note">(Lise arıyorsanız bu adımı atlayabilirsiniz.)</p>
+      </div>
+      <div class="q">
+        <label class="qlabel" data-i18n="mq4">Elit bir sporcu musunuz? Spor bursu mu arıyorsunuz?</label>
+        <div class="opts" data-field="athlete" data-single>
+          <label class="opt sel"><input type="radio" name="athlete" value="0" checked><span data-i18n="mq4b">Hayır</span></label>
+          <label class="opt"><input type="radio" name="athlete" value="1"><span data-i18n="mq4a">Evet, sporcu bursu arıyorum</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <label class="qlabel" for="fBudget" data-i18n="mq5">Yurtdışı eğitim için yıllık bütçeniz nedir?</label>
+        <div class="budget-row">
+          <input type="number" id="fBudget" min="0" step="500" data-i18n-ph="mq5ph" placeholder="Tutar">
+          <select id="fCurrency">
+            <option value="EUR">EUR €</option>
+            <option value="USD">USD $</option>
+            <option value="GBP">GBP £</option>
+            <option value="TRY" selected>TRY ₺</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </div>
+      </div>
+      <button class="pill start-btn" type="submit" data-i18n="maiaStart">MaiA ile Başla</button>
+    </form>
+
+    <!-- Chat (revealed after intake) -->
+    <div class="chat" id="chat" hidden></div>
+    <div class="chat-actions" id="chatActions" hidden>
+      <button class="finish-btn" id="finishBtn" data-i18n="maiaFinish">Bitir ve Özetimi Al</button>
+    </div>
+    <form class="chat-bar" id="chatBar" hidden>
+      <input type="text" id="chatInput" data-i18n-ph="maiaPlaceholder" placeholder="MaiA'ya yazın…" autocomplete="off">
+      <button class="pill" type="submit" data-i18n="maiaSend">Gönder</button>
+    </form>
+  </main>
+
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/maia.js"></script>
+</body>
+</html>
