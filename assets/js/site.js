@@ -186,6 +186,8 @@ const I18N = {
   tr: {
     ask: "Müşteri Temsilcinize Her Şeyi Sorun",
     register: "Kayıt Ol",
+    signin: "Giriş",
+    regHaveAccount: "Zaten hesabınız var mı?",
     menu: "Menü",
     explore: "Openborders'ı Keşfedin",
     close: "Kapat",
@@ -315,6 +317,8 @@ const I18N = {
   en: {
     ask: "Ask Anything to Your Client Representative",
     register: "Register",
+    signin: "Sign in",
+    regHaveAccount: "Already have an account?",
     menu: "Menu",
     explore: "Explore Openborders",
     close: "Close",
