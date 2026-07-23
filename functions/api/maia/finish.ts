@@ -108,27 +108,39 @@ async function logToHubspot(env: Env, email: string, name: string, intakeLine: s
     if (!contactId) { console.error("hs_no_contact", email); return false; }
 
     const now = Date.now();
-    const noteOk = await fetch("https://api.hubapi.com/crm/v3/objects/notes", {
-      method: "POST", headers: H,
-      body: JSON.stringify({
-        properties: { hs_note_body: `<b>MaiA enquiry</b><br>${escape(intakeLine)}<br><br>${toHtml(summary)}`, hs_timestamp: now },
-        associations: [{ to: { id: contactId }, types: [{ associationCategory: "HUBSPOT_DEFINED", associationTypeId: 202 }] }],
-      }),
-    }).then((r) => r.ok || (console.error("hs_note", r.status), false));
 
-    const taskOk = await fetch("https://api.hubapi.com/crm/v3/objects/tasks", {
+    // Create each engagement standalone (proven to work), then attach it to
+    // the contact via HubSpot's "default" association endpoint (v4), which
+    // picks the correct association type itself — no fragile type IDs.
+    async function associate(objType: string, objId: string) {
+      const a = await fetch(
+        `https://api.hubapi.com/crm/v4/objects/${objType}/${objId}/associations/default/contacts/${contactId}`,
+        { method: "PUT", headers: H });
+      if (!a.ok) console.error(`hs_assoc_${objType}`, a.status, await a.text());
+      return a.ok;
+    }
+
+    let noteOk = false;
+    const rn = await fetch("https://api.hubapi.com/crm/v3/objects/notes", {
       method: "POST", headers: H,
-      body: JSON.stringify({
-        properties: {
-          hs_task_subject: `Call ${name} — MaiA enquiry follow-up`,
-          hs_task_body: intakeLine,
-          hs_task_status: "NOT_STARTED",
-          hs_task_priority: "HIGH",
-          hs_timestamp: businessDaysFromNow(3),
-        },
-        associations: [{ to: { id: contactId }, types: [{ associationCategory: "HUBSPOT_DEFINED", associationTypeId: 204 }] }],
-      }),
-    }).then((r) => r.ok || (console.error("hs_task", r.status), false));
+      body: JSON.stringify({ properties: { hs_note_body: `<b>MaiA enquiry</b><br>${escape(intakeLine)}<br><br>${toHtml(summary)}`, hs_timestamp: now } }),
+    });
+    if (rn.ok) { noteOk = true; await associate("notes", (await rn.json<any>()).id); }
+    else console.error("hs_note", rn.status, await rn.text());
+
+    let taskOk = false;
+    const rt = await fetch("https://api.hubapi.com/crm/v3/objects/tasks", {
+      method: "POST", headers: H,
+      body: JSON.stringify({ properties: {
+        hs_task_subject: `Call ${name} — MaiA enquiry follow-up`,
+        hs_task_body: intakeLine,
+        hs_task_status: "NOT_STARTED",
+        hs_task_priority: "HIGH",
+        hs_timestamp: businessDaysFromNow(3),
+      } }),
+    });
+    if (rt.ok) { taskOk = true; await associate("tasks", (await rt.json<any>()).id); }
+    else console.error("hs_task", rt.status, await rt.text());
 
     return Boolean(noteOk && taskOk);
   } catch (e) { console.error("hs_err", e); return false; }

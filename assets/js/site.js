@@ -291,7 +291,7 @@ const I18N = {
     maiaTitle: "MaiA ile Tanışın",
     maiaLead: "Yapay zeka danışmanınız. Birkaç soruyla başlayalım.",
     mq1: "Bugün ne arıyorsunuz?",
-    mq1a: "Lise", mq1b: "Üniversite (Lisans)", mq1c: "Yüksek Lisans / Doktora",
+    mq1a: "Lise", mq1b: "Üniversite - Lisans", mq1c: "Yüksek Lisans / Doktora",
     mq2: "Tercih ettiğiniz bir yer var mı? (Örn. Avrupa, ABD, Almanya, New York)",
     mq2ph: "Örn. Almanya, Avrupa, New York…",
     mq3: "Aklınızda bir bölüm var mı? Ne okumak istersiniz?",
@@ -304,9 +304,9 @@ const I18N = {
     maiaStart: "MaiA ile Başla",
     maiaPlaceholder: "MaiA'ya yazın…",
     maiaSend: "Gönder",
-    maiaFinish: "Bitir ve Özetimi Al",
+    maiaFinish: "Bitir ve Özeti Gönder",
     maiaTyping: "MaiA yazıyor…",
-    maiaWelcome: "Merhaba! Verdiğiniz bilgilere göre size en uygun programları arıyorum…",
+    maiaWelcome: "Merhaba! 👋 Görüşmeyi istediğiniz an “Bitir ve Özeti Gönder” butonuyla tamamlayabilirsiniz. Butona bastığınızda, görüşmemizin bir özetini hem size hem de müşteri hizmetleri ekibimize göndereceğim; ekibimiz sizi arayarak seçenekleri birlikte değerlendirecek. Şimdi verdiğiniz bilgilere göre size en uygun programları arıyorum…",
     maiaDone: "Görüşmeniz tamamlandı. Özet e-posta adresinize ve danışmanlarımıza gönderildi. En kısa sürede sizinle iletişime geçeceğiz. 🎓",
     maiaSignout: "Çıkış",
 
@@ -422,7 +422,7 @@ const I18N = {
     maiaTitle: "Meet MaiA",
     maiaLead: "Your AI consultant. Let's start with a few questions.",
     mq1: "What are you looking for today?",
-    mq1a: "High school", mq1b: "University (Bachelor's)", mq1c: "Postgraduate / Master's / PhD",
+    mq1a: "High School", mq1b: "University - Bachelor's Degree", mq1c: "Post Graduate / Master's / PhD",
     mq2: "Do you have a preferred location? (e.g. Europe, US, Germany, New York)",
     mq2ph: "e.g. Germany, Europe, New York…",
     mq3: "Do you have a major in mind? What do you want to study?",
@@ -435,9 +435,9 @@ const I18N = {
     maiaStart: "Start with MaiA",
     maiaPlaceholder: "Message MaiA…",
     maiaSend: "Send",
-    maiaFinish: "Finish & get my summary",
+    maiaFinish: "Finish & send the summary",
     maiaTyping: "MaiA is typing…",
-    maiaWelcome: "Hi! Based on what you told me, I'm searching for the programs that fit you best…",
+    maiaWelcome: "Hi! 👋 You can end our chat any time with the “Finish & send the summary” button. When you press it, I'll send a summary of our conversation both to you and to our customer-service team, who will call you to discuss the options together. Now, based on what you told me, I'm searching for the programs that fit you best…",
     maiaDone: "Your session is complete. A summary has been sent to your email and to our consultants. We'll be in touch very soon. 🎓",
     maiaSignout: "Sign out",
 
@@ -470,11 +470,37 @@ function t(key) {
   const lang = getLang();
   return (I18N[lang] && I18N[lang][key]) || I18N.tr[key] || key;
 }
+/* Render text with the MaiA brand ("ai" bold) as safe DOM nodes. */
+function brandifyNodes(text) {
+  const frag = document.createDocumentFragment();
+  const parts = String(text).split("MaiA");
+  parts.forEach((p, i) => {
+    if (p) frag.appendChild(document.createTextNode(p));
+    if (i < parts.length - 1) {
+      const span = document.createElement("span");
+      span.className = "maia-brand";
+      span.appendChild(document.createTextNode("M"));
+      const b = document.createElement("b"); b.textContent = "ai";
+      span.appendChild(b);
+      span.appendChild(document.createTextNode("A"));
+      frag.appendChild(span);
+    }
+  });
+  return frag;
+}
+window.OB_brandify = brandifyNodes;
+
 function applyLang() {
   const lang = getLang();
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach(node => {
-    node.textContent = t(node.dataset.i18n);
+    const val = t(node.dataset.i18n);
+    if (node.hasAttribute("data-brandify")) {
+      node.textContent = "";
+      node.appendChild(brandifyNodes(val));
+    } else {
+      node.textContent = val;
+    }
   });
   document.querySelectorAll("[data-i18n-ph]").forEach(node => {
     node.placeholder = t(node.dataset.i18nPh);

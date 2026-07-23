@@ -20,18 +20,27 @@
   }).catch(() => { location.href = "../giris/"; });
 
   /* ---- option pills single-select visual ---- */
+  function syncGroup(group) {
+    group.querySelectorAll(".opt").forEach((o) =>
+      o.classList.toggle("sel", o.querySelector("input").checked));
+  }
   document.querySelectorAll(".opts[data-single]").forEach((group) => {
-    group.addEventListener("change", () => {
-      group.querySelectorAll(".opt").forEach((o) =>
-        o.classList.toggle("sel", o.querySelector("input").checked));
-    });
+    syncGroup(group);                       // reflect the default selection on load
+    group.addEventListener("change", () => syncGroup(group));
+    // allow re-clicking the already-checked option (no change event) to still register
+    group.querySelectorAll(".opt").forEach((o) =>
+      o.addEventListener("click", () => { o.querySelector("input").checked = true; syncGroup(group); }));
   });
 
   /* ---- helpers ---- */
   function bubble(cls, text) {
     const el = document.createElement("div");
     el.className = "msg " + cls;
-    el.textContent = text;
+    if (cls.indexOf("maia") !== -1 && window.OB_brandify) {
+      el.appendChild(window.OB_brandify(text));   // bold the "ai" in MaiA
+    } else {
+      el.textContent = text;
+    }
     chat.appendChild(el);
     chat.scrollIntoView(false);
     window.scrollTo(0, document.body.scrollHeight);
