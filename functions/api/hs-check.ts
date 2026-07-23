@@ -3,7 +3,7 @@
 
 interface Env { HUBSPOT_TOKEN: string; }
 
-export const onRequestGet: PagesFunction<Env> = async ({ env }) => {
+export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const H = { Authorization: `Bearer ${env.HUBSPOT_TOKEN}` };
   const out: Record<string, unknown> = {};
 
