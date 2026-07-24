@@ -134,6 +134,10 @@
     } catch (_) { /* proceed anyway */ }
 
     intakeForm.hidden = true;
+    // The long intro belongs to the landing screen only; the chat's welcome
+    // bubble covers the same ground, so drop it once the conversation opens.
+    const leadEl = document.querySelector('[data-i18n="maiaLead"]');
+    if (leadEl) leadEl.hidden = true;
     chat.hidden = false; chatBar.hidden = false; chatActions.hidden = false;
     bubble("maia", T("maiaWelcome"));
     // kick off the first search from the intake
