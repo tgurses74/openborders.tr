@@ -831,6 +831,20 @@ a.prog-card:hover .prog-more { opacity: 1; }
 .form-fallback { font-size: 14px; color: var(--muted); margin-top: 16px; }
 .form-fallback a { color: var(--navy); border-bottom: 1px solid var(--line); }
 
+/* ---------- Contact page ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; }
+.contact-item { margin-bottom: 26px; }
+.contact-item .k { font-family: var(--font-cond); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; color: var(--navy); margin-bottom: 5px; }
+.contact-item .v { font-size: 17px; line-height: 1.5; color: var(--ink); }
+.contact-item .v a { color: var(--ink); border-bottom: 1px solid var(--line); }
+.social-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.social-row a { display: inline-block; padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: #fff; font-size: 14px; color: var(--navy); text-decoration: none; transition: border-color .15s, transform .15s; }
+.social-row a:hover { border-color: var(--navy); transform: translateY(-1px); }
+.contact-cta { display: inline-block; margin-top: 8px; background: var(--navy); color: #fff; text-decoration: none; padding: 14px 26px; border-radius: 999px; font-size: 15px; }
+.contact-cta:hover { background: var(--ink); }
+.contact-map { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff; }
+.contact-map iframe { width: 100%; height: 100%; min-height: 420px; border: 0; display: block; }
+
 /* ---------- Legal / policy prose (çerez, KVKK) ---------- */
 .legal { max-width: 780px; }
 .legal .legal-note { font-size: 13px; color: var(--muted); margin: -30px 0 40px; font-style: italic; }
@@ -877,6 +891,7 @@ a.prog-card:hover .prog-more { opacity: 1; }
   .story-modal .photo { min-height: 280px; order: -1; }
   .menu-list { columns: 1; }
   .form-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .story { margin: 24px 16px 0; padding: 90px 24px 44px; border-radius: 14px; }
   .marquee-item { width: 130px; height: 58px; }
   .marquee-track { gap: 46px; }
