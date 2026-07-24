@@ -13,10 +13,14 @@
   let enquiryId = null;
   let messages = [];      // conversation history (user/assistant)
   let busy = false;
+  let savedIds = new Set();   // program ids already on the client's shortlist
 
-  /* ---- gate: must be signed in ---- */
-  fetch("/api/maia/me").then((r) => {
-    if (!r.ok) location.href = "../giris/";
+  /* ---- gate: must be signed in (also loads the saved shortlist) ---- */
+  fetch("/api/account/me").then((r) => {
+    if (!r.ok) { location.href = "../giris/"; return null; }
+    return r.json();
+  }).then((d) => {
+    if (d && Array.isArray(d.saved)) d.saved.forEach((p) => savedIds.add(p.id));
   }).catch(() => { location.href = "../giris/"; });
 
   /* ---- option pills single-select visual ---- */
@@ -47,6 +51,31 @@
     return el;
   }
 
+  // A "Save"/"Saved" toggle that shortlists a program to the client's account.
+  function makeSaveBtn(p) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "save-btn";
+    const setState = (saved) => {
+      btn.classList.toggle("is-saved", saved);
+      btn.textContent = saved ? T("maiaSaved") : T("maiaSave");
+    };
+    setState(savedIds.has(p.id));
+    btn.addEventListener("click", async () => {
+      const willSave = !savedIds.has(p.id);
+      btn.disabled = true;
+      try {
+        const r = await fetch("/api/account/save", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ program_id: p.id, action: willSave ? "save" : "remove" }),
+        });
+        if (r.ok) { willSave ? savedIds.add(p.id) : savedIds.delete(p.id); setState(willSave); }
+      } catch (_) { /* leave state as-is */ }
+      btn.disabled = false;
+    });
+    return btn;
+  }
+
   function renderPrograms(programs) {
     if (!programs || !programs.length) return;
     const wrap = document.createElement("div");
@@ -56,15 +85,15 @@
       const key = (p.university || "") + "|" + (p.name || "");
       if (seen.has(key)) return;
       seen.add(key);
-      // Each card is a link to an on-demand detail page (rendered from D1).
-      const card = p.id
-        ? document.createElement("a")
-        : document.createElement("div");
+      const card = document.createElement("div");
       card.className = "prog-card";
+      // The body links to the on-demand detail page (rendered from D1).
+      const body = p.id ? document.createElement("a") : document.createElement("div");
+      body.className = "prog-card-body";
       if (p.id) {
-        card.href = "../program/" + encodeURIComponent(p.id) + "?lang=" + LANG();
-        card.target = "_blank";
-        card.rel = "noopener";
+        body.href = "../program/" + encodeURIComponent(p.id) + "?lang=" + LANG();
+        body.target = "_blank";
+        body.rel = "noopener";
       }
       const uni = document.createElement("div"); uni.className = "uni";
       uni.textContent = [p.university, p.country_code].filter(Boolean).join(" · ");
@@ -76,12 +105,14 @@
       if (p.tuition_eur) bits.push("~€" + Number(p.tuition_eur).toLocaleString() + "/yr");
       else if (p.tuition_intl) bits.push(p.tuition_intl + " " + (p.tuition_currency || ""));
       meta.textContent = bits.join(" · ");
-      card.appendChild(uni); card.appendChild(h4); card.appendChild(meta);
+      body.appendChild(uni); body.appendChild(h4); body.appendChild(meta);
       if (p.id) {
         const cue = document.createElement("span"); cue.className = "prog-more";
         cue.textContent = (LANG() === "tr" ? "Detayları gör →" : "View details →");
-        card.appendChild(cue);
+        body.appendChild(cue);
       }
+      card.appendChild(body);
+      if (p.id) card.appendChild(makeSaveBtn(p));
       wrap.appendChild(card);
     });
     chat.appendChild(wrap);

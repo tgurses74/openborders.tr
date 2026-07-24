@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hesabım | Openborders</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="../assets/img/openborders-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Geist:wght@400;500;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="..">
+
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../assets/img/openborders-logo-text.png" alt="Openborders"></a>
+    <div class="header-pills">
+      <a class="pill" href="../maia/" data-brandify>MaiA</a>
+      <button class="pill lang" type="button" aria-label="Language">🌐 <b>EN</b></button>
+      <button class="pill" type="button" id="menuPill" data-i18n="menu">Menü</button>
+    </div>
+  </header>
+
+  <main class="page-wrap account" id="accountMain" hidden>
+    <h1><span data-i18n="accountGreetingHi">Merhaba</span>, <span id="acctName">…</span></h1>
+
+    <!-- Membership -->
+    <section class="acct-card">
+      <div class="acct-card-head">
+        <span class="k" data-i18n="accountMembership">Üyelik</span>
+        <span class="tier-badge" id="acctTier">—</span>
+      </div>
+      <p class="acct-soft" id="acctSince"></p>
+      <p class="acct-soft" data-i18n="accountPaidSoon">Ücretli üyelik seçenekleri çok yakında sizlerle.</p>
+    </section>
+
+    <!-- Saved schools -->
+    <section class="acct-section">
+      <h2 data-i18n="accountSavedTitle">Kaydettiğim Okullar</h2>
+      <div id="savedList" class="prog-cards"></div>
+      <div id="savedEmpty" class="acct-empty" hidden>
+        <p data-i18n="accountSavedEmpty">Henüz okul kaydetmediniz.</p>
+        <a href="../maia/" data-i18n="accountSavedCta" data-brandify>MaiA ile keşfetmeye başlayın →</a>
+      </div>
+    </section>
+
+    <!-- Account actions -->
+    <section class="acct-section acct-danger">
+      <h2 data-i18n="accountDanger">Hesap İşlemleri</h2>
+      <div class="acct-actions">
+        <button class="pill" type="button" id="signoutBtn" data-i18n="accountSignout">Çıkış Yap</button>
+        <button class="del-btn" type="button" id="deleteBtn" data-i18n="accountDelete">Hesabımı Sil</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <span>© 2026 Openborders</span>
+      <span data-i18n="rights">Tüm hakları saklıdır.</span>
+    </div>
+  </footer>
+
+  <!-- Menu modal -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true">
+    <div class="menu-top">
+      <img src="../assets/img/openborders-logo-text.png" alt="Openborders">
+      <button class="menu-close" type="button" id="menuClose" data-i18n="close">Kapat</button>
+    </div>
+    <ul class="menu-list">
+      <li><a href="../" data-i18n="mHome">Anasayfa</a></li>
+      <li><a href="../maia/" data-brandify>MaiA</a></li>
+      <li><a href="../ogrenciler/" data-i18n="mStudents">Öğrencilerimiz</a></li>
+      <li><a href="../hakkimizda/" data-i18n="mAbout">Hakkımızda</a></li>
+      <li><a href="../iletisim/" data-i18n="mContact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/account.js"></script>
+</body>
+</html>

@@ -240,14 +240,34 @@ const I18N = {
     cPhone: "Telefon",
     cEmail: "E-posta",
     cFollow: "Bizi Takip Edin",
+    accountTitle: "Hesabım",
+    accountGreetingHi: "Merhaba",
+    accountMembership: "Üyelik",
+    accountFree: "Ücretsiz",
+    accountPaidSoon: "Ücretli üyelik seçenekleri çok yakında sizlerle.",
+    accountMemberSince: "Üyelik tarihi",
+    accountSavedTitle: "Kaydettiğim Okullar",
+    accountSavedEmpty: "Henüz okul kaydetmediniz.",
+    accountSavedCta: "MaiA ile keşfetmeye başlayın →",
+    accountRemove: "Kaldır",
+    accountDetails: "Detaylar →",
+    accountSignout: "Çıkış Yap",
+    accountDanger: "Hesap İşlemleri",
+    accountDelete: "Hesabımı Sil",
+    accountDeleteConfirm: "Hesabınız ve tüm verileriniz kalıcı olarak silinecek. Bu işlem geri alınamaz. Devam etmek istiyor musunuz?",
+    accountDeleted: "Hesabınız silindi. İlginiz için teşekkür ederiz.",
+    accountNav: "Hesabım",
+    accountErr: "Bir sorun oluştu, lütfen tekrar deneyin.",
+    maiaSave: "Kaydet",
+    maiaSaved: "Kaydedildi ✓",
     regTitle: "Kayıt Olun",
-    regLead: "Hesabınızı oluşturun; yapay zeka müşteri temsilcimiz MaiA çok yakında sizinle. Bu sayfa geliştirme aşamasındadır ve ileride tam olarak tasarlanacaktır.",
+    regLead: "Hesabınızı oluşturun ve MaiA ile etkileşime geçin — size en iyi yönlendirmeyi yapmak için her zaman hazır olan 7/24 yapay zeka danışmanınız.",
     regName: "Ad", regSurname: "Soyad", regEmail: "E-posta", regPhone: "Telefon",
     regInterest: "İlgilendiğiniz Program",
     regConsent: "Kişisel verilerimin KVKK kapsamında işlenmesini kabul ediyorum.",
     regSubmit: "Kayıt Ol",
-    regMaia: "MaiA — yapay zeka destekli interaktif müşteri temsilcimiz — ikinci geliştirme aşamasında burada olacak. Kayıt olan kullanıcılar MaiA ile üniversite arama ve seçim sürecini sohbet ederek yürütebilecek.",
-    regSoon: "Kayıt sistemi yakında aktif olacaktır. İlginiz için teşekkür ederiz!",
+    regMaia: "Kaydınızı tamamlayıp giriş yaptıktan sonra MaiA ile sohbet ederek size uygun üniversite ve programları birlikte keşfedebilir, tüm sorularınızı anında yanıtlayabilirsiniz.",
+    regSoon: "Bağlantı kurulamadı. Lütfen birkaç dakika sonra tekrar deneyin.",
     regCheckEmail: "Onay e-postası gönderdik! Kaydınızı tamamlamak için lütfen gelen kutunuzu (ve spam klasörünüzü) kontrol edin.",
     regAlready: "Bu e-posta adresi zaten kayıtlı ve onaylı. Hoş geldiniz!",
     regFailed: "Kayıt sırasında bir sorun oluştu. Lütfen daha sonra tekrar deneyin.",
@@ -388,14 +408,34 @@ const I18N = {
     cPhone: "Phone",
     cEmail: "E-mail",
     cFollow: "Follow Us",
+    accountTitle: "My Account",
+    accountGreetingHi: "Hello",
+    accountMembership: "Membership",
+    accountFree: "Free",
+    accountPaidSoon: "Paid membership tiers are coming soon.",
+    accountMemberSince: "Member since",
+    accountSavedTitle: "My Saved Schools",
+    accountSavedEmpty: "You haven't saved any schools yet.",
+    accountSavedCta: "Start exploring with MaiA →",
+    accountRemove: "Remove",
+    accountDetails: "Details →",
+    accountSignout: "Sign out",
+    accountDanger: "Account",
+    accountDelete: "Delete my account",
+    accountDeleteConfirm: "Your account and all your data will be permanently deleted. This cannot be undone. Are you sure?",
+    accountDeleted: "Your account has been deleted. Thank you.",
+    accountNav: "My Account",
+    accountErr: "Something went wrong, please try again.",
+    maiaSave: "Save",
+    maiaSaved: "Saved ✓",
     regTitle: "Register",
-    regLead: "Create your account — our AI client representative MaiA is coming very soon. This page is a work in progress and will be fully designed at a later stage.",
+    regLead: "Create your account and interact with MaiA — your 24/7 AI agent, always ready to give you the best guidance.",
     regName: "First Name", regSurname: "Last Name", regEmail: "Email", regPhone: "Phone",
     regInterest: "Program of Interest",
     regConsent: "I consent to the processing of my personal data under KVKK.",
     regSubmit: "Register",
-    regMaia: "MaiA — our AI-powered interactive client representative — will arrive in the second development phase. Registered users will be able to search and select universities by simply chatting with MaiA.",
-    regSoon: "The registration system will be activated soon. Thank you for your interest!",
+    regMaia: "Once you've completed your registration and signed in, you can chat with MaiA to explore the universities and programs that fit you and get instant answers to all your questions.",
+    regSoon: "Couldn't connect. Please try again in a few minutes.",
     regCheckEmail: "Confirmation email sent! Please check your inbox (and spam folder) to complete your registration.",
     regAlready: "This email address is already registered and confirmed. Welcome back!",
     regFailed: "Something went wrong during registration. Please try again later.",
@@ -747,6 +787,30 @@ function toggleMenu(open) {
 window.OB_T = t;
 window.OB_LANG = getLang;
 
+/* Once a user is signed in, surface a "Hesabım" pill in the header on every
+   page (except the account page itself). Silently does nothing when logged
+   out or when the API isn't reachable (e.g. static preview). */
+function injectAccountPill() {
+  if (location.pathname.indexOf("/hesabim") !== -1) return;
+  const pills = document.querySelector(".header-pills");
+  if (!pills) return;
+  fetch("/api/account/me", { headers: { Accept: "application/json" } })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      if (!d || !d.ok || document.getElementById("acctPill")) return;
+      const root = (document.body.getAttribute("data-root") || ".").replace(/\/$/, "");
+      const a = document.createElement("a");
+      a.id = "acctPill";
+      a.className = "pill acct";
+      a.href = root + "/hesabim/";
+      a.textContent = t("accountNav");
+      pills.insertBefore(a, pills.firstChild);
+      const reg = pills.querySelector('a.pill[href$="register/"]');
+      if (reg) reg.style.display = "none"; // already registered
+    })
+    .catch(() => {});
+}
+
 /* ---------------- Init ---------------- */
 document.addEventListener("DOMContentLoaded", () => {
   renderGrid();
@@ -764,6 +828,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (langPill) langPill.addEventListener("click", () => {
     setLang(getLang() === "tr" ? "en" : "tr");
   });
+
+  injectAccountPill();
 
   const menuPill = document.getElementById("menuPill");
   if (menuPill) menuPill.addEventListener("click", () => toggleMenu(true));
