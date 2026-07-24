@@ -56,8 +56,16 @@
       const key = (p.university || "") + "|" + (p.name || "");
       if (seen.has(key)) return;
       seen.add(key);
-      const card = document.createElement("div");
+      // Each card is a link to an on-demand detail page (rendered from D1).
+      const card = p.id
+        ? document.createElement("a")
+        : document.createElement("div");
       card.className = "prog-card";
+      if (p.id) {
+        card.href = "../program/" + encodeURIComponent(p.id) + "?lang=" + LANG();
+        card.target = "_blank";
+        card.rel = "noopener";
+      }
       const uni = document.createElement("div"); uni.className = "uni";
       uni.textContent = [p.university, p.country_code].filter(Boolean).join(" · ");
       const h4 = document.createElement("h4"); h4.textContent = p.name || "";
@@ -69,6 +77,11 @@
       else if (p.tuition_intl) bits.push(p.tuition_intl + " " + (p.tuition_currency || ""));
       meta.textContent = bits.join(" · ");
       card.appendChild(uni); card.appendChild(h4); card.appendChild(meta);
+      if (p.id) {
+        const cue = document.createElement("span"); cue.className = "prog-more";
+        cue.textContent = (LANG() === "tr" ? "Detayları gör →" : "View details →");
+        card.appendChild(cue);
+      }
       wrap.appendChild(card);
     });
     chat.appendChild(wrap);

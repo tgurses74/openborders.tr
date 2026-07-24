@@ -101,7 +101,7 @@ async function searchPrograms(DB: D1Database, levels: string[], args: any, budge
 
   const limit = Math.min(Math.max(Number(args.max_results) || 8, 1), 15);
   const sql = `
-    SELECT p.name, p.level, p.field, p.duration_years, p.language,
+    SELECT p.id, p.name, p.level, p.field, p.duration_years, p.language,
            p.tuition_intl, p.tuition_currency,
            CASE WHEN p.tuition_intl IS NOT NULL AND fx.rate_per_eur IS NOT NULL
                 THEN ROUND(p.tuition_intl / fx.rate_per_eur) END AS tuition_eur,
