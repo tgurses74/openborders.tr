@@ -150,7 +150,7 @@ language stories; ③ done — grid, marquee, students page all render from the
 array automatically.
 
 ### 4c. Menu items (11, in `#menuOverlay` of every page)
-Anasayfa `/` · Kamplarımız `camps.okareistanbul.com` · Öğrencilerimiz
+Anasayfa `/` · Kamplarımız `camps.openborders.tr` · Öğrencilerimiz
 `/ogrenciler/` · Referans Listemiz `/referans-listesi-formu/` · Yardımcı
 Videolar `youtube.com/@okareistanbul2816` · Sporcu Tanıma Formu
 `/sporcu_tanima_formu/` · Randevu Alın `/appointment-page/` · Hakkımızda
